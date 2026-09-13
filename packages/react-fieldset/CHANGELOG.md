@@ -1,5 +1,26 @@
 # @virtari-packages/react-fieldset
 
+## 0.4.0
+
+### Minor Changes
+
+- f2badbc: Add static package code rendering, accessible clipboard feedback and shared rendered-field metadata. Improve semantic text contrast, control composition, native form reset, keyboard behavior, nested surfaces and containment in reviewed packages.
+
+  Center control text with shared browser font metrics and separate icon/text slots; preserve ordinary line-box fallback where text-box trimming is unsupported.
+
+### Patch Changes
+
+- 0c1908a: Soften surface boundaries and add inherited default/strong field tones that preserve tinted backgrounds. Resolve semantic colors within nested themes while retaining appearance intent and honoring contrast preferences.
+
+  Keep button icon/text spacing, section slots and loading content consistent through asChild composition. Add an explicit iconOnly prop, preserve disabled link behavior, bound badge/chip SVG geometry and stabilize field metadata keys.
+
+  Let ScrollArea inherit live ancestor direction unless an explicit direction is supplied.
+
+- Updated dependencies [35df268]
+- Updated dependencies [f2badbc]
+- Updated dependencies [800f0f5]
+  - @virtari-packages/utils@0.5.0
+
 ## 0.3.0
 
 ### Minor Changes

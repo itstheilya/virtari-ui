@@ -1,5 +1,21 @@
 # @virtari-packages/react-copy-button
 
+## 0.4.0
+
+### Minor Changes
+
+- f2badbc: Add static package code rendering, accessible clipboard feedback and shared rendered-field metadata. Improve semantic text contrast, control composition, native form reset, keyboard behavior, nested surfaces and containment in reviewed packages.
+
+  Center control text with shared browser font metrics and separate icon/text slots; preserve ordinary line-box fallback where text-box trimming is unsupported.
+
+### Patch Changes
+
+- Updated dependencies [35df268]
+- Updated dependencies [f2badbc]
+- Updated dependencies [800f0f5]
+  - @virtari-packages/utils@0.5.0
+  - @virtari-packages/react-icons@0.4.1
+
 ## 0.3.0
 
 ### Minor Changes

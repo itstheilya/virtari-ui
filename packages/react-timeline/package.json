@@ -1,6 +1,6 @@
 {
   "name": "@virtari-packages/react-timeline",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Virtari timeline — sequential event display with indicator, connector, content, and time slots.",
   "license": "MIT",
   "author": "Virtari",

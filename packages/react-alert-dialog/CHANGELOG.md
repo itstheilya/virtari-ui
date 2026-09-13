@@ -1,5 +1,16 @@
 # @virtari-packages/react-alert-dialog
 
+## 1.0.1
+
+### Patch Changes
+
+- Updated dependencies [35df268]
+- Updated dependencies [f2badbc]
+- Updated dependencies [800f0f5]
+- Updated dependencies [9b5353a]
+  - @virtari-packages/utils@0.5.0
+  - @virtari-packages/primitives@1.1.0
+
 ## 1.0.0
 
 ### Major Changes

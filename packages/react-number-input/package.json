@@ -1,6 +1,6 @@
 {
   "name": "@virtari-packages/react-number-input",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Virtari number-input — numeric stepper input with min/max/step/precision support.",
   "license": "MIT",
   "author": "Virtari",

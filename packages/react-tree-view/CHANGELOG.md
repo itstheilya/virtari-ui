@@ -1,5 +1,14 @@
 # @virtari-packages/react-tree-view
 
+## 0.4.1
+
+### Patch Changes
+
+- Updated dependencies [35df268]
+- Updated dependencies [f2badbc]
+- Updated dependencies [800f0f5]
+  - @virtari-packages/utils@0.5.0
+
 ## 0.4.0
 
 ### Minor Changes

@@ -1,5 +1,26 @@
 # @virtari-packages/react-scroll-area
 
+## 1.2.0
+
+### Minor Changes
+
+- aeb16a1: Unify field and container appearance through bordered, tonal and elevated surface roles. Preserve semantic focus and invalid cues and stable control geometry. Add smart ScrollArea visibility and viewport access, quiet native desktop scrollbars, mode-aware nested card radii and tones, and flex-gap Stack spacing.
+
+### Patch Changes
+
+- 0c1908a: Soften surface boundaries and add inherited default/strong field tones that preserve tinted backgrounds. Resolve semantic colors within nested themes while retaining appearance intent and honoring contrast preferences.
+
+  Keep button icon/text spacing, section slots and loading content consistent through asChild composition. Add an explicit iconOnly prop, preserve disabled link behavior, bound badge/chip SVG geometry and stabilize field metadata keys.
+
+  Let ScrollArea inherit live ancestor direction unless an explicit direction is supplied.
+
+- Updated dependencies [35df268]
+- Updated dependencies [f2badbc]
+- Updated dependencies [800f0f5]
+- Updated dependencies [9b5353a]
+  - @virtari-packages/utils@0.5.0
+  - @virtari-packages/primitives@1.1.0
+
 ## 1.1.0
 
 ### Minor Changes
