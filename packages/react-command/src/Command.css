@@ -44,7 +44,6 @@
 
   /* Input */
   .vds-command-input-wrapper {
-    transition: box-shadow 180ms ease-out;
     display: flex;
     align-items: center;
     padding-inline: var(--vds-command-input-padding-inline);
@@ -198,7 +197,10 @@
 }
 
 @layer design-system.components {
-  .vds-command-input-wrapper:focus-within { box-shadow: inset 0 0 0 4px var(--vds-color-primary-a4), inset 0 0 12px 2px var(--vds-color-primary-a2); }
-  @media (prefers-reduced-motion: reduce) { .vds-command-input-wrapper { transition-duration: 0s; } }
-  @media (forced-colors: active) { .vds-command-input-wrapper:focus-within { outline: 2px solid Highlight; outline-offset: -2px; box-shadow: none; } }
+  @media (forced-colors: active) {
+    .vds-command-input-wrapper:focus-within {
+      outline: 2px solid Highlight;
+      outline-offset: -2px;
+    }
+  }
 }

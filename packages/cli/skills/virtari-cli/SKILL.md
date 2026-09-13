@@ -5,7 +5,7 @@ description: "Use when building, reviewing, or troubleshooting virtari. Source-f
 
 # virtari
 
-Use the existing package and its composition API. Verify the installed version against this snapshot (0.1.6); do not invent exports, class names, CSS variables, or Tailwind utilities. In a source-owned application with `virtari.json`, import from its configured local target; package-name import guidance below applies only to package-consumer mode.
+Use the existing package and its composition API. Verify the installed version against this snapshot (0.1.7); do not invent exports, class names, CSS variables, or Tailwind utilities. In a source-owned application with `virtari.json`, import from its configured local target; package-name import guidance below applies only to package-consumer mode.
 
 ## Workflow
 
