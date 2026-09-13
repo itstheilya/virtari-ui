@@ -1,6 +1,6 @@
 {
   "name": "@virtari-packages/core",
-  "version": "0.3.5",
+  "version": "0.4.0",
   "description": "Base reset, layers, and global primitives for the Virtari design system.",
   "license": "MIT",
   "author": "Virtari",

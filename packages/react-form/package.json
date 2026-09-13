@@ -1,6 +1,6 @@
 {
   "name": "@virtari-packages/react-form",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Virtari form — react-hook-form wrapper with Field/Label/Control/Description/Message primitives.",
   "license": "MIT",
   "author": "Virtari",

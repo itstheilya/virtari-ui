@@ -1,5 +1,16 @@
 # @virtari-packages/utilities
 
+## 6.0.0
+
+### Patch Changes
+
+- Updated dependencies [aeb16a1]
+- Updated dependencies [f2badbc]
+- Updated dependencies [0c1908a]
+- Updated dependencies [800f0f5]
+- Updated dependencies [9b5353a]
+  - @virtari-packages/tokens@0.7.0
+
 ## 5.0.0
 
 ### Patch Changes

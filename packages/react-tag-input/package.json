@@ -1,6 +1,6 @@
 {
   "name": "@virtari-packages/react-tag-input",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Virtari tag input — multi-value text input that renders tags as chips with keyboard and paste support.",
   "license": "MIT",
   "author": "Virtari",

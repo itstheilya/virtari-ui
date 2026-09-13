@@ -1,5 +1,45 @@
 # @virtari-packages/react-data-table
 
+## 0.6.1
+
+### Patch Changes
+
+- aeb16a1: Unify field and container appearance through bordered, tonal and elevated surface roles. Preserve semantic focus and invalid cues and stable control geometry. Add smart ScrollArea visibility and viewport access, quiet native desktop scrollbars, mode-aware nested card radii and tones, and flex-gap Stack spacing.
+- 35df268: Fix form-control compatibility: preserve refs and React 19 ref cleanups, honor disabled/read-only controls, retain numeric drafts and tag input focus, batch pasted tags, compose keyboard handlers, and preserve native text editing during IME composition. Stop combobox close from stealing outside focus and move the select clear button outside its trigger button.
+
+  Connect date/time controls to React Aria's native form inputs. Add form association/reset support to composite controls. TagInput submits repeated name/value entries for committed tags; Combobox submits its selected values. OTP supports defaultValue and uncontrolled editing. Phone parsing refreshes when the parser loads and recognizes pasted international numbers.
+
+  Keep Yoopta editor data when readOnly changes and apply external document replacements while retaining the mounted view for ordinary edit echoes. Avoid committing table cells on composition confirmation or browser-window blur.
+
+- 35df268: Replace form-control focus outlines with a 4px spread halo using existing primary alpha colors and a soft 180ms shadow transition. Apply the same treatment to selection, date/time, search, file, rich-text and code controls; retain danger alpha for invalid fields. Preserve forced-colors focus indicators and honor reduced-motion preferences without changing token definitions.
+- Updated dependencies [aeb16a1]
+- Updated dependencies [35df268]
+- Updated dependencies [35df268]
+- Updated dependencies [35df268]
+- Updated dependencies [35df268]
+- Updated dependencies [35df268]
+- Updated dependencies [f2badbc]
+- Updated dependencies [c052c05]
+- Updated dependencies [0c1908a]
+- Updated dependencies [35df268]
+- Updated dependencies [800f0f5]
+- Updated dependencies [9b5353a]
+  - @virtari-packages/react-checkbox@1.1.1
+  - @virtari-packages/react-drawer@1.1.1
+  - @virtari-packages/react-dropdown-menu@1.1.1
+  - @virtari-packages/react-input@1.1.0
+  - @virtari-packages/react-popover@1.1.1
+  - @virtari-packages/react-select@1.1.1
+  - @virtari-packages/react-tabs@1.1.1
+  - @virtari-packages/utils@0.5.0
+  - @virtari-packages/react-badge@1.1.1
+  - @virtari-packages/react-button@1.2.0
+  - @virtari-packages/react-chip@1.1.1
+  - @virtari-packages/react-switch@1.1.1
+  - @virtari-packages/react-pagination@0.3.1
+  - @virtari-packages/react-avatar@1.1.1
+  - @virtari-packages/react-icons@0.4.1
+
 ## 0.6.0
 
 ### Minor Changes

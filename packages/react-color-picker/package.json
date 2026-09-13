@@ -1,6 +1,6 @@
 {
   "name": "@virtari-packages/react-color-picker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Virtari color picker - solid colors, CSS gradients, code mode, and full channel conversion.",
   "license": "MIT",
   "author": "Virtari",

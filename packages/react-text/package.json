@@ -1,6 +1,6 @@
 {
   "name": "@virtari-packages/react-text",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Virtari text — accessible React component built on CSS variables and logical properties.",
   "license": "MIT",
   "author": "Virtari",

@@ -1,6 +1,6 @@
 {
   "name": "@virtari-packages/react-empty-state",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Virtari empty state — accessible React component for zero-data views with icon, title, description, and actions slots.",
   "license": "MIT",
   "author": "Virtari",

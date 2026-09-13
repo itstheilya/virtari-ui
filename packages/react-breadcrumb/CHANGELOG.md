@@ -1,5 +1,23 @@
 # @virtari-packages/react-breadcrumb
 
+## 1.0.2
+
+### Patch Changes
+
+- f2badbc: Add static package code rendering, accessible clipboard feedback and shared rendered-field metadata. Improve semantic text contrast, control composition, native form reset, keyboard behavior, nested surfaces and containment in reviewed packages.
+
+  Center control text with shared browser font metrics and separate icon/text slots; preserve ordinary line-box fallback where text-box trimming is unsupported.
+
+- Updated dependencies [aeb16a1]
+- Updated dependencies [35df268]
+- Updated dependencies [f2badbc]
+- Updated dependencies [800f0f5]
+- Updated dependencies [9b5353a]
+  - @virtari-packages/react-dropdown-menu@1.1.1
+  - @virtari-packages/utils@0.5.0
+  - @virtari-packages/primitives@1.1.0
+  - @virtari-packages/react-icons@0.4.1
+
 ## 1.0.1
 
 ### Patch Changes

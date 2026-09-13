@@ -1,5 +1,21 @@
 # @virtari-packages/react-pagination
 
+## 0.3.1
+
+### Patch Changes
+
+- Updated dependencies [aeb16a1]
+- Updated dependencies [35df268]
+- Updated dependencies [f2badbc]
+- Updated dependencies [c052c05]
+- Updated dependencies [0c1908a]
+- Updated dependencies [35df268]
+- Updated dependencies [800f0f5]
+- Updated dependencies [9b5353a]
+  - @virtari-packages/react-select@1.1.1
+  - @virtari-packages/utils@0.5.0
+  - @virtari-packages/react-icons@0.4.1
+
 ## 0.3.0
 
 ### Minor Changes

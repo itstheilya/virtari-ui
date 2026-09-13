@@ -1,5 +1,43 @@
 # @virtari-packages/react-editor
 
+## 0.4.1
+
+### Patch Changes
+
+- aeb16a1: Unify field and container appearance through bordered, tonal and elevated surface roles. Preserve semantic focus and invalid cues and stable control geometry. Add smart ScrollArea visibility and viewport access, quiet native desktop scrollbars, mode-aware nested card radii and tones, and flex-gap Stack spacing.
+- 35df268: Replace form-control focus outlines with a 4px spread halo using existing primary alpha colors and a soft 180ms shadow transition. Apply the same treatment to selection, date/time, search, file, rich-text and code controls; retain danger alpha for invalid fields. Preserve forced-colors focus indicators and honor reduced-motion preferences without changing token definitions.
+- 800f0f5: Align segmented tracks with field radius roles, distinguish Round from Soft controls, and keep keycaps and small checkboxes appropriately bounded. Resolve nested Flow modes, clamp Editor radius subtraction and use a semantic TimeWheel role.
+
+  Keep tab and segment indicators concentric with their tracks, bound vertical pill tracks, adapt boxed corners to radius modes, and honor explicit/provider/ancestor direction. Publish the styles required by standalone SegmentedControl consumers.
+
+  Add shared platform-aware shortcut formatting and KbdShortcut. Match Windows/Linux Control and Apple Command labels with actual key bindings and ARIA metadata. Ignore handled, composing and repeated hotkey events by default; repeated activation can be opted into.
+
+  Restore the actual opener's focus when a controlled CommandDialog closes, including an input that opened it with a shortcut. Preserve consumer autofocus callbacks and overrides.
+
+- Updated dependencies [aeb16a1]
+- Updated dependencies [35df268]
+- Updated dependencies [f2badbc]
+- Updated dependencies [c052c05]
+- Updated dependencies [0c1908a]
+- Updated dependencies [35df268]
+- Updated dependencies [800f0f5]
+- Updated dependencies [9b5353a]
+  - @virtari-packages/react-color-picker@1.0.1
+  - @virtari-packages/react-dialog@2.0.1
+  - @virtari-packages/react-file-upload@1.1.1
+  - @virtari-packages/react-input@1.1.0
+  - @virtari-packages/react-scroll-area@1.2.0
+  - @virtari-packages/react-select@1.1.1
+  - @virtari-packages/react-tabs@1.1.1
+  - @virtari-packages/react-textarea@0.4.1
+  - @virtari-packages/utils@0.5.0
+  - @virtari-packages/react-button@1.2.0
+  - @virtari-packages/react-code@0.4.0
+  - @virtari-packages/react-fieldset@0.4.0
+  - @virtari-packages/react-kbd@0.5.0
+  - @virtari-packages/react-icons@0.4.1
+  - @virtari-packages/react-tooltip@1.1.1
+
 ## 0.4.0
 
 ### Minor Changes

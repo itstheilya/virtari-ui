@@ -1,6 +1,6 @@
 {
   "name": "@virtari-packages/react-stepper",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Virtari stepper — multi-step progress indicator with horizontal and vertical orientations.",
   "license": "MIT",
   "author": "Virtari",

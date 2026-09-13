@@ -1,5 +1,15 @@
 # @virtari-packages/react-flag
 
+## 0.3.1
+
+### Patch Changes
+
+- ac401c7: Use the historic Lion and Sun artwork for Iran, label the country as Iran, and make date-picker overlays responsive across the full component size ramp while keeping Apply and Cancel reachable.
+- Updated dependencies [35df268]
+- Updated dependencies [f2badbc]
+- Updated dependencies [800f0f5]
+  - @virtari-packages/utils@0.5.0
+
 ## 0.3.0
 
 ### Minor Changes
