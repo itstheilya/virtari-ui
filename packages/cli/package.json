@@ -1,6 +1,6 @@
 {
   "name": "virtari",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Install editable Virtari design-system source into React projects.",
   "homepage": "https://github.com/itstheilya/virtari-ui#readme",
   "repository": {

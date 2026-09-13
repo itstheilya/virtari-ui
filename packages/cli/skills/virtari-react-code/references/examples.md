@@ -343,12 +343,13 @@ All documentation sections importing this package (some demonstrate another pack
 - `pagination/5` — With DataTable; source `apps/docs/src/pages/PaginationPage.tsx` lines 152–159.
 - `pagination/6` — Usage; source `apps/docs/src/pages/PaginationPage.tsx` lines 161–188.
 - `phone-input/1` — Overview; source `apps/docs/src/pages/PhoneInputPage.tsx` lines 13–20.
-- `phone-input/2` — Uncontrolled; source `apps/docs/src/pages/PhoneInputPage.tsx` lines 22–29.
-- `phone-input/3` — Controlled; source `apps/docs/src/pages/PhoneInputPage.tsx` lines 31–45.
-- `phone-input/4` — Size ramp; source `apps/docs/src/pages/PhoneInputPage.tsx` lines 47–61.
-- `phone-input/5` — States; source `apps/docs/src/pages/PhoneInputPage.tsx` lines 63–75.
-- `phone-input/6` — Preferred countries; source `apps/docs/src/pages/PhoneInputPage.tsx` lines 77–87.
-- `phone-input/7` — Usage; source `apps/docs/src/pages/PhoneInputPage.tsx` lines 89–102.
+- `phone-input/2` — Uncontrolled and normalized; source `apps/docs/src/pages/PhoneInputPage.tsx` lines 22–29.
+- `phone-input/3` — Controlled; source `apps/docs/src/pages/PhoneInputPage.tsx` lines 31–44.
+- `phone-input/4` — Size ramp; source `apps/docs/src/pages/PhoneInputPage.tsx` lines 46–60.
+- `phone-input/5` — States; source `apps/docs/src/pages/PhoneInputPage.tsx` lines 62–74.
+- `phone-input/6` — Preferred countries; source `apps/docs/src/pages/PhoneInputPage.tsx` lines 76–85.
+- `phone-input/7` — Restricted countries; source `apps/docs/src/pages/PhoneInputPage.tsx` lines 87–94.
+- `phone-input/8` — Usage; source `apps/docs/src/pages/PhoneInputPage.tsx` lines 96–109.
 - `popover/1` — Basic; source `apps/docs/src/pages/PopoverPage.tsx` lines 9–33.
 - `popover/2` — Placements; source `apps/docs/src/pages/PopoverPage.tsx` lines 35–56.
 - `popover/3` — Usage; source `apps/docs/src/pages/PopoverPage.tsx` lines 58–69.

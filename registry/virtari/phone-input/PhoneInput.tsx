@@ -24,12 +24,14 @@ export interface PhoneInputProps
     InputProps,
     "value" | "defaultValue" | "onChange" | "type" | "size" | "inputSize"
   > {
-  /** Controlled value — E.164 (`+98…`) or a national string. */
+  /** Controlled value — E.164 (`+1…`) or a national string. */
   value?: string;
   /** Uncontrolled initial value. */
   defaultValue?: string;
-  /** ISO 3166-1 alpha-2 fallback when `value` has no explicit country. */
+  /** ISO 3166-1 alpha-2 fallback when `value` has no explicit country. Defaults to `"us"`. */
   defaultCountry?: CountryCode;
+  /** Restricts the country picker. When US is excluded, the first valid entry becomes the fallback. */
+  allowedCountries?: CountryCode[];
   /** Countries pinned to the top of the popover. */
   preferredCountries?: CountryCode[];
   /** Size preset — shares ramp with Input. Default `"md"`. */
@@ -64,6 +66,7 @@ export const PhoneInput = forwardRef<HTMLInputElement, PhoneInputProps>(function
   value,
   defaultValue,
   defaultCountry,
+  allowedCountries,
   preferredCountries,
   size = "md",
   invalid,
@@ -102,6 +105,7 @@ export const PhoneInput = forwardRef<HTMLInputElement, PhoneInputProps>(function
     value,
     defaultValue,
     defaultCountry,
+    allowedCountries,
     onChange,
     onValidityChange,
     normalize: normalizeDigits,
@@ -145,6 +149,7 @@ export const PhoneInput = forwardRef<HTMLInputElement, PhoneInputProps>(function
         onCountryChange={handleCountryChange}
         size={size}
         preferredCountries={preferredCountries}
+        allowedCountries={allowedCountries}
         locale={locale}
         disabled={disabled || readOnly}
         invalid={invalid}
@@ -152,7 +157,7 @@ export const PhoneInput = forwardRef<HTMLInputElement, PhoneInputProps>(function
         label={label}
       />
 
-      {/* Hidden helper that SR reads before digits so "+98" frames the number. */}
+      {/* Hidden helper lets screen readers announce the active dial code before the digits. */}
       <span id={dialId} className="vds-phone-input-announce">
         Dial code {countryEntry.dialCode}
       </span>

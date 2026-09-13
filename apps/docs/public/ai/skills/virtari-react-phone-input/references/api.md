@@ -80,12 +80,14 @@ export interface PhoneInputProps
     InputProps,
     "value" | "defaultValue" | "onChange" | "type" | "size" | "inputSize"
   > {
-  /** Controlled value — E.164 (`+98…`) or a national string. */
+  /** Controlled value — E.164 (`+1…`) or a national string. */
   value?: string;
   /** Uncontrolled initial value. */
   defaultValue?: string;
-  /** ISO 3166-1 alpha-2 fallback when `value` has no explicit country. */
+  /** ISO 3166-1 alpha-2 fallback when `value` has no explicit country. Defaults to `"us"`. */
   defaultCountry?: CountryCode;
+  /** Restricts the country picker. When US is excluded, the first valid entry becomes the fallback. */
+  allowedCountries?: CountryCode[];
   /** Countries pinned to the top of the popover. */
   preferredCountries?: CountryCode[];
   /** Size preset — shares ramp with Input. Default `"md"`. */
@@ -130,6 +132,8 @@ export interface PhoneInputCountrySelectProps {
   size?: PhoneInputSize;
   /** Countries pinned to the top of the search list. */
   preferredCountries?: CountryCode[];
+  /** Countries available in the picker. An empty list falls back to US. */
+  allowedCountries?: CountryCode[];
   /** Language used for country names in the list. Defaults to document.lang or `"en"`. */
   locale?: "en" | "fa" | "ar";
   /** Whole picker disabled (mirrors Input disabled). */
@@ -155,6 +159,7 @@ export function PhoneInputCountrySelect({
   onCountryChange,
   size = "md",
   preferredCountries,
+  allowedCountries,
   locale,
   disabled,
   invalid,
@@ -188,6 +193,7 @@ export interface UsePhoneInputProps {
   value?: string;
   defaultValue?: string;
   defaultCountry?: CountryCode;
+  allowedCountries?: readonly CountryCode[];
   onChange?: (next: PhoneInputValue) => void;
   onValidityChange?: (isValid: boolean) => void;
   /** Auto-convert ۰۱۲۳… / ٠١٢٣… to ASCII before parsing. Default `true`. */
@@ -202,6 +208,7 @@ export function usePhoneInput({
   value,
   defaultValue,
   defaultCountry,
+  allowedCountries,
   onChange,
   onValidityChange,
   normalize = true,

@@ -4,7 +4,7 @@
     {
       "id": "cli",
       "name": "virtari",
-      "version": "0.1.7",
+      "version": "0.1.8",
       "category": "tooling",
       "description": "Source-first CLI that installs editable Virtari React and CSS files with transitive dependencies, conflict protection, diffing, and health checks.",
       "publicSymbols": [],
@@ -6376,6 +6376,7 @@
         "phone-input/5",
         "phone-input/6",
         "phone-input/7",
+        "phone-input/8",
         "popover/1",
         "popover/2",
         "popover/3",
@@ -15932,7 +15933,8 @@
         "phone-input/4",
         "phone-input/5",
         "phone-input/6",
-        "phone-input/7"
+        "phone-input/7",
+        "phone-input/8"
       ],
       "guidance": [
         "Use PhoneInput with string value/defaultValue; onChange returns PhoneInputValue containing country, national, e164 and isValid. Set defaultCountry when a national number has no explicit country and preferredCountries for frequently used choices.",
@@ -164232,7 +164234,7 @@
       "sourceId": "apps/docs/src/pages/PhoneInputPage.tsx",
       "startLine": 13,
       "endLine": 20,
-      "code": "<Section\n        title=\"Overview\"\n        description=\"A complete tel input: country picker, dial-code prefix, format-as-you-type, Persian/Arabic digit normalization, full ARIA and autofill hints. Composed on top of <Input> + <Combobox>.\"\n      >\n        <div style={{ maxInlineSize: \"24rem\" }}>\n          <PhoneInput defaultCountry=\"ir\" placeholder=\"Phone number\" />\n        </div>\n      </Section>",
+      "code": "<Section\n        title=\"Overview\"\n        description=\"A complete tel input: country picker, dial-code prefix, format-as-you-type, Persian/Arabic digit normalization, full ARIA and autofill hints. Composed on top of <Input> + <Combobox>.\"\n      >\n        <div style={{ maxInlineSize: \"24rem\" }}>\n          <PhoneInput placeholder=\"Phone number\" />\n        </div>\n      </Section>",
       "imports": [
         "import { CodeBlock as VirtariCodeBlock } from \"@virtari-packages/react-code\";",
         "import { useState } from \"react\";",
@@ -164242,7 +164244,7 @@
     },
     {
       "id": "phone-input/2",
-      "title": "Uncontrolled",
+      "title": "Uncontrolled and normalized",
       "page": "phone-input",
       "packageIds": [
         "react-code",
@@ -164251,7 +164253,7 @@
       "sourceId": "apps/docs/src/pages/PhoneInputPage.tsx",
       "startLine": 22,
       "endLine": 29,
-      "code": "<Section\n        title=\"Uncontrolled\"\n        description=\"Just drop it in. Try typing with Persian digits: ۰۹۱۲۳۴۵۶۷۸۹ — they'll auto-convert to ASCII and format as 0912 345 6789.\"\n      >\n        <div style={{ maxInlineSize: \"24rem\" }}>\n          <PhoneInput defaultCountry=\"ir\" placeholder=\"مثلاً ۰۹۱۲۳۴۵۶۷۸۹\" />\n        </div>\n      </Section>",
+      "code": "<Section\n        title=\"Uncontrolled and normalized\"\n        description=\"The default is United States (+1). Persian and Arabic numerals are still converted to ASCII before US formatting; try ۲۰۲۵۵۵۰۱۲۳.\"\n      >\n        <div style={{ maxInlineSize: \"24rem\" }}>\n          <PhoneInput placeholder=\"For example, 202 555 0123\" />\n        </div>\n      </Section>",
       "imports": [
         "import { CodeBlock as VirtariCodeBlock } from \"@virtari-packages/react-code\";",
         "import { useState } from \"react\";",
@@ -164269,8 +164271,8 @@
       ],
       "sourceId": "apps/docs/src/pages/PhoneInputPage.tsx",
       "startLine": 31,
-      "endLine": 45,
-      "code": "<Section\n        title=\"Controlled\"\n        description=\"Listen to onChange to get parsed { country, national, e164, isValid } on every keystroke. E.164 stays null until the number is complete and valid.\"\n      >\n        <Stack>\n          <div style={{ maxInlineSize: \"24rem\" }}>\n            <PhoneInput\n              defaultCountry=\"us\"\n              onChange={setCtrl}\n              preferredCountries={[\"us\", \"gb\", \"ir\", \"de\", \"fr\"]}\n            />\n          </div>\n          <VirtariCodeBlock renderer=\"static\" language=\"json\" code={JSON.stringify(ctrl, null, 2)} />\n        </Stack>\n      </Section>",
+      "endLine": 44,
+      "code": "<Section\n        title=\"Controlled\"\n        description=\"Listen to onChange to get parsed { country, national, e164, isValid } on every keystroke. E.164 stays null until the number is complete and valid.\"\n      >\n        <Stack>\n          <div style={{ maxInlineSize: \"24rem\" }}>\n            <PhoneInput\n              onChange={setCtrl}\n              preferredCountries={[\"us\", \"gb\", \"ir\", \"de\", \"fr\"]}\n            />\n          </div>\n          <VirtariCodeBlock renderer=\"static\" language=\"json\" code={JSON.stringify(ctrl, null, 2)} />\n        </Stack>\n      </Section>",
       "imports": [
         "import { CodeBlock as VirtariCodeBlock } from \"@virtari-packages/react-code\";",
         "import { useState } from \"react\";",
@@ -164287,9 +164289,9 @@
         "react-phone-input"
       ],
       "sourceId": "apps/docs/src/pages/PhoneInputPage.tsx",
-      "startLine": 47,
-      "endLine": 61,
-      "code": "<Section\n        title=\"Size ramp\"\n        description=\"Shares the same height ramp as Input and Button. Country chip widens on larger sizes so the flag + dial code stay readable.\"\n      >\n        <Stack>\n          {SIZES.map((s) => (\n            <Row key={s}>\n              <span className=\"docs-size-label\">{s}</span>\n              <div style={{ maxInlineSize: \"22rem\", inlineSize: \"100%\" }}>\n                <PhoneInput size={s} defaultCountry=\"ir\" />\n              </div>\n            </Row>\n          ))}\n        </Stack>\n      </Section>",
+      "startLine": 46,
+      "endLine": 60,
+      "code": "<Section\n        title=\"Size ramp\"\n        description=\"Shares the same height ramp as Input and Button. Country chip widens on larger sizes so the flag + dial code stay readable.\"\n      >\n        <Stack>\n          {SIZES.map((s) => (\n            <Row key={s}>\n              <span className=\"docs-size-label\">{s}</span>\n              <div style={{ maxInlineSize: \"22rem\", inlineSize: \"100%\" }}>\n                <PhoneInput size={s} />\n              </div>\n            </Row>\n          ))}\n        </Stack>\n      </Section>",
       "imports": [
         "import { CodeBlock as VirtariCodeBlock } from \"@virtari-packages/react-code\";",
         "import { useState } from \"react\";",
@@ -164306,9 +164308,9 @@
         "react-phone-input"
       ],
       "sourceId": "apps/docs/src/pages/PhoneInputPage.tsx",
-      "startLine": 63,
-      "endLine": 75,
-      "code": "<Section title=\"States\">\n        <Stack>\n          <div style={{ maxInlineSize: \"22rem\" }}>\n            <PhoneInput defaultCountry=\"ir\" placeholder=\"Normal\" />\n          </div>\n          <div style={{ maxInlineSize: \"22rem\" }}>\n            <PhoneInput defaultCountry=\"ir\" invalid placeholder=\"Invalid\" />\n          </div>\n          <div style={{ maxInlineSize: \"22rem\" }}>\n            <PhoneInput defaultCountry=\"ir\" disabled placeholder=\"Disabled\" />\n          </div>\n        </Stack>\n      </Section>",
+      "startLine": 62,
+      "endLine": 74,
+      "code": "<Section title=\"States\">\n        <Stack>\n          <div style={{ maxInlineSize: \"22rem\" }}>\n            <PhoneInput placeholder=\"Normal\" />\n          </div>\n          <div style={{ maxInlineSize: \"22rem\" }}>\n            <PhoneInput invalid placeholder=\"Invalid\" />\n          </div>\n          <div style={{ maxInlineSize: \"22rem\" }}>\n            <PhoneInput disabled placeholder=\"Disabled\" />\n          </div>\n        </Stack>\n      </Section>",
       "imports": [
         "import { CodeBlock as VirtariCodeBlock } from \"@virtari-packages/react-code\";",
         "import { useState } from \"react\";",
@@ -164325,9 +164327,9 @@
         "react-phone-input"
       ],
       "sourceId": "apps/docs/src/pages/PhoneInputPage.tsx",
-      "startLine": 77,
-      "endLine": 87,
-      "code": "<Section\n        title=\"Preferred countries\"\n        description=\"Pin a short-list to the top of the popover. Everything else stays below, alphabetical.\"\n      >\n        <div style={{ maxInlineSize: \"24rem\" }}>\n          <PhoneInput\n            defaultCountry=\"ir\"\n            preferredCountries={[\"ir\", \"us\", \"gb\", \"de\", \"fr\", \"ae\", \"sa\"]}\n          />\n        </div>\n      </Section>",
+      "startLine": 76,
+      "endLine": 85,
+      "code": "<Section\n        title=\"Preferred countries\"\n        description=\"Pin a short-list to the top of the popover. Everything else stays below, alphabetical.\"\n      >\n        <div style={{ maxInlineSize: \"24rem\" }}>\n          <PhoneInput\n            preferredCountries={[\"us\", \"gb\", \"ir\", \"de\", \"fr\", \"ae\", \"sa\"]}\n          />\n        </div>\n      </Section>",
       "imports": [
         "import { CodeBlock as VirtariCodeBlock } from \"@virtari-packages/react-code\";",
         "import { useState } from \"react\";",
@@ -164337,6 +164339,25 @@
     },
     {
       "id": "phone-input/7",
+      "title": "Restricted countries",
+      "page": "phone-input",
+      "packageIds": [
+        "react-code",
+        "react-phone-input"
+      ],
+      "sourceId": "apps/docs/src/pages/PhoneInputPage.tsx",
+      "startLine": 87,
+      "endLine": 94,
+      "code": "<Section\n        title=\"Restricted countries\"\n        description=\"Use allowedCountries to limit the picker. US remains the fallback when available; when it is excluded, the first valid allowed country is selected.\"\n      >\n        <div style={{ maxInlineSize: \"24rem\" }}>\n          <PhoneInput allowedCountries={[\"gb\", \"de\", \"fr\"]} />\n        </div>\n      </Section>",
+      "imports": [
+        "import { CodeBlock as VirtariCodeBlock } from \"@virtari-packages/react-code\";",
+        "import { useState } from \"react\";",
+        "import { PhoneInput, type PhoneInputValue } from \"@virtari-packages/react-phone-input\";",
+        "import { Section, Row, Stack } from \"../components\";"
+      ]
+    },
+    {
+      "id": "phone-input/8",
       "title": "Usage",
       "page": "phone-input",
       "packageIds": [
@@ -164344,9 +164365,9 @@
         "react-phone-input"
       ],
       "sourceId": "apps/docs/src/pages/PhoneInputPage.tsx",
-      "startLine": 89,
-      "endLine": 102,
-      "code": "<Section title=\"Usage\">\n        <VirtariCodeBlock renderer=\"static\" language=\"tsx\" code={`import { PhoneInput } from \"@virtari-packages/react-phone-input\";\n\n<PhoneInput\n  defaultCountry=\"ir\"\n  preferredCountries={[\"ir\", \"us\", \"gb\"]}\n  onChange={({ country, national, e164, isValid }) => { … }}\n  onValidityChange={(ok) => setValid(ok)}\n  name=\"phone\"               // emits a hidden <input autoComplete=\"tel\" value={e164}>\n  size=\"md\"                  // 2xs | xs | sm | md | lg | xl | 2xl\n  invalid={hasError}\n  locale=\"fa\"                // country-name language in the popover\n/>`} />\n      </Section>",
+      "startLine": 96,
+      "endLine": 109,
+      "code": "<Section title=\"Usage\">\n        <VirtariCodeBlock renderer=\"static\" language=\"tsx\" code={`import { PhoneInput } from \"@virtari-packages/react-phone-input\";\n\n<PhoneInput\n  preferredCountries={[\"us\", \"gb\", \"ir\"]}\n  allowedCountries={[\"us\", \"gb\", \"ir\"]} // optional restriction; US is the default\n  onChange={({ country, national, e164, isValid }) => { … }}\n  onValidityChange={(ok) => setValid(ok)}\n  name=\"phone\"               // emits a hidden <input autoComplete=\"tel\" value={e164}>\n  size=\"md\"                  // 2xs | xs | sm | md | lg | xl | 2xl\n  invalid={hasError}\n  locale=\"fa\"                // country-name language in the popover\n/>`} />\n      </Section>",
       "imports": [
         "import { CodeBlock as VirtariCodeBlock } from \"@virtari-packages/react-code\";",
         "import { useState } from \"react\";",
@@ -169394,8 +169415,8 @@
     },
     {
       "id": "apps/docs/src/pages/PhoneInputPage.tsx",
-      "sha256": "f22296c12a757ba9d627c7c6dc0fddbcd43b3c7809fc82ccb430da03a544f271",
-      "bytes": 3928,
+      "sha256": "dcf7a953c2a9a14af188c0c1f61fa29f7ac2ae4b2334a470f649813c829a114d",
+      "bytes": 4190,
       "kind": "tsx"
     },
     {
@@ -169820,7 +169841,7 @@
     },
     {
       "id": "docs/source-registry.md",
-      "sha256": "3298f08e7bee41a7f204cdfd25e7d67a62bcff293d7bc330fca8dfa9dec2bcd6",
+      "sha256": "a8f71229a95bd3c9fcb487b950558f92ffe17594e6991cbe2441c9c3dd3b6437",
       "bytes": 5302,
       "kind": "md"
     },
@@ -169838,7 +169859,7 @@
     },
     {
       "id": "packages/cli/package.json",
-      "sha256": "efe02c3293a83f427abd87a29ccb17edd1c9118392f2e2c5c37fe80d2a9e5aee",
+      "sha256": "25fb02f49aef800f25c548ad1a2298f9d09389662be030864ab069890a8f0907",
       "bytes": 973,
       "kind": "json"
     },
@@ -174602,14 +174623,14 @@
     },
     {
       "id": "packages/react-phone-input/src/PhoneInput.tsx",
-      "sha256": "19f5352bed89597bed3de14bdbb61a28fb23b845ec7af47ab9fc43b38d0a17bc",
-      "bytes": 6220,
+      "sha256": "bcb8c921c076bcddad53ac31b4efc37e9edc86f7f98834959e7860a7e2e9cad7",
+      "bytes": 6478,
       "kind": "tsx"
     },
     {
       "id": "packages/react-phone-input/src/PhoneInputCountrySelect.tsx",
-      "sha256": "e226436a05bd21a8c8affc1a1eacf930cf95cbffa8854fc7e04affe260363989",
-      "bytes": 9168,
+      "sha256": "8ab9b472cd6dc2f42f3e452f997f62ccba01cc996a6cb47bbaf385da159701d3",
+      "bytes": 9713,
       "kind": "tsx"
     },
     {
@@ -174638,8 +174659,8 @@
     },
     {
       "id": "packages/react-phone-input/src/use-phone-input.ts",
-      "sha256": "ad3faf99777a8f9f3a3a43700bf21ccf635db163602e43225ce6cd98e1529205",
-      "bytes": 7217,
+      "sha256": "35ffbb27f28cab4f58c722da2720d4e08d9854fd45f23fec64a5acbc14d62942",
+      "bytes": 8653,
       "kind": "ts"
     },
     {
@@ -176084,7 +176105,7 @@
     },
     {
       "id": "registry.json",
-      "sha256": "2693f4921fee0ad431f10d63661a90e62a93ca012c563b333b843d7c312307d4",
+      "sha256": "a0b55a78c0186265ee397d294fd2368a60b42601f5c9aed388177c8b9a6a10ed",
       "bytes": 284286,
       "kind": "json"
     },

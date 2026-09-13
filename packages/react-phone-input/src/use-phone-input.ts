@@ -19,19 +19,42 @@ export interface UsePhoneInputProps {
   value?: string;
   defaultValue?: string;
   defaultCountry?: CountryCode;
+  allowedCountries?: readonly CountryCode[];
   onChange?: (next: PhoneInputValue) => void;
   onValidityChange?: (isValid: boolean) => void;
   /** Auto-convert ۰۱۲۳… / ٠١٢٣… to ASCII before parsing. Default `true`. */
   normalize?: boolean;
 }
 
-function detectCountry(): CountryCode {
-  if (typeof navigator === "undefined") return "us" as CountryCode;
-  const lang = navigator.language || "en-US";
-  const match = lang.match(/[-_]([a-zA-Z]{2})/);
-  const code = (match?.[1] ?? "").toLowerCase();
-  if (code && code in countriesByCode) return code as CountryCode;
-  return "us" as CountryCode;
+const DEFAULT_COUNTRY = "us" as CountryCode;
+
+function normalizeAllowedCountries(
+  allowedCountries: readonly CountryCode[] | undefined,
+): readonly CountryCode[] | undefined {
+  if (allowedCountries === undefined) return undefined;
+
+  const unique = Array.from(new Set(allowedCountries)).filter(
+    (code) => code in countriesByCode,
+  );
+  return unique.length > 0 ? unique : [DEFAULT_COUNTRY];
+}
+
+function resolveFallbackCountry(
+  defaultCountry: CountryCode | undefined,
+  allowedCountries: readonly CountryCode[] | undefined,
+): CountryCode {
+  if (defaultCountry && (!allowedCountries || allowedCountries.includes(defaultCountry))) {
+    return defaultCountry;
+  }
+  if (!allowedCountries || allowedCountries.includes(DEFAULT_COUNTRY)) return DEFAULT_COUNTRY;
+  return allowedCountries[0] ?? DEFAULT_COUNTRY;
+}
+
+function isAllowedCountry(
+  country: CountryCode,
+  allowedCountries: readonly CountryCode[] | undefined,
+): boolean {
+  return !allowedCountries || allowedCountries.includes(country);
 }
 
 function stripDialPrefix(input: string, dialCode: string): string {
@@ -47,14 +70,23 @@ export function usePhoneInput({
   value,
   defaultValue,
   defaultCountry,
+  allowedCountries,
   onChange,
   onValidityChange,
   normalize = true,
 }: UsePhoneInputProps) {
   const isControlled = value !== undefined;
+  const allowed = useMemo(
+    () => normalizeAllowedCountries(allowedCountries),
+    [allowedCountries],
+  );
+  const fallbackCountry = useMemo(
+    () => resolveFallbackCountry(defaultCountry, allowed),
+    [allowed, defaultCountry],
+  );
 
   const [internalCountry, setInternalCountry] = useState<CountryCode>(
-    defaultCountry ?? detectCountry(),
+    () => resolveFallbackCountry(defaultCountry, normalizeAllowedCountries(allowedCountries)),
   );
   const [internalRaw, setInternalRaw] = useState<string>(defaultValue ?? "");
   // Re-render bump after lazy lib loads so AsYouType formatting kicks in.
@@ -71,6 +103,12 @@ export function usePhoneInput({
     };
   }, [libReady]);
 
+  useEffect(() => {
+    setInternalCountry((current) =>
+      isAllowedCountry(current, allowed) ? current : fallbackCountry,
+    );
+  }, [allowed, fallbackCountry]);
+
   const currentRaw = isControlled ? (value ?? "") : internalRaw;
 
   // When a value arrives as E.164, infer country from it so the
@@ -81,12 +119,15 @@ export function usePhoneInput({
     if (!lib) return internalCountry;
     try {
       const parsed = lib.parsePhoneNumberFromString(normalize ? normalizeDigits(currentRaw) : currentRaw);
-      if (parsed?.country) return parsed.country.toLowerCase() as CountryCode;
+      if (parsed?.country) {
+        const parsedCountry = parsed.country.toLowerCase() as CountryCode;
+        if (isAllowedCountry(parsedCountry, allowed)) return parsedCountry;
+      }
     } catch {
       /* ignore */
     }
-    return internalCountry;
-  }, [currentRaw, internalCountry, normalize, libReady]);
+    return isAllowedCountry(internalCountry, allowed) ? internalCountry : fallbackCountry;
+  }, [allowed, currentRaw, fallbackCountry, internalCountry, normalize, libReady]);
 
   const country: CountryCode = inferredCountry;
   const countryEntry: CountryEntry =
@@ -152,6 +193,7 @@ export function usePhoneInput({
 
   const setCountry = useCallback(
     (nextCountry: CountryCode) => {
+      if (!isAllowedCountry(nextCountry, allowed)) return;
       setInternalCountry(nextCountry);
       const stripped = stripDialPrefix(currentRaw, countryEntry.dialCode);
       if (!isControlled) setInternalRaw(stripped);
@@ -176,7 +218,7 @@ export function usePhoneInput({
         });
       }
     },
-    [currentRaw, countryEntry.dialCode, isControlled, normalize, onChange],
+    [allowed, currentRaw, countryEntry.dialCode, isControlled, normalize, onChange],
   );
 
   return {
@@ -185,7 +227,7 @@ export function usePhoneInput({
     value: formatted,
     allCountries: countries,
     reset: () => {
-      const fallback = defaultCountry ?? detectCountry();
+      const fallback = fallbackCountry;
       const raw = normalize ? normalizeDigits(defaultValue ?? "") : defaultValue ?? "";
       setInternalCountry(fallback);
       if (!isControlled) setInternalRaw(raw);

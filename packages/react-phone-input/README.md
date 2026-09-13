@@ -63,6 +63,10 @@ Override any `--vds-*` custom property at `:root` (or a subtree) to retheme.
 
 All components use logical CSS properties (`margin-inline`, `padding-block`, …) and `:dir(rtl)` overrides where logical props cannot express the rule. Layouts flip automatically when the host document sets `dir="rtl"`.
 
+## Country defaults and restrictions
+
+`PhoneInput` starts with the United States and `+1` unless `defaultCountry` is provided or an E.164 value identifies another country. Use `allowedCountries` to limit the picker. If that list excludes the United States, its first valid country becomes the fallback. `preferredCountries` only changes ordering and does not restrict the available countries.
+
 ## Links
 
 - [Repository](https://github.com/itstheilya/virtari-ui)

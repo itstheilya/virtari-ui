@@ -20,16 +20,16 @@ export function PhoneInputPage() {
         description="A complete tel input: country picker, dial-code prefix, format-as-you-type, Persian/Arabic digit normalization, full ARIA and autofill hints. Composed on top of <Input> + <Combobox>."
       >
         <div style={{ maxInlineSize: "24rem" }}>
-          <PhoneInput defaultCountry="ir" placeholder="Phone number" />
+          <PhoneInput placeholder="Phone number" />
         </div>
       </Section>
 
       <Section
-        title="Uncontrolled"
-        description="Just drop it in. Try typing with Persian digits: ۰۹۱۲۳۴۵۶۷۸۹ — they'll auto-convert to ASCII and format as 0912 345 6789."
+        title="Uncontrolled and normalized"
+        description="The default is United States (+1). Persian and Arabic numerals are still converted to ASCII before US formatting; try ۲۰۲۵۵۵۰۱۲۳."
       >
         <div style={{ maxInlineSize: "24rem" }}>
-          <PhoneInput defaultCountry="ir" placeholder="مثلاً ۰۹۱۲۳۴۵۶۷۸۹" />
+          <PhoneInput placeholder="For example, 202 555 0123" />
         </div>
       </Section>
 
@@ -40,7 +40,6 @@ export function PhoneInputPage() {
         <Stack>
           <div style={{ maxInlineSize: "24rem" }}>
             <PhoneInput
-              defaultCountry="us"
               onChange={setCtrl}
               preferredCountries={["us", "gb", "ir", "de", "fr"]}
             />
@@ -58,7 +57,7 @@ export function PhoneInputPage() {
             <Row key={s}>
               <span className="docs-size-label">{s}</span>
               <div style={{ maxInlineSize: "22rem", inlineSize: "100%" }}>
-                <PhoneInput size={s} defaultCountry="ir" />
+                <PhoneInput size={s} />
               </div>
             </Row>
           ))}
@@ -68,13 +67,13 @@ export function PhoneInputPage() {
       <Section title="States">
         <Stack>
           <div style={{ maxInlineSize: "22rem" }}>
-            <PhoneInput defaultCountry="ir" placeholder="Normal" />
+            <PhoneInput placeholder="Normal" />
           </div>
           <div style={{ maxInlineSize: "22rem" }}>
-            <PhoneInput defaultCountry="ir" invalid placeholder="Invalid" />
+            <PhoneInput invalid placeholder="Invalid" />
           </div>
           <div style={{ maxInlineSize: "22rem" }}>
-            <PhoneInput defaultCountry="ir" disabled placeholder="Disabled" />
+            <PhoneInput disabled placeholder="Disabled" />
           </div>
         </Stack>
       </Section>
@@ -85,9 +84,17 @@ export function PhoneInputPage() {
       >
         <div style={{ maxInlineSize: "24rem" }}>
           <PhoneInput
-            defaultCountry="ir"
-            preferredCountries={["ir", "us", "gb", "de", "fr", "ae", "sa"]}
+            preferredCountries={["us", "gb", "ir", "de", "fr", "ae", "sa"]}
           />
+        </div>
+      </Section>
+
+      <Section
+        title="Restricted countries"
+        description="Use allowedCountries to limit the picker. US remains the fallback when available; when it is excluded, the first valid allowed country is selected."
+      >
+        <div style={{ maxInlineSize: "24rem" }}>
+          <PhoneInput allowedCountries={["gb", "de", "fr"]} />
         </div>
       </Section>
 
@@ -95,8 +102,8 @@ export function PhoneInputPage() {
         <VirtariCodeBlock renderer="static" language="tsx" code={`import { PhoneInput } from "@virtari-packages/react-phone-input";
 
 <PhoneInput
-  defaultCountry="ir"
-  preferredCountries={["ir", "us", "gb"]}
+  preferredCountries={["us", "gb", "ir"]}
+  allowedCountries={["us", "gb", "ir"]} // optional restriction; US is the default
   onChange={({ country, national, e164, isValid }) => { … }}
   onValidityChange={(ok) => setValid(ok)}
   name="phone"               // emits a hidden <input autoComplete="tel" value={e164}>

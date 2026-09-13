@@ -32,6 +32,8 @@ export interface PhoneInputCountrySelectProps {
   size?: PhoneInputSize;
   /** Countries pinned to the top of the search list. */
   preferredCountries?: CountryCode[];
+  /** Countries available in the picker. An empty list falls back to US. */
+  allowedCountries?: CountryCode[];
   /** Language used for country names in the list. Defaults to document.lang or `"en"`. */
   locale?: "en" | "fa" | "ar";
   /** Whole picker disabled (mirrors Input disabled). */
@@ -58,16 +60,28 @@ function resolveLocale(preferred?: "en" | "fa" | "ar"): "en" | "fa" | "ar" {
   return "en";
 }
 
-function orderedCountries(preferred: readonly CountryCode[] | undefined): CountryEntry[] {
-  if (!preferred || preferred.length === 0) return countries.slice();
+function orderedCountries(
+  preferred: readonly CountryCode[] | undefined,
+  allowed: readonly CountryCode[] | undefined,
+): CountryEntry[] {
+  const available = allowed === undefined
+    ? countries.slice()
+    : Array.from(new Set(allowed))
+        .map((code) => countriesByCode[code])
+        .filter((entry): entry is CountryEntry => Boolean(entry));
+  const usable = available.length > 0
+    ? available
+    : [countriesByCode.us as CountryEntry];
+  if (!preferred || preferred.length === 0) return usable;
+
   const pref: CountryEntry[] = [];
   const rest: CountryEntry[] = [];
   const preferredSet = new Set(preferred);
   for (const code of preferred) {
     const entry = countriesByCode[code];
-    if (entry) pref.push(entry);
+    if (entry && usable.includes(entry)) pref.push(entry);
   }
-  for (const entry of countries) {
+  for (const entry of usable) {
     if (!preferredSet.has(entry.code as CountryCode)) rest.push(entry);
   }
   return [...pref, ...rest];
@@ -82,6 +96,7 @@ export function PhoneInputCountrySelect({
   onCountryChange,
   size = "md",
   preferredCountries,
+  allowedCountries,
   locale,
   disabled,
   invalid,
@@ -94,12 +109,12 @@ export function PhoneInputCountrySelect({
   const resolvedLocale = resolveLocale(locale);
   const items = useMemo(
     () =>
-      orderedCountries(preferredCountries).map((entry) => ({
+      orderedCountries(preferredCountries, allowedCountries).map((entry) => ({
         value: entry.code,
         label: entry.names[resolvedLocale],
         keywords: [entry.names.en, entry.names.native, entry.dialCode, entry.code],
       })),
-    [preferredCountries, resolvedLocale],
+    [allowedCountries, preferredCountries, resolvedLocale],
   );
 
   const handleChange = useCallback(

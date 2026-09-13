@@ -24,8 +24,8 @@
       "description": "Virtari cascade layers, design tokens, global reset, primitives, and shared React utilities.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/virtari-core#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/virtari-core#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ],
       "files": [
         {
@@ -43,8 +43,8 @@
       "description": "Base reset, layers, and global primitives for the Virtari design system.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-tokens#cli-v0.1.7"
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-tokens#cli-v0.1.8"
       ],
       "files": [
         {
@@ -81,16 +81,16 @@
       "description": "Headless Accordion behavior used by Virtari components.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-collapsible#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-collection#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-context#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-direction#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-event-handlers#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-id#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-controllable-state#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-collapsible#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-collection#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-context#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-direction#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-event-handlers#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-id#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-controllable-state#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ],
       "files": [
         {
@@ -112,12 +112,12 @@
       "description": "Headless Alert Dialog behavior used by Virtari components.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-context#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-dialog#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-event-handlers#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-slot#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-context#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-dialog#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-event-handlers#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-slot#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ],
       "files": [
         {
@@ -139,8 +139,8 @@
       "description": "Headless Arrow behavior used by Virtari components.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ],
       "files": [
         {
@@ -162,12 +162,12 @@
       "description": "Headless Avatar behavior used by Virtari components.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-context#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-callback-ref#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-is-hydrated#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-layout-effect#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-context#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-callback-ref#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-is-hydrated#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-layout-effect#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ],
       "files": [
         {
@@ -189,15 +189,15 @@
       "description": "Headless Checkbox behavior used by Virtari components.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-context#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-event-handlers#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-presence#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-controllable-state#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-previous#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-size#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-context#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-event-handlers#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-presence#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-controllable-state#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-previous#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-size#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ],
       "files": [
         {
@@ -219,15 +219,15 @@
       "description": "Headless Collapsible behavior used by Virtari components.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-context#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-event-handlers#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-id#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-presence#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-controllable-state#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-layout-effect#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-context#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-event-handlers#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-id#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-presence#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-controllable-state#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-layout-effect#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ],
       "files": [
         {
@@ -249,10 +249,10 @@
       "description": "Headless Collection behavior used by Virtari components.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-context#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-slot#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-context#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-slot#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ],
       "files": [
         {
@@ -296,7 +296,7 @@
         }
       ],
       "registryDependencies": [
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ]
     },
     {
@@ -318,7 +318,7 @@
         }
       ],
       "registryDependencies": [
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ]
     },
     {
@@ -328,19 +328,19 @@
       "description": "Headless Dialog behavior used by Virtari components.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-context#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-dismissable-layer#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-event-handlers#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-focus-guards#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-focus-scope#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-id#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-portal#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-presence#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-slot#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-controllable-state#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-context#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-dismissable-layer#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-event-handlers#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-focus-guards#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-focus-scope#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-id#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-portal#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-presence#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-slot#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-controllable-state#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ],
       "dependencies": [
         "aria-hidden@^1.2.6",
@@ -378,7 +378,7 @@
         }
       ],
       "registryDependencies": [
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ]
     },
     {
@@ -388,12 +388,12 @@
       "description": "Headless Dismissable Layer behavior used by Virtari components.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-event-handlers#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-callback-ref#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-escape-keydown#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-event-handlers#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-callback-ref#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-escape-keydown#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ],
       "files": [
         {
@@ -415,14 +415,14 @@
       "description": "Headless Dropdown Menu behavior used by Virtari components.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-context#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-event-handlers#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-id#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-menu#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-controllable-state#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-context#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-event-handlers#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-id#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-menu#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-controllable-state#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ],
       "files": [
         {
@@ -461,7 +461,7 @@
         }
       ],
       "registryDependencies": [
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ]
     },
     {
@@ -483,7 +483,7 @@
         }
       ],
       "registryDependencies": [
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ]
     },
     {
@@ -493,10 +493,10 @@
       "description": "Headless Focus Scope behavior used by Virtari components.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-callback-ref#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-callback-ref#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ],
       "files": [
         {
@@ -518,8 +518,8 @@
       "description": "Headless Id behavior used by Virtari components.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-use-layout-effect#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-use-layout-effect#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ],
       "files": [
         {
@@ -541,8 +541,8 @@
       "description": "Headless Label behavior used by Virtari components.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ],
       "files": [
         {
@@ -564,23 +564,23 @@
       "description": "Headless Menu behavior used by Virtari components.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-collection#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-context#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-direction#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-dismissable-layer#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-event-handlers#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-focus-guards#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-focus-scope#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-id#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-popper#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-portal#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-presence#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-roving-focus#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-slot#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-callback-ref#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-collection#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-context#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-direction#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-dismissable-layer#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-event-handlers#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-focus-guards#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-focus-scope#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-id#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-popper#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-portal#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-presence#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-roving-focus#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-slot#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-callback-ref#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ],
       "dependencies": [
         "aria-hidden@^1.2.6",
@@ -618,7 +618,7 @@
         }
       ],
       "registryDependencies": [
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ]
     },
     {
@@ -628,20 +628,20 @@
       "description": "Headless Popover behavior used by Virtari components.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-context#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-dismissable-layer#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-event-handlers#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-focus-guards#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-focus-scope#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-id#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-popper#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-portal#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-presence#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-slot#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-controllable-state#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-context#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-dismissable-layer#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-event-handlers#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-focus-guards#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-focus-scope#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-id#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-popper#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-portal#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-presence#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-slot#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-controllable-state#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ],
       "dependencies": [
         "aria-hidden@^1.2.6",
@@ -667,15 +667,15 @@
       "description": "Headless Popper behavior used by Virtari components.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-arrow#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-context#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-rect#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-callback-ref#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-layout-effect#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-size#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-arrow#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-context#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-rect#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-callback-ref#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-layout-effect#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-size#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ],
       "dependencies": [
         "@floating-ui/react-dom@^2.1.8"
@@ -700,9 +700,9 @@
       "description": "Headless Portal behavior used by Virtari components.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-layout-effect#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-layout-effect#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ],
       "files": [
         {
@@ -724,9 +724,9 @@
       "description": "Headless Presence behavior used by Virtari components.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-layout-effect#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-layout-effect#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ],
       "files": [
         {
@@ -753,8 +753,8 @@
       "description": "Headless Primitive behavior used by Virtari components.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-slot#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-slot#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ],
       "files": [
         {
@@ -776,9 +776,9 @@
       "description": "Headless Progress behavior used by Virtari components.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-context#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-context#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ],
       "files": [
         {
@@ -800,17 +800,17 @@
       "description": "Headless Radio Group behavior used by Virtari components.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-context#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-direction#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-event-handlers#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-presence#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-roving-focus#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-controllable-state#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-previous#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-size#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-context#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-direction#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-event-handlers#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-presence#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-roving-focus#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-controllable-state#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-previous#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-size#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ],
       "files": [
         {
@@ -849,7 +849,7 @@
         }
       ],
       "registryDependencies": [
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ]
     },
     {
@@ -859,16 +859,16 @@
       "description": "Headless Roving Focus behavior used by Virtari components.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-collection#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-context#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-direction#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-event-handlers#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-id#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-callback-ref#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-controllable-state#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-collection#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-context#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-direction#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-event-handlers#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-id#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-callback-ref#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-controllable-state#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ],
       "files": [
         {
@@ -890,16 +890,16 @@
       "description": "Headless Scroll Area behavior used by Virtari components.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-context#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-direction#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-event-handlers#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-number#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-presence#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-callback-ref#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-layout-effect#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-context#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-direction#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-event-handlers#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-number#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-presence#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-callback-ref#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-layout-effect#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ],
       "files": [
         {
@@ -926,26 +926,26 @@
       "description": "Headless Select behavior used by Virtari components.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-collection#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-context#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-direction#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-dismissable-layer#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-event-handlers#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-focus-guards#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-focus-scope#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-id#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-number#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-popper#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-portal#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-slot#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-callback-ref#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-controllable-state#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-layout-effect#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-previous#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-visually-hidden#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-collection#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-context#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-direction#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-dismissable-layer#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-event-handlers#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-focus-guards#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-focus-scope#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-id#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-number#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-popper#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-portal#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-slot#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-callback-ref#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-controllable-state#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-layout-effect#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-previous#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-visually-hidden#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ],
       "dependencies": [
         "aria-hidden@^1.2.6",
@@ -971,8 +971,8 @@
       "description": "Headless Separator behavior used by Virtari components.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ],
       "files": [
         {
@@ -994,17 +994,17 @@
       "description": "Headless Slider behavior used by Virtari components.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-collection#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-context#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-direction#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-event-handlers#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-number#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-controllable-state#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-previous#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-size#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-collection#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-context#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-direction#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-event-handlers#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-number#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-controllable-state#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-previous#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-size#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ],
       "files": [
         {
@@ -1026,8 +1026,8 @@
       "description": "Headless Slot behavior used by Virtari components.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ],
       "files": [
         {
@@ -1049,14 +1049,14 @@
       "description": "Headless Switch behavior used by Virtari components.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-context#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-event-handlers#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-controllable-state#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-previous#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-size#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-context#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-event-handlers#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-controllable-state#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-previous#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-size#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ],
       "files": [
         {
@@ -1078,15 +1078,15 @@
       "description": "Headless Tabs behavior used by Virtari components.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-context#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-direction#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-event-handlers#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-id#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-presence#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-roving-focus#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-controllable-state#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-context#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-direction#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-event-handlers#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-id#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-presence#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-roving-focus#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-controllable-state#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ],
       "files": [
         {
@@ -1108,19 +1108,19 @@
       "description": "Headless Toast behavior used by Virtari components.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-collection#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-context#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-dismissable-layer#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-event-handlers#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-portal#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-presence#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-callback-ref#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-controllable-state#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-layout-effect#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-visually-hidden#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-collection#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-context#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-dismissable-layer#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-event-handlers#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-portal#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-presence#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-callback-ref#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-controllable-state#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-layout-effect#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-visually-hidden#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ],
       "files": [
         {
@@ -1142,10 +1142,10 @@
       "description": "Headless Toggle behavior used by Virtari components.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-event-handlers#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-controllable-state#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-event-handlers#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-controllable-state#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ],
       "files": [
         {
@@ -1167,19 +1167,19 @@
       "description": "Headless Tooltip behavior used by Virtari components.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-context#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-dismissable-layer#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-event-handlers#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-id#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-popper#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-portal#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-presence#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-slot#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-controllable-state#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-visually-hidden#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-context#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-dismissable-layer#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-event-handlers#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-id#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-popper#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-portal#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-presence#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-slot#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-controllable-state#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-visually-hidden#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ],
       "files": [
         {
@@ -1213,7 +1213,7 @@
         }
       ],
       "registryDependencies": [
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ]
     },
     {
@@ -1223,9 +1223,9 @@
       "description": "Headless Use Controllable State behavior used by Virtari components.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-use-effect-event#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-layout-effect#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-use-effect-event#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-layout-effect#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ],
       "files": [
         {
@@ -1252,8 +1252,8 @@
       "description": "Headless Use Effect Event behavior used by Virtari components.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-use-layout-effect#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-use-layout-effect#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ],
       "files": [
         {
@@ -1275,8 +1275,8 @@
       "description": "Headless Use Escape Keydown behavior used by Virtari components.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-use-callback-ref#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-use-callback-ref#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ],
       "files": [
         {
@@ -1310,7 +1310,7 @@
         }
       ],
       "registryDependencies": [
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ]
     },
     {
@@ -1332,7 +1332,7 @@
         }
       ],
       "registryDependencies": [
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ]
     },
     {
@@ -1354,7 +1354,7 @@
         }
       ],
       "registryDependencies": [
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ]
     },
     {
@@ -1364,8 +1364,8 @@
       "description": "Headless Use Rect behavior used by Virtari components.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-rect#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-rect#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ],
       "files": [
         {
@@ -1387,8 +1387,8 @@
       "description": "Headless Use Size behavior used by Virtari components.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-use-layout-effect#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-use-layout-effect#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ],
       "files": [
         {
@@ -1410,8 +1410,8 @@
       "description": "Headless Visually Hidden behavior used by Virtari components.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ],
       "files": [
         {
@@ -1433,56 +1433,56 @@
       "description": "Complete headless primitive collection. Component installs use smaller primitive items automatically.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-accordion#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-alert-dialog#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-arrow#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-avatar#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-checkbox#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-collapsible#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-collection#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-context#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-dialog#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-direction#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-dismissable-layer#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-dropdown-menu#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-event-handlers#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-focus-guards#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-focus-scope#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-id#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-label#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-menu#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-number#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-popover#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-popper#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-portal#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-presence#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-progress#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-radio-group#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-rect#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-roving-focus#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-scroll-area#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-select#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-separator#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-slider#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-slot#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-switch#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-tabs#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-toast#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-toggle#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-tooltip#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-callback-ref#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-controllable-state#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-effect-event#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-escape-keydown#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-is-hydrated#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-layout-effect#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-previous#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-rect#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-use-size#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-visually-hidden#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-accordion#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-alert-dialog#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-arrow#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-avatar#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-checkbox#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-collapsible#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-collection#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-compose-refs#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-context#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-dialog#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-direction#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-dismissable-layer#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-dropdown-menu#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-event-handlers#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-focus-guards#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-focus-scope#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-id#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-label#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-menu#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-number#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-popover#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-popper#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-portal#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-presence#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-primitive#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-progress#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-radio-group#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-rect#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-roving-focus#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-scroll-area#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-select#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-separator#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-slider#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-slot#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-switch#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-tabs#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-toast#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-toggle#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-tooltip#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-callback-ref#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-controllable-state#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-effect-event#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-escape-keydown#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-is-hydrated#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-layout-effect#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-previous#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-rect#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-use-size#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-visually-hidden#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ]
     },
     {
@@ -1492,11 +1492,11 @@
       "description": "Accordion source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/icons#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-accordion#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/icons#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-accordion#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "dependencies": [
         "@tabler/icons-react@^3.0.0"
@@ -1537,10 +1537,10 @@
       "description": "Alert source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-slot#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-slot#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -1573,10 +1573,10 @@
       "description": "Alert Dialog source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-alert-dialog#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-alert-dialog#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -1604,10 +1604,10 @@
       "description": "Avatar source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-avatar#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-avatar#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -1635,10 +1635,10 @@
       "description": "Badge source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-slot#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-slot#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -1671,10 +1671,10 @@
       "description": "Bottom Nav source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-slot#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-slot#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -1732,12 +1732,12 @@
       "description": "Breadcrumb source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/dropdown-menu#cli-v0.1.7",
-        "itstheilya/virtari-ui/icons#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-slot#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/dropdown-menu#cli-v0.1.8",
+        "itstheilya/virtari-ui/icons#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-slot#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -1770,10 +1770,10 @@
       "description": "Button source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-slot#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-slot#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -1821,10 +1821,10 @@
       "description": "Button Group source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/button#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/button#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -1857,9 +1857,9 @@
       "description": "Card source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -1897,11 +1897,11 @@
       "description": "Carousel source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/button#cli-v0.1.7",
-        "itstheilya/virtari-ui/icons#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/button#cli-v0.1.8",
+        "itstheilya/virtari-ui/icons#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "dependencies": [
         "swiper@^12.1.2"
@@ -1937,11 +1937,11 @@
       "description": "Checkbox source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/icons#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-checkbox#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/icons#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-checkbox#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "dependencies": [
         "@tabler/icons-react@^3.0.0"
@@ -2022,10 +2022,10 @@
       "description": "Chip source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-slot#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-slot#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -2058,10 +2058,10 @@
       "description": "Code source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/copy-button#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/copy-button#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "dependencies": [
         "@codemirror/autocomplete@^6.18.4",
@@ -2150,10 +2150,10 @@
       "description": "Collapsible source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-collapsible#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-collapsible#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -2181,15 +2181,15 @@
       "description": "Color Picker source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/button#cli-v0.1.7",
-        "itstheilya/virtari-ui/icons#cli-v0.1.7",
-        "itstheilya/virtari-ui/input#cli-v0.1.7",
-        "itstheilya/virtari-ui/popover#cli-v0.1.7",
-        "itstheilya/virtari-ui/select#cli-v0.1.7",
-        "itstheilya/virtari-ui/textarea#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/button#cli-v0.1.8",
+        "itstheilya/virtari-ui/icons#cli-v0.1.8",
+        "itstheilya/virtari-ui/input#cli-v0.1.8",
+        "itstheilya/virtari-ui/popover#cli-v0.1.8",
+        "itstheilya/virtari-ui/select#cli-v0.1.8",
+        "itstheilya/virtari-ui/textarea#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -2237,12 +2237,12 @@
       "description": "Command source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/dialog#cli-v0.1.7",
-        "itstheilya/virtari-ui/icons#cli-v0.1.7",
-        "itstheilya/virtari-ui/kbd#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/dialog#cli-v0.1.8",
+        "itstheilya/virtari-ui/icons#cli-v0.1.8",
+        "itstheilya/virtari-ui/kbd#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "dependencies": [
         "cmdk@^1.0.0"
@@ -2288,10 +2288,10 @@
       "description": "Copy Button source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/icons#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/icons#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -2324,23 +2324,23 @@
       "description": "Data Table source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/avatar#cli-v0.1.7",
-        "itstheilya/virtari-ui/badge#cli-v0.1.7",
-        "itstheilya/virtari-ui/button#cli-v0.1.7",
-        "itstheilya/virtari-ui/checkbox#cli-v0.1.7",
-        "itstheilya/virtari-ui/chip#cli-v0.1.7",
-        "itstheilya/virtari-ui/drawer#cli-v0.1.7",
-        "itstheilya/virtari-ui/dropdown-menu#cli-v0.1.7",
-        "itstheilya/virtari-ui/icons#cli-v0.1.7",
-        "itstheilya/virtari-ui/input#cli-v0.1.7",
-        "itstheilya/virtari-ui/pagination#cli-v0.1.7",
-        "itstheilya/virtari-ui/popover#cli-v0.1.7",
-        "itstheilya/virtari-ui/select#cli-v0.1.7",
-        "itstheilya/virtari-ui/switch#cli-v0.1.7",
-        "itstheilya/virtari-ui/tabs#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/avatar#cli-v0.1.8",
+        "itstheilya/virtari-ui/badge#cli-v0.1.8",
+        "itstheilya/virtari-ui/button#cli-v0.1.8",
+        "itstheilya/virtari-ui/checkbox#cli-v0.1.8",
+        "itstheilya/virtari-ui/chip#cli-v0.1.8",
+        "itstheilya/virtari-ui/drawer#cli-v0.1.8",
+        "itstheilya/virtari-ui/dropdown-menu#cli-v0.1.8",
+        "itstheilya/virtari-ui/icons#cli-v0.1.8",
+        "itstheilya/virtari-ui/input#cli-v0.1.8",
+        "itstheilya/virtari-ui/pagination#cli-v0.1.8",
+        "itstheilya/virtari-ui/popover#cli-v0.1.8",
+        "itstheilya/virtari-ui/select#cli-v0.1.8",
+        "itstheilya/virtari-ui/switch#cli-v0.1.8",
+        "itstheilya/virtari-ui/tabs#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "dependencies": [
         "@dnd-kit/core@^6.1.0",
@@ -2701,15 +2701,15 @@
       "description": "Date Picker source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/button#cli-v0.1.7",
-        "itstheilya/virtari-ui/dialog#cli-v0.1.7",
-        "itstheilya/virtari-ui/drawer#cli-v0.1.7",
-        "itstheilya/virtari-ui/icons#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-popover#cli-v0.1.7",
-        "itstheilya/virtari-ui/radio-group#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/button#cli-v0.1.8",
+        "itstheilya/virtari-ui/dialog#cli-v0.1.8",
+        "itstheilya/virtari-ui/drawer#cli-v0.1.8",
+        "itstheilya/virtari-ui/icons#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-popover#cli-v0.1.8",
+        "itstheilya/virtari-ui/radio-group#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "dependencies": [
         "@internationalized/date@^3.5.6",
@@ -2841,11 +2841,11 @@
       "description": "Dialog source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/icons#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-dialog#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/icons#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-dialog#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "dependencies": [
         "@tabler/icons-react@^3.0.0"
@@ -2881,10 +2881,10 @@
       "description": "Drawer source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-dialog#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-dialog#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -2932,11 +2932,11 @@
       "description": "Dropdown Menu source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-direction#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-dropdown-menu#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-direction#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-dropdown-menu#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -2964,23 +2964,23 @@
       "description": "Editor source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/button#cli-v0.1.7",
-        "itstheilya/virtari-ui/code#cli-v0.1.7",
-        "itstheilya/virtari-ui/color-picker#cli-v0.1.7",
-        "itstheilya/virtari-ui/dialog#cli-v0.1.7",
-        "itstheilya/virtari-ui/fieldset#cli-v0.1.7",
-        "itstheilya/virtari-ui/file-upload#cli-v0.1.7",
-        "itstheilya/virtari-ui/icons#cli-v0.1.7",
-        "itstheilya/virtari-ui/input#cli-v0.1.7",
-        "itstheilya/virtari-ui/kbd#cli-v0.1.7",
-        "itstheilya/virtari-ui/scroll-area#cli-v0.1.7",
-        "itstheilya/virtari-ui/select#cli-v0.1.7",
-        "itstheilya/virtari-ui/tabs#cli-v0.1.7",
-        "itstheilya/virtari-ui/textarea#cli-v0.1.7",
-        "itstheilya/virtari-ui/tooltip#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/button#cli-v0.1.8",
+        "itstheilya/virtari-ui/code#cli-v0.1.8",
+        "itstheilya/virtari-ui/color-picker#cli-v0.1.8",
+        "itstheilya/virtari-ui/dialog#cli-v0.1.8",
+        "itstheilya/virtari-ui/fieldset#cli-v0.1.8",
+        "itstheilya/virtari-ui/file-upload#cli-v0.1.8",
+        "itstheilya/virtari-ui/icons#cli-v0.1.8",
+        "itstheilya/virtari-ui/input#cli-v0.1.8",
+        "itstheilya/virtari-ui/kbd#cli-v0.1.8",
+        "itstheilya/virtari-ui/scroll-area#cli-v0.1.8",
+        "itstheilya/virtari-ui/select#cli-v0.1.8",
+        "itstheilya/virtari-ui/tabs#cli-v0.1.8",
+        "itstheilya/virtari-ui/textarea#cli-v0.1.8",
+        "itstheilya/virtari-ui/tooltip#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "dependencies": [
         "@lexical/code@^0.38.2",
@@ -3165,9 +3165,9 @@
       "description": "Empty State source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -3200,9 +3200,9 @@
       "description": "Fieldset source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -3240,12 +3240,12 @@
       "description": "File Upload source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/icons#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-slot#cli-v0.1.7",
-        "itstheilya/virtari-ui/progress#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/icons#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-slot#cli-v0.1.8",
+        "itstheilya/virtari-ui/progress#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "dependencies": [
         "react-dropzone@^14.2.0"
@@ -3296,9 +3296,9 @@
       "description": "Flag source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -4701,9 +4701,9 @@
       "description": "Flow source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "dependencies": [
         "@xyflow/react@^12.10.2"
@@ -4759,11 +4759,11 @@
       "description": "Form source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/label#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-slot#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/label#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-slot#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "dependencies": [
         "react-hook-form@^7.0.0"
@@ -4839,9 +4839,9 @@
       "description": "Header source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -4889,9 +4889,9 @@
       "description": "Icons source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "dependencies": [
         "@tabler/icons-react@^3.0.0"
@@ -4932,11 +4932,11 @@
       "description": "Input source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/fieldset#cli-v0.1.7",
-        "itstheilya/virtari-ui/icons#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/fieldset#cli-v0.1.8",
+        "itstheilya/virtari-ui/icons#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -4984,9 +4984,9 @@
       "description": "Kbd source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -5014,10 +5014,10 @@
       "description": "Label source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-label#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-label#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -5045,13 +5045,13 @@
       "description": "Language Picker source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/button#cli-v0.1.7",
-        "itstheilya/virtari-ui/drawer#cli-v0.1.7",
-        "itstheilya/virtari-ui/flag#cli-v0.1.7",
-        "itstheilya/virtari-ui/select#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/button#cli-v0.1.8",
+        "itstheilya/virtari-ui/drawer#cli-v0.1.8",
+        "itstheilya/virtari-ui/flag#cli-v0.1.8",
+        "itstheilya/virtari-ui/select#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -5109,9 +5109,9 @@
       "description": "Layout source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -5274,10 +5274,10 @@
       "description": "Nav source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-slot#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-slot#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "dependencies": [
         "@floating-ui/react@^0.27.0"
@@ -5338,11 +5338,11 @@
       "description": "Number Input source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/fieldset#cli-v0.1.7",
-        "itstheilya/virtari-ui/icons#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/fieldset#cli-v0.1.8",
+        "itstheilya/virtari-ui/icons#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -5380,9 +5380,9 @@
       "description": "Otp Input source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -5415,11 +5415,11 @@
       "description": "Pagination source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/icons#cli-v0.1.7",
-        "itstheilya/virtari-ui/select#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/icons#cli-v0.1.8",
+        "itstheilya/virtari-ui/select#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -5462,13 +5462,13 @@
       "description": "Phone Input source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/flag#cli-v0.1.7",
-        "itstheilya/virtari-ui/input#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-popover#cli-v0.1.7",
-        "itstheilya/virtari-ui/select#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/flag#cli-v0.1.8",
+        "itstheilya/virtari-ui/input#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-popover#cli-v0.1.8",
+        "itstheilya/virtari-ui/select#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "dependencies": [
         "libphonenumber-js@^1.11.0"
@@ -5534,11 +5534,11 @@
       "description": "Popover source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-direction#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-popover#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-direction#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-popover#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -5571,10 +5571,10 @@
       "description": "Progress source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-progress#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-progress#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -5607,12 +5607,12 @@
       "description": "Radio Group source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/icons#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-direction#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-radio-group#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/icons#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-direction#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-radio-group#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "dependencies": [
         "@tabler/icons-react@^3.0.0"
@@ -5698,10 +5698,10 @@
       "description": "Scroll Area source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-scroll-area#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-scroll-area#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -5759,12 +5759,12 @@
       "description": "Segmented Control source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-direction#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-radio-group#cli-v0.1.7",
-        "itstheilya/virtari-ui/tabs#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-direction#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-radio-group#cli-v0.1.8",
+        "itstheilya/virtari-ui/tabs#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -5802,15 +5802,15 @@
       "description": "Select source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/chip#cli-v0.1.7",
-        "itstheilya/virtari-ui/fieldset#cli-v0.1.7",
-        "itstheilya/virtari-ui/icons#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-direction#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-popover#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-select#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/chip#cli-v0.1.8",
+        "itstheilya/virtari-ui/fieldset#cli-v0.1.8",
+        "itstheilya/virtari-ui/icons#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-direction#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-popover#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-select#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "dependencies": [
         "@tabler/icons-react@^3.0.0",
@@ -5877,10 +5877,10 @@
       "description": "Separator source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-separator#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-separator#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -5908,9 +5908,9 @@
       "description": "Sidebar source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -5953,9 +5953,9 @@
       "description": "Skeleton source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -5983,11 +5983,11 @@
       "description": "Slider source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-direction#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-slider#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-direction#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-slider#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -6015,9 +6015,9 @@
       "description": "Spinner source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -6050,9 +6050,9 @@
       "description": "Stepper source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -6090,10 +6090,10 @@
       "description": "Switch source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-switch#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-switch#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -6126,9 +6126,9 @@
       "description": "Table source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -6161,11 +6161,11 @@
       "description": "Tabs source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-direction#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-tabs#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-direction#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-tabs#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -6228,10 +6228,10 @@
       "description": "Tag Input source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/chip#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/chip#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -6264,10 +6264,10 @@
       "description": "Text source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-slot#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-slot#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -6315,10 +6315,10 @@
       "description": "Textarea source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/fieldset#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/fieldset#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -6351,9 +6351,9 @@
       "description": "Timeline source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -6386,11 +6386,11 @@
       "description": "Toast source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/icons#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-toast#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/icons#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-toast#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "dependencies": [
         "@tabler/icons-react@^3.0.0"
@@ -6461,10 +6461,10 @@
       "description": "Toggle source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-toggle#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-toggle#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -6492,11 +6492,11 @@
       "description": "Tooltip source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-direction#cli-v0.1.7",
-        "itstheilya/virtari-ui/primitive-tooltip#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-direction#cli-v0.1.8",
+        "itstheilya/virtari-ui/primitive-tooltip#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -6529,9 +6529,9 @@
       "description": "Tree View source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -6569,10 +6569,10 @@
       "description": "Visually Hidden source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/primitive-slot#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/primitive-slot#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "files": [
         {
@@ -6595,19 +6595,19 @@
       "description": "Yoopta Editor source component with Virtari tokens, behavior, and editable styles.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/accordion#cli-v0.1.7",
-        "itstheilya/virtari-ui/button#cli-v0.1.7",
-        "itstheilya/virtari-ui/dropdown-menu#cli-v0.1.7",
-        "itstheilya/virtari-ui/file-upload#cli-v0.1.7",
-        "itstheilya/virtari-ui/icons#cli-v0.1.7",
-        "itstheilya/virtari-ui/input#cli-v0.1.7",
-        "itstheilya/virtari-ui/popover#cli-v0.1.7",
-        "itstheilya/virtari-ui/scroll-area#cli-v0.1.7",
-        "itstheilya/virtari-ui/tabs#cli-v0.1.7",
-        "itstheilya/virtari-ui/tooltip#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.7"
+        "itstheilya/virtari-ui/accordion#cli-v0.1.8",
+        "itstheilya/virtari-ui/button#cli-v0.1.8",
+        "itstheilya/virtari-ui/dropdown-menu#cli-v0.1.8",
+        "itstheilya/virtari-ui/file-upload#cli-v0.1.8",
+        "itstheilya/virtari-ui/icons#cli-v0.1.8",
+        "itstheilya/virtari-ui/input#cli-v0.1.8",
+        "itstheilya/virtari-ui/popover#cli-v0.1.8",
+        "itstheilya/virtari-ui/scroll-area#cli-v0.1.8",
+        "itstheilya/virtari-ui/tabs#cli-v0.1.8",
+        "itstheilya/virtari-ui/tooltip#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utils#cli-v0.1.8"
       ],
       "dependencies": [
         "@yoopta/accordion@^6.0.3",
@@ -6991,7 +6991,7 @@
         }
       ],
       "registryDependencies": [
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ]
     },
     {
@@ -7001,8 +7001,8 @@
       "description": "Utility CSS classes (spacing, sizing, layout, z-index) driven by Virtari tokens.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-tokens#cli-v0.1.7"
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-tokens#cli-v0.1.8"
       ],
       "files": [
         {
@@ -7066,7 +7066,7 @@
         }
       ],
       "registryDependencies": [
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7"
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8"
       ]
     },
     {
@@ -7076,76 +7076,76 @@
       "description": "The complete Virtari source component collection. Prefer individual items for smaller applications.",
       "author": "Virtari",
       "registryDependencies": [
-        "itstheilya/virtari-ui/accordion#cli-v0.1.7",
-        "itstheilya/virtari-ui/alert#cli-v0.1.7",
-        "itstheilya/virtari-ui/alert-dialog#cli-v0.1.7",
-        "itstheilya/virtari-ui/avatar#cli-v0.1.7",
-        "itstheilya/virtari-ui/badge#cli-v0.1.7",
-        "itstheilya/virtari-ui/bottom-nav#cli-v0.1.7",
-        "itstheilya/virtari-ui/breadcrumb#cli-v0.1.7",
-        "itstheilya/virtari-ui/button#cli-v0.1.7",
-        "itstheilya/virtari-ui/button-group#cli-v0.1.7",
-        "itstheilya/virtari-ui/card#cli-v0.1.7",
-        "itstheilya/virtari-ui/carousel#cli-v0.1.7",
-        "itstheilya/virtari-ui/checkbox#cli-v0.1.7",
-        "itstheilya/virtari-ui/chip#cli-v0.1.7",
-        "itstheilya/virtari-ui/code#cli-v0.1.7",
-        "itstheilya/virtari-ui/collapsible#cli-v0.1.7",
-        "itstheilya/virtari-ui/color-picker#cli-v0.1.7",
-        "itstheilya/virtari-ui/command#cli-v0.1.7",
-        "itstheilya/virtari-ui/copy-button#cli-v0.1.7",
-        "itstheilya/virtari-ui/data-table#cli-v0.1.7",
-        "itstheilya/virtari-ui/date-picker#cli-v0.1.7",
-        "itstheilya/virtari-ui/dialog#cli-v0.1.7",
-        "itstheilya/virtari-ui/drawer#cli-v0.1.7",
-        "itstheilya/virtari-ui/dropdown-menu#cli-v0.1.7",
-        "itstheilya/virtari-ui/editor#cli-v0.1.7",
-        "itstheilya/virtari-ui/empty-state#cli-v0.1.7",
-        "itstheilya/virtari-ui/fieldset#cli-v0.1.7",
-        "itstheilya/virtari-ui/file-upload#cli-v0.1.7",
-        "itstheilya/virtari-ui/flag#cli-v0.1.7",
-        "itstheilya/virtari-ui/flow#cli-v0.1.7",
-        "itstheilya/virtari-ui/form#cli-v0.1.7",
-        "itstheilya/virtari-ui/header#cli-v0.1.7",
-        "itstheilya/virtari-ui/icons#cli-v0.1.7",
-        "itstheilya/virtari-ui/input#cli-v0.1.7",
-        "itstheilya/virtari-ui/kbd#cli-v0.1.7",
-        "itstheilya/virtari-ui/label#cli-v0.1.7",
-        "itstheilya/virtari-ui/language-picker#cli-v0.1.7",
-        "itstheilya/virtari-ui/layout#cli-v0.1.7",
-        "itstheilya/virtari-ui/nav#cli-v0.1.7",
-        "itstheilya/virtari-ui/number-input#cli-v0.1.7",
-        "itstheilya/virtari-ui/otp-input#cli-v0.1.7",
-        "itstheilya/virtari-ui/pagination#cli-v0.1.7",
-        "itstheilya/virtari-ui/phone-input#cli-v0.1.7",
-        "itstheilya/virtari-ui/popover#cli-v0.1.7",
-        "itstheilya/virtari-ui/progress#cli-v0.1.7",
-        "itstheilya/virtari-ui/radio-group#cli-v0.1.7",
-        "itstheilya/virtari-ui/scroll-area#cli-v0.1.7",
-        "itstheilya/virtari-ui/segmented-control#cli-v0.1.7",
-        "itstheilya/virtari-ui/select#cli-v0.1.7",
-        "itstheilya/virtari-ui/separator#cli-v0.1.7",
-        "itstheilya/virtari-ui/sidebar#cli-v0.1.7",
-        "itstheilya/virtari-ui/skeleton#cli-v0.1.7",
-        "itstheilya/virtari-ui/slider#cli-v0.1.7",
-        "itstheilya/virtari-ui/spinner#cli-v0.1.7",
-        "itstheilya/virtari-ui/stepper#cli-v0.1.7",
-        "itstheilya/virtari-ui/switch#cli-v0.1.7",
-        "itstheilya/virtari-ui/table#cli-v0.1.7",
-        "itstheilya/virtari-ui/tabs#cli-v0.1.7",
-        "itstheilya/virtari-ui/tag-input#cli-v0.1.7",
-        "itstheilya/virtari-ui/text#cli-v0.1.7",
-        "itstheilya/virtari-ui/textarea#cli-v0.1.7",
-        "itstheilya/virtari-ui/timeline#cli-v0.1.7",
-        "itstheilya/virtari-ui/toast#cli-v0.1.7",
-        "itstheilya/virtari-ui/toggle#cli-v0.1.7",
-        "itstheilya/virtari-ui/tooltip#cli-v0.1.7",
-        "itstheilya/virtari-ui/tree-view#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-base#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-license#cli-v0.1.7",
-        "itstheilya/virtari-ui/virtari-utilities#cli-v0.1.7",
-        "itstheilya/virtari-ui/visually-hidden#cli-v0.1.7",
-        "itstheilya/virtari-ui/yoopta-editor#cli-v0.1.7"
+        "itstheilya/virtari-ui/accordion#cli-v0.1.8",
+        "itstheilya/virtari-ui/alert#cli-v0.1.8",
+        "itstheilya/virtari-ui/alert-dialog#cli-v0.1.8",
+        "itstheilya/virtari-ui/avatar#cli-v0.1.8",
+        "itstheilya/virtari-ui/badge#cli-v0.1.8",
+        "itstheilya/virtari-ui/bottom-nav#cli-v0.1.8",
+        "itstheilya/virtari-ui/breadcrumb#cli-v0.1.8",
+        "itstheilya/virtari-ui/button#cli-v0.1.8",
+        "itstheilya/virtari-ui/button-group#cli-v0.1.8",
+        "itstheilya/virtari-ui/card#cli-v0.1.8",
+        "itstheilya/virtari-ui/carousel#cli-v0.1.8",
+        "itstheilya/virtari-ui/checkbox#cli-v0.1.8",
+        "itstheilya/virtari-ui/chip#cli-v0.1.8",
+        "itstheilya/virtari-ui/code#cli-v0.1.8",
+        "itstheilya/virtari-ui/collapsible#cli-v0.1.8",
+        "itstheilya/virtari-ui/color-picker#cli-v0.1.8",
+        "itstheilya/virtari-ui/command#cli-v0.1.8",
+        "itstheilya/virtari-ui/copy-button#cli-v0.1.8",
+        "itstheilya/virtari-ui/data-table#cli-v0.1.8",
+        "itstheilya/virtari-ui/date-picker#cli-v0.1.8",
+        "itstheilya/virtari-ui/dialog#cli-v0.1.8",
+        "itstheilya/virtari-ui/drawer#cli-v0.1.8",
+        "itstheilya/virtari-ui/dropdown-menu#cli-v0.1.8",
+        "itstheilya/virtari-ui/editor#cli-v0.1.8",
+        "itstheilya/virtari-ui/empty-state#cli-v0.1.8",
+        "itstheilya/virtari-ui/fieldset#cli-v0.1.8",
+        "itstheilya/virtari-ui/file-upload#cli-v0.1.8",
+        "itstheilya/virtari-ui/flag#cli-v0.1.8",
+        "itstheilya/virtari-ui/flow#cli-v0.1.8",
+        "itstheilya/virtari-ui/form#cli-v0.1.8",
+        "itstheilya/virtari-ui/header#cli-v0.1.8",
+        "itstheilya/virtari-ui/icons#cli-v0.1.8",
+        "itstheilya/virtari-ui/input#cli-v0.1.8",
+        "itstheilya/virtari-ui/kbd#cli-v0.1.8",
+        "itstheilya/virtari-ui/label#cli-v0.1.8",
+        "itstheilya/virtari-ui/language-picker#cli-v0.1.8",
+        "itstheilya/virtari-ui/layout#cli-v0.1.8",
+        "itstheilya/virtari-ui/nav#cli-v0.1.8",
+        "itstheilya/virtari-ui/number-input#cli-v0.1.8",
+        "itstheilya/virtari-ui/otp-input#cli-v0.1.8",
+        "itstheilya/virtari-ui/pagination#cli-v0.1.8",
+        "itstheilya/virtari-ui/phone-input#cli-v0.1.8",
+        "itstheilya/virtari-ui/popover#cli-v0.1.8",
+        "itstheilya/virtari-ui/progress#cli-v0.1.8",
+        "itstheilya/virtari-ui/radio-group#cli-v0.1.8",
+        "itstheilya/virtari-ui/scroll-area#cli-v0.1.8",
+        "itstheilya/virtari-ui/segmented-control#cli-v0.1.8",
+        "itstheilya/virtari-ui/select#cli-v0.1.8",
+        "itstheilya/virtari-ui/separator#cli-v0.1.8",
+        "itstheilya/virtari-ui/sidebar#cli-v0.1.8",
+        "itstheilya/virtari-ui/skeleton#cli-v0.1.8",
+        "itstheilya/virtari-ui/slider#cli-v0.1.8",
+        "itstheilya/virtari-ui/spinner#cli-v0.1.8",
+        "itstheilya/virtari-ui/stepper#cli-v0.1.8",
+        "itstheilya/virtari-ui/switch#cli-v0.1.8",
+        "itstheilya/virtari-ui/table#cli-v0.1.8",
+        "itstheilya/virtari-ui/tabs#cli-v0.1.8",
+        "itstheilya/virtari-ui/tag-input#cli-v0.1.8",
+        "itstheilya/virtari-ui/text#cli-v0.1.8",
+        "itstheilya/virtari-ui/textarea#cli-v0.1.8",
+        "itstheilya/virtari-ui/timeline#cli-v0.1.8",
+        "itstheilya/virtari-ui/toast#cli-v0.1.8",
+        "itstheilya/virtari-ui/toggle#cli-v0.1.8",
+        "itstheilya/virtari-ui/tooltip#cli-v0.1.8",
+        "itstheilya/virtari-ui/tree-view#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-base#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-license#cli-v0.1.8",
+        "itstheilya/virtari-ui/virtari-utilities#cli-v0.1.8",
+        "itstheilya/virtari-ui/visually-hidden#cli-v0.1.8",
+        "itstheilya/virtari-ui/yoopta-editor#cli-v0.1.8"
       ]
     }
   ]
