@@ -90,11 +90,24 @@
   }
 
   .vds-date-range-picker-content {
+    --date-range-picker-calendar-width: 37rem;
+    --date-range-picker-presets-width: 0rem;
+    --date-range-picker-time-width: 0rem;
+
     z-index: var(--date-picker-content-z-index);
     box-sizing: border-box;
-    inline-size: min(42rem, calc(100vw - 1rem));
-    max-inline-size: min(44rem, calc(100vw - 1rem));
-    max-block-size: min(36rem, calc(100dvh - 1rem));
+    display: flex;
+    flex-direction: column;
+    inline-size: min(
+      calc(var(--date-range-picker-calendar-width) + var(--date-range-picker-presets-width) + var(--date-range-picker-time-width)),
+      calc(100vw - 1rem)
+    );
+    max-inline-size: calc(100vw - 1rem);
+    max-block-size: min(
+      36rem,
+      calc(100dvh - 1rem),
+      var(--vds-popper-available-height, calc(100dvh - 1rem))
+    );
     background: var(--date-picker-content-bg);
     border: var(--date-picker-content-border-width) solid var(--date-picker-content-border-color);
     border-radius: var(--date-picker-content-radius);
@@ -102,6 +115,60 @@
     padding: var(--date-picker-content-padding);
     overflow: hidden;
     animation: vds-fade-in var(--date-picker-content-transition-duration) var(--date-picker-content-transition-easing);
+  }
+
+  .vds-date-range-picker-content[data-size="2xs"],
+  .vds-date-range-picker-content[data-size="xs"] {
+    --date-range-picker-calendar-width: 31rem;
+  }
+
+  .vds-date-range-picker-content[data-size="sm"] {
+    --date-range-picker-calendar-width: 34rem;
+  }
+
+  .vds-date-range-picker-content[data-size="lg"] {
+    --date-range-picker-calendar-width: 42rem;
+  }
+
+  .vds-date-range-picker-content[data-size="xl"] {
+    --date-range-picker-calendar-width: 46rem;
+  }
+
+  .vds-date-range-picker-content[data-size="2xl"] {
+    --date-range-picker-calendar-width: 50rem;
+  }
+
+  .vds-date-range-picker-content:has(.vds-calendar-months[data-month-count="1"]) {
+    --date-range-picker-calendar-width: 19rem;
+  }
+
+  .vds-date-range-picker-content[data-size="2xs"]:has(.vds-calendar-months[data-month-count="1"]),
+  .vds-date-range-picker-content[data-size="xs"]:has(.vds-calendar-months[data-month-count="1"]) {
+    --date-range-picker-calendar-width: 15rem;
+  }
+
+  .vds-date-range-picker-content[data-size="sm"]:has(.vds-calendar-months[data-month-count="1"]) {
+    --date-range-picker-calendar-width: 17rem;
+  }
+
+  .vds-date-range-picker-content[data-size="lg"]:has(.vds-calendar-months[data-month-count="1"]) {
+    --date-range-picker-calendar-width: 21rem;
+  }
+
+  .vds-date-range-picker-content[data-size="xl"]:has(.vds-calendar-months[data-month-count="1"]) {
+    --date-range-picker-calendar-width: 23rem;
+  }
+
+  .vds-date-range-picker-content[data-size="2xl"]:has(.vds-calendar-months[data-month-count="1"]) {
+    --date-range-picker-calendar-width: 25rem;
+  }
+
+  .vds-date-range-picker-content:has(.vds-date-range-picker-presets) {
+    --date-range-picker-presets-width: 12rem;
+  }
+
+  .vds-date-range-picker-content:has(.vds-date-range-picker-main[data-layout="split"]) {
+    --date-range-picker-time-width: 14rem;
   }
 
   .vds-date-range-picker-content[data-state="closed"] {
@@ -120,6 +187,12 @@
     inline-size: 100%;
     min-inline-size: 0;
     max-inline-size: 100%;
+  }
+
+  .vds-date-range-picker-content > .vds-date-range-picker-overlay {
+    min-block-size: 0;
+    max-block-size: inherit;
+    overflow: hidden;
   }
 
   .vds-date-range-picker-mobile-panel {
@@ -141,6 +214,13 @@
     inline-size: 100%;
     max-inline-size: 100%;
     min-inline-size: 0;
+  }
+
+  .vds-date-range-picker-content > .vds-date-range-picker-overlay > .vds-date-range-picker-content-inner {
+    flex: 1 1 auto;
+    min-block-size: 0;
+    overflow: auto;
+    overscroll-behavior: contain;
   }
 
   .vds-date-range-picker-presets {
@@ -224,6 +304,7 @@
   }
 
   .vds-date-range-picker-actions {
+    flex: none;
     padding: var(--vds-space-3, 0.75rem);
     border-block-start: 1px solid var(--vds-color-border-muted, #e5e7eb);
     background: color-mix(in oklab, var(--date-picker-content-bg) 98%, var(--vds-color-bg-subtle, #fafafa));

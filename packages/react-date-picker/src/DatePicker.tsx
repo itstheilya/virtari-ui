@@ -382,7 +382,9 @@ export const DatePicker = forwardRef<HTMLDivElement, DatePickerProps>(function D
               sideOffset={6}
               align="start"
               collisionPadding={8}
+              sticky="always"
               className="vds-date-picker-content"
+              data-size={size}
               onOpenAutoFocus={(event) => event.preventDefault()}
             >
               {overlayBody}

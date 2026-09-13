@@ -4,6 +4,7 @@ Source ID: `apps/docs/src/pages/SelectPage.tsx`. This is source context, not a s
 
 ```tsx
 import { CodeBlock as VirtariCodeBlock } from "@virtari-packages/react-code";
+import { Flag, type CountryCode } from "@virtari-packages/react-flag";
 import { useEffect, useState } from "react";
 import {
   Select,
@@ -34,36 +35,36 @@ import { Section, Row } from "../components";
  * ───────────────────────────────────────────── */
 
 const COUNTRIES: ComboboxItemData[] = [
-  { value: "us", label: "United States", flag: "🇺🇸", region: "Americas" },
-  { value: "ca", label: "Canada", flag: "🇨🇦", region: "Americas" },
-  { value: "mx", label: "Mexico", flag: "🇲🇽", region: "Americas" },
-  { value: "br", label: "Brazil", flag: "🇧🇷", region: "Americas" },
-  { value: "ar", label: "Argentina", flag: "🇦🇷", region: "Americas" },
-  { value: "uk", label: "United Kingdom", flag: "🇬🇧", region: "Europe" },
-  { value: "de", label: "Germany", flag: "🇩🇪", region: "Europe" },
-  { value: "fr", label: "France", flag: "🇫🇷", region: "Europe" },
-  { value: "es", label: "Spain", flag: "🇪🇸", region: "Europe" },
-  { value: "it", label: "Italy", flag: "🇮🇹", region: "Europe" },
-  { value: "nl", label: "Netherlands", flag: "🇳🇱", region: "Europe" },
-  { value: "se", label: "Sweden", flag: "🇸🇪", region: "Europe" },
-  { value: "no", label: "Norway", flag: "🇳🇴", region: "Europe" },
-  { value: "pl", label: "Poland", flag: "🇵🇱", region: "Europe" },
-  { value: "ir", label: "Iran", flag: "🇮🇷", region: "Asia" },
-  { value: "tr", label: "Turkey", flag: "🇹🇷", region: "Asia" },
-  { value: "ae", label: "United Arab Emirates", flag: "🇦🇪", region: "Asia" },
-  { value: "sa", label: "Saudi Arabia", flag: "🇸🇦", region: "Asia" },
-  { value: "jp", label: "Japan", flag: "🇯🇵", region: "Asia" },
-  { value: "kr", label: "South Korea", flag: "🇰🇷", region: "Asia" },
-  { value: "cn", label: "China", flag: "🇨🇳", region: "Asia" },
-  { value: "in", label: "India", flag: "🇮🇳", region: "Asia" },
-  { value: "sg", label: "Singapore", flag: "🇸🇬", region: "Asia" },
-  { value: "au", label: "Australia", flag: "🇦🇺", region: "Oceania" },
-  { value: "nz", label: "New Zealand", flag: "🇳🇿", region: "Oceania" },
-  { value: "za", label: "South Africa", flag: "🇿🇦", region: "Africa" },
-  { value: "eg", label: "Egypt", flag: "🇪🇬", region: "Africa" },
-  { value: "ng", label: "Nigeria", flag: "🇳🇬", region: "Africa" },
-  { value: "ke", label: "Kenya", flag: "🇰🇪", region: "Africa" },
-  { value: "ma", label: "Morocco", flag: "🇲🇦", region: "Africa" },
+  { value: "us", label: "United States", flag: "us", region: "Americas" },
+  { value: "ca", label: "Canada", flag: "ca", region: "Americas" },
+  { value: "mx", label: "Mexico", flag: "mx", region: "Americas" },
+  { value: "br", label: "Brazil", flag: "br", region: "Americas" },
+  { value: "ar", label: "Argentina", flag: "ar", region: "Americas" },
+  { value: "uk", label: "United Kingdom", flag: "gb", region: "Europe" },
+  { value: "de", label: "Germany", flag: "de", region: "Europe" },
+  { value: "fr", label: "France", flag: "fr", region: "Europe" },
+  { value: "es", label: "Spain", flag: "es", region: "Europe" },
+  { value: "it", label: "Italy", flag: "it", region: "Europe" },
+  { value: "nl", label: "Netherlands", flag: "nl", region: "Europe" },
+  { value: "se", label: "Sweden", flag: "se", region: "Europe" },
+  { value: "no", label: "Norway", flag: "no", region: "Europe" },
+  { value: "pl", label: "Poland", flag: "pl", region: "Europe" },
+  { value: "ir", label: "Iran", flag: "ir", region: "Asia" },
+  { value: "tr", label: "Turkey", flag: "tr", region: "Asia" },
+  { value: "ae", label: "United Arab Emirates", flag: "ae", region: "Asia" },
+  { value: "sa", label: "Saudi Arabia", flag: "sa", region: "Asia" },
+  { value: "jp", label: "Japan", flag: "jp", region: "Asia" },
+  { value: "kr", label: "South Korea", flag: "kr", region: "Asia" },
+  { value: "cn", label: "China", flag: "cn", region: "Asia" },
+  { value: "in", label: "India", flag: "in", region: "Asia" },
+  { value: "sg", label: "Singapore", flag: "sg", region: "Asia" },
+  { value: "au", label: "Australia", flag: "au", region: "Oceania" },
+  { value: "nz", label: "New Zealand", flag: "nz", region: "Oceania" },
+  { value: "za", label: "South Africa", flag: "za", region: "Africa" },
+  { value: "eg", label: "Egypt", flag: "eg", region: "Africa" },
+  { value: "ng", label: "Nigeria", flag: "ng", region: "Africa" },
+  { value: "ke", label: "Kenya", flag: "ke", region: "Africa" },
+  { value: "ma", label: "Morocco", flag: "ma", region: "Africa" },
 ];
 
 const FRAMEWORKS: ComboboxItemData[] = [
@@ -137,7 +138,7 @@ const renderCountryWithGroupHeader = (() => {
         ) : null}
         <ComboboxItem value={item.value}>
           <span style={{ marginInlineEnd: "0.5rem" }}>
-            {item.flag as string}
+            <Flag code={item.flag as CountryCode} size="sm" />
           </span>
           {item.label}
         </ComboboxItem>
@@ -426,7 +427,7 @@ export function SelectPage() {
                   {(item) => (
                     <ComboboxItem key={item.value} value={item.value}>
                       <span style={{ marginInlineEnd: "0.5rem" }}>
-                        {item.flag as string}
+                        <Flag code={item.flag as CountryCode} size="sm" />
                       </span>
                       {item.label}
                     </ComboboxItem>

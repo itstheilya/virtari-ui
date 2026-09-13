@@ -33,6 +33,19 @@ Wrap your app in `I18nProvider` once (from `@react-aria/i18n`) so locale and dir
 
 Every primitive supports: `size` (`2xs`–`2xl` — shared ramp with Button/Input/Select), `appearance` (`soft`|`outline`|`ghost`|`filled`), `invalid`, keyboard a11y, RTL, min/max, and disabled dates.
 
+## Responsive overlays and confirmation
+
+`overlayMode="auto"` uses a collision-aware popover on desktop and a mobile
+drawer below 42rem. Popover width follows the selected size, stays inside the
+viewport, and scrolls its calendar body when vertical space is limited. Range
+pickers show two months only when the viewport can contain both at the current
+size; narrower layouts switch to one month.
+
+Calendar selections are drafts until the user activates **Apply**. **Cancel**
+closes the surface without changing the controlled value. The action footer
+stays outside the scrolling calendar body so both actions remain reachable on
+short desktop viewports and mobile screens.
+
 ## Without modal or drawer
 
 Use `overlayMode="popover"` to keep `DatePicker`, `DateRangePicker`, or `TimeField`

@@ -23,6 +23,7 @@ import {
   type PickerOverlayMode,
   PickerActionBar,
   useIsMobileViewport,
+  useResponsiveCalendarMonthCount,
 } from "./picker-overlay";
 
 export interface DateRangePickerProps {
@@ -110,6 +111,7 @@ export const DateRangePicker = forwardRef<HTMLDivElement, DateRangePickerProps>(
     : preferredOverlayMode;
   const usePopoverSurface = resolvedOverlayMode === "popover";
   const useSheetSurface = resolvedOverlayMode === "drawer" || resolvedOverlayMode === "dialog";
+  const visibleMonthCount = useResponsiveCalendarMonthCount(size, isMobile);
   // Desktop dialogs should size to content rather than going full-screen; the
   // `mobileSizeMode="full"` default is intended for mobile drawers.
   const effectiveSizeMode =
@@ -300,7 +302,7 @@ export const DateRangePicker = forwardRef<HTMLDivElement, DateRangePickerProps>(
       allowsNonContiguousRanges={props.allowsNonContiguousRanges}
       autoFocus={!isMobile}
       aria-label={props["aria-label"] ?? "Date range calendar"}
-      visibleDuration={isMobile ? { months: 1 } : { months: 2 }}
+      visibleDuration={{ months: visibleMonthCount }}
       pageBehavior="single"
       size={size}
       appearance={appearance}
@@ -459,7 +461,9 @@ export const DateRangePicker = forwardRef<HTMLDivElement, DateRangePickerProps>(
               sideOffset={6}
               align="start"
               collisionPadding={8}
+              sticky="always"
               className="vds-date-range-picker-content"
+              data-size={size}
               onOpenAutoFocus={(event) => event.preventDefault()}
             >
               {overlayBody}
@@ -487,7 +491,11 @@ export const DateRangePicker = forwardRef<HTMLDivElement, DateRangePickerProps>(
           }
           presentation={resolvedOverlayMode}
           sizeMode={effectiveSizeMode}
-          dialogSize={mobileView === "date" ? "lg" : "sm"}
+          dialogSize={
+            mobileView === "date"
+              ? size === "xl" || size === "2xl" ? "xl" : "lg"
+              : "sm"
+          }
           bodyClassName="vds-date-range-picker-mobile-body"
           footer={mobileView !== "date" ? actionBarTimeView : actionBarDateView}
         >
@@ -525,7 +533,7 @@ export const DateRangePicker = forwardRef<HTMLDivElement, DateRangePickerProps>(
                     isReadOnly={props.isReadOnly}
                     allowsNonContiguousRanges={props.allowsNonContiguousRanges}
                     aria-label={props["aria-label"] ?? "Date range calendar"}
-                    visibleDuration={isMobile ? { months: 1 } : { months: 2 }}
+                    visibleDuration={{ months: visibleMonthCount }}
                     pageBehavior="single"
                     size={size}
                     appearance={appearance}

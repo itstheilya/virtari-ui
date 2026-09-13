@@ -1312,6 +1312,19 @@ export const countries: readonly CountryEntry[] = [
     "region": "asia"
   },
   {
+    "code": "ir",
+    "alpha3": "irn",
+    "dialCode": "+98",
+    "names": {
+      "en": "Iran",
+      "fa": "ایران",
+      "ar": "إيران",
+      "native": "ایران"
+    },
+    "priority": 0,
+    "region": "asia"
+  },
+  {
     "code": "iq",
     "alpha3": "irq",
     "dialCode": "+964",
@@ -1336,19 +1349,6 @@ export const countries: readonly CountryEntry[] = [
     },
     "priority": 0,
     "region": "europe"
-  },
-  {
-    "code": "ir",
-    "alpha3": "irn",
-    "dialCode": "+98",
-    "names": {
-      "en": "Islamic Republic of Iran",
-      "fa": "ایران",
-      "ar": "إيران",
-      "native": "ایران"
-    },
-    "priority": 0,
-    "region": "asia"
   },
   {
     "code": "im",

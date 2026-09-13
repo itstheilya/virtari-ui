@@ -14,6 +14,10 @@ const require = createRequire(import.meta.url);
 
 const outDir = resolve(root, "src/generated");
 
+const countryNameOverrides = {
+  ir: { en: "Iran" },
+};
+
 function requireFromPackage(mod) {
   const candidates = [
     resolve(root, "node_modules", mod),
@@ -54,16 +58,18 @@ async function main() {
 
     const native = Object.values(c.name?.native || {})[0]?.common || c.name?.common || code.toUpperCase();
 
+    const generatedNames = {
+      en: isoCountriesModule.getName(code.toUpperCase(), "en") || c.name?.common || code,
+      fa: isoCountriesModule.getName(code.toUpperCase(), "fa") || native,
+      ar: isoCountriesModule.getName(code.toUpperCase(), "ar") || native,
+      native,
+    };
+
     entries.push({
       code,
       alpha3: (c.cca3 || "").toLowerCase(),
       dialCode,
-      names: {
-        en: isoCountriesModule.getName(code.toUpperCase(), "en") || c.name?.common || code,
-        fa: isoCountriesModule.getName(code.toUpperCase(), "fa") || native,
-        ar: isoCountriesModule.getName(code.toUpperCase(), "ar") || native,
-        native,
-      },
+      names: { ...generatedNames, ...countryNameOverrides[code] },
       // priority: lower = shown first when two countries share a dial code
       priority: sharedPriority(code),
       region: (c.region || "").toLowerCase(),

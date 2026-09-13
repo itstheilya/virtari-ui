@@ -41,7 +41,7 @@ The same items are available through the official shadcn GitHub registry
 protocol:
 
 ```bash
-pnpm dlx shadcn@latest add itstheilya/virtari-ui/button#cli-v0.1.5
+pnpm dlx shadcn@latest add itstheilya/virtari-ui/button#cli-v0.1.6
 ```
 
 The CLI reads the matching release tag by default. Set

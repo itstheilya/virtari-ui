@@ -503,13 +503,22 @@ export type PickerOverlayMode = "auto" | "popover" | "drawer" | "dialog";
 Source: `packages/react-date-picker/src/picker-overlay.tsx`
 
 ```tsx
-export type PickerDialogSize = "sm" | "md" | "lg";
+export type PickerDialogSize = "sm" | "md" | "lg" | "xl";
 ```
 
 Source: `packages/react-date-picker/src/picker-overlay.tsx`
 
 ```tsx
 export function useIsMobileViewport();
+```
+
+Source: `packages/react-date-picker/src/picker-overlay.tsx`
+
+```tsx
+export function useResponsiveCalendarMonthCount(
+  size: DatePickerSize,
+  forceSingleMonth = false,
+): 1 | 2;
 ```
 
 Source: `packages/react-date-picker/src/picker-overlay.tsx`

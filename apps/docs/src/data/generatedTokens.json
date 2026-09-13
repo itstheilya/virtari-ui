@@ -20785,30 +20785,150 @@
       "line": 177
     },
     {
-      "id": "packages/react-date-picker/src/DatePicker.css:323:7",
-      "name": "--calendar-padding",
-      "value": "var(--vds-space-2, 0.5rem)",
-      "selector": ".vds-picker-mobile-body .vds-calendar",
+      "id": "packages/react-date-picker/src/DatePicker.css:92:5",
+      "name": "--date-picker-calendar-width",
+      "value": "19rem",
+      "selector": ".vds-date-picker-content",
       "conditions": [
-        "@layer design-system.components",
-        "@media (max-width: 42rem)"
+        "@layer design-system.components"
       ],
       "category": "component",
       "sourceId": "packages/react-date-picker/src/DatePicker.css",
-      "line": 323
+      "line": 92
     },
     {
-      "id": "packages/react-date-picker/src/DatePicker.css:324:7",
-      "name": "--calendar-cell-size",
-      "value": "clamp(1.75rem, 12vw, 2.25rem)",
-      "selector": ".vds-picker-mobile-body .vds-calendar",
+      "id": "packages/react-date-picker/src/DatePicker.css:93:5",
+      "name": "--date-picker-presets-width",
+      "value": "0rem",
+      "selector": ".vds-date-picker-content",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DatePicker.css",
+      "line": 93
+    },
+    {
+      "id": "packages/react-date-picker/src/DatePicker.css:94:5",
+      "name": "--date-picker-time-width",
+      "value": "0rem",
+      "selector": ".vds-date-picker-content",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DatePicker.css",
+      "line": 94
+    },
+    {
+      "id": "packages/react-date-picker/src/DatePicker.css:121:5",
+      "name": "--date-picker-calendar-width",
+      "value": "15rem",
+      "selector": ".vds-date-picker-content[data-size=\"2xs\"],\n  .vds-date-picker-content[data-size=\"xs\"]",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DatePicker.css",
+      "line": 121
+    },
+    {
+      "id": "packages/react-date-picker/src/DatePicker.css:125:5",
+      "name": "--date-picker-calendar-width",
+      "value": "17rem",
+      "selector": ".vds-date-picker-content[data-size=\"sm\"]",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DatePicker.css",
+      "line": 125
+    },
+    {
+      "id": "packages/react-date-picker/src/DatePicker.css:129:5",
+      "name": "--date-picker-calendar-width",
+      "value": "21rem",
+      "selector": ".vds-date-picker-content[data-size=\"lg\"]",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DatePicker.css",
+      "line": 129
+    },
+    {
+      "id": "packages/react-date-picker/src/DatePicker.css:133:5",
+      "name": "--date-picker-calendar-width",
+      "value": "23rem",
+      "selector": ".vds-date-picker-content[data-size=\"xl\"]",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DatePicker.css",
+      "line": 133
+    },
+    {
+      "id": "packages/react-date-picker/src/DatePicker.css:137:5",
+      "name": "--date-picker-calendar-width",
+      "value": "25rem",
+      "selector": ".vds-date-picker-content[data-size=\"2xl\"]",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DatePicker.css",
+      "line": 137
+    },
+    {
+      "id": "packages/react-date-picker/src/DatePicker.css:141:5",
+      "name": "--date-picker-presets-width",
+      "value": "10rem",
+      "selector": ".vds-date-picker-content:has(.vds-date-picker-presets)",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DatePicker.css",
+      "line": 141
+    },
+    {
+      "id": "packages/react-date-picker/src/DatePicker.css:145:5",
+      "name": "--date-picker-time-width",
+      "value": "13rem",
+      "selector": ".vds-date-picker-content:has(.vds-date-picker-main[data-layout=\"split\"])",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DatePicker.css",
+      "line": 145
+    },
+    {
+      "id": "packages/react-date-picker/src/DatePicker.css:364:7",
+      "name": "--calendar-padding",
+      "value": "var(--vds-space-2, 0.5rem)",
+      "selector": ":is(.vds-picker-mobile-body, .vds-date-picker-content, .vds-date-range-picker-content) .vds-calendar",
       "conditions": [
         "@layer design-system.components",
         "@media (max-width: 42rem)"
       ],
       "category": "component",
       "sourceId": "packages/react-date-picker/src/DatePicker.css",
-      "line": 324
+      "line": 364
+    },
+    {
+      "id": "packages/react-date-picker/src/DatePicker.css:365:7",
+      "name": "--calendar-cell-size",
+      "value": "clamp(1.75rem, 12vw, 2.25rem)",
+      "selector": ":is(.vds-picker-mobile-body, .vds-date-picker-content, .vds-date-range-picker-content) .vds-calendar",
+      "conditions": [
+        "@layer design-system.components",
+        "@media (max-width: 42rem)"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DatePicker.css",
+      "line": 365
     },
     {
       "id": "packages/react-date-picker/src/DatePicker.tokens.css:12:5",
@@ -20917,6 +21037,198 @@
       "category": "component",
       "sourceId": "packages/react-date-picker/src/DatePicker.tokens.css",
       "line": 21
+    },
+    {
+      "id": "packages/react-date-picker/src/DateRangePicker.css:93:5",
+      "name": "--date-range-picker-calendar-width",
+      "value": "37rem",
+      "selector": ".vds-date-range-picker-content",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DateRangePicker.css",
+      "line": 93
+    },
+    {
+      "id": "packages/react-date-picker/src/DateRangePicker.css:94:5",
+      "name": "--date-range-picker-presets-width",
+      "value": "0rem",
+      "selector": ".vds-date-range-picker-content",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DateRangePicker.css",
+      "line": 94
+    },
+    {
+      "id": "packages/react-date-picker/src/DateRangePicker.css:95:5",
+      "name": "--date-range-picker-time-width",
+      "value": "0rem",
+      "selector": ".vds-date-range-picker-content",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DateRangePicker.css",
+      "line": 95
+    },
+    {
+      "id": "packages/react-date-picker/src/DateRangePicker.css:122:5",
+      "name": "--date-range-picker-calendar-width",
+      "value": "31rem",
+      "selector": ".vds-date-range-picker-content[data-size=\"2xs\"],\n  .vds-date-range-picker-content[data-size=\"xs\"]",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DateRangePicker.css",
+      "line": 122
+    },
+    {
+      "id": "packages/react-date-picker/src/DateRangePicker.css:126:5",
+      "name": "--date-range-picker-calendar-width",
+      "value": "34rem",
+      "selector": ".vds-date-range-picker-content[data-size=\"sm\"]",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DateRangePicker.css",
+      "line": 126
+    },
+    {
+      "id": "packages/react-date-picker/src/DateRangePicker.css:130:5",
+      "name": "--date-range-picker-calendar-width",
+      "value": "42rem",
+      "selector": ".vds-date-range-picker-content[data-size=\"lg\"]",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DateRangePicker.css",
+      "line": 130
+    },
+    {
+      "id": "packages/react-date-picker/src/DateRangePicker.css:134:5",
+      "name": "--date-range-picker-calendar-width",
+      "value": "46rem",
+      "selector": ".vds-date-range-picker-content[data-size=\"xl\"]",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DateRangePicker.css",
+      "line": 134
+    },
+    {
+      "id": "packages/react-date-picker/src/DateRangePicker.css:138:5",
+      "name": "--date-range-picker-calendar-width",
+      "value": "50rem",
+      "selector": ".vds-date-range-picker-content[data-size=\"2xl\"]",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DateRangePicker.css",
+      "line": 138
+    },
+    {
+      "id": "packages/react-date-picker/src/DateRangePicker.css:142:5",
+      "name": "--date-range-picker-calendar-width",
+      "value": "19rem",
+      "selector": ".vds-date-range-picker-content:has(.vds-calendar-months[data-month-count=\"1\"])",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DateRangePicker.css",
+      "line": 142
+    },
+    {
+      "id": "packages/react-date-picker/src/DateRangePicker.css:147:5",
+      "name": "--date-range-picker-calendar-width",
+      "value": "15rem",
+      "selector": ".vds-date-range-picker-content[data-size=\"2xs\"]:has(.vds-calendar-months[data-month-count=\"1\"]),\n  .vds-date-range-picker-content[data-size=\"xs\"]:has(.vds-calendar-months[data-month-count=\"1\"])",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DateRangePicker.css",
+      "line": 147
+    },
+    {
+      "id": "packages/react-date-picker/src/DateRangePicker.css:151:5",
+      "name": "--date-range-picker-calendar-width",
+      "value": "17rem",
+      "selector": ".vds-date-range-picker-content[data-size=\"sm\"]:has(.vds-calendar-months[data-month-count=\"1\"])",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DateRangePicker.css",
+      "line": 151
+    },
+    {
+      "id": "packages/react-date-picker/src/DateRangePicker.css:155:5",
+      "name": "--date-range-picker-calendar-width",
+      "value": "21rem",
+      "selector": ".vds-date-range-picker-content[data-size=\"lg\"]:has(.vds-calendar-months[data-month-count=\"1\"])",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DateRangePicker.css",
+      "line": 155
+    },
+    {
+      "id": "packages/react-date-picker/src/DateRangePicker.css:159:5",
+      "name": "--date-range-picker-calendar-width",
+      "value": "23rem",
+      "selector": ".vds-date-range-picker-content[data-size=\"xl\"]:has(.vds-calendar-months[data-month-count=\"1\"])",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DateRangePicker.css",
+      "line": 159
+    },
+    {
+      "id": "packages/react-date-picker/src/DateRangePicker.css:163:5",
+      "name": "--date-range-picker-calendar-width",
+      "value": "25rem",
+      "selector": ".vds-date-range-picker-content[data-size=\"2xl\"]:has(.vds-calendar-months[data-month-count=\"1\"])",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DateRangePicker.css",
+      "line": 163
+    },
+    {
+      "id": "packages/react-date-picker/src/DateRangePicker.css:167:5",
+      "name": "--date-range-picker-presets-width",
+      "value": "12rem",
+      "selector": ".vds-date-range-picker-content:has(.vds-date-range-picker-presets)",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DateRangePicker.css",
+      "line": 167
+    },
+    {
+      "id": "packages/react-date-picker/src/DateRangePicker.css:171:5",
+      "name": "--date-range-picker-time-width",
+      "value": "14rem",
+      "selector": ".vds-date-range-picker-content:has(.vds-date-range-picker-main[data-layout=\"split\"])",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DateRangePicker.css",
+      "line": 171
     },
     {
       "id": "packages/react-date-picker/src/DateRangePicker.tokens.css:7:5",

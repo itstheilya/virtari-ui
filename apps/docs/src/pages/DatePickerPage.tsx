@@ -113,7 +113,7 @@ export function DatePickerPage() {
       {/* ══════ Sizes ══════ */}
       <Section
         title="Sizes"
-        description="Shared ramp with Button / Input / Select."
+        description="Shared ramp with Button / Input / Select. The overlay scales with the control and collapses multi-month layouts when the viewport is too narrow."
       >
         <div
           style={{

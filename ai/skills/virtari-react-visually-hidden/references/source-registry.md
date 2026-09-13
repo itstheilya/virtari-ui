@@ -62,9 +62,9 @@ The default target can be changed before installation:
 
 ```json
 {
-  "$schema": "https://raw.githubusercontent.com/itstheilya/virtari-ui/cli-v0.1.5/virtari.schema.json",
+  "$schema": "https://raw.githubusercontent.com/itstheilya/virtari-ui/cli-v0.1.6/virtari.schema.json",
   "target": "src/design-system",
-  "registry": "https://raw.githubusercontent.com/itstheilya/virtari-ui/cli-v0.1.5/registry.json",
+  "registry": "https://raw.githubusercontent.com/itstheilya/virtari-ui/cli-v0.1.6/registry.json",
   "install": true
 }
 ```
@@ -96,7 +96,7 @@ The root `registry.json` follows the public shadcn source-registry schema. A
 consumer can use the standard shadcn CLI without installing the Virtari CLI:
 
 ```bash
-pnpm dlx shadcn@latest add itstheilya/virtari-ui/button#cli-v0.1.5
+pnpm dlx shadcn@latest add itstheilya/virtari-ui/button#cli-v0.1.6
 ```
 
 Registry dependencies use full same-repository GitHub addresses because bare

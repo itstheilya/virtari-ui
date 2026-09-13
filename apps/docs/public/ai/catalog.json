@@ -4,7 +4,7 @@
     {
       "id": "cli",
       "name": "virtari",
-      "version": "0.1.5",
+      "version": "0.1.6",
       "category": "tooling",
       "description": "Source-first CLI that installs editable Virtari React and CSS files with transitive dependencies, conflict protection, diffing, and health checks.",
       "publicSymbols": [],
@@ -12997,7 +12997,22 @@
         "flag/4",
         "flag/5",
         "flag/6",
-        "flag/7"
+        "flag/7",
+        "select/1",
+        "select/2",
+        "select/3",
+        "select/4",
+        "select/5",
+        "select/6",
+        "select/7",
+        "select/8",
+        "select/9",
+        "select/10",
+        "select/11",
+        "select/12",
+        "select/13",
+        "select/14",
+        "select/15"
       ],
       "guidance": [
         "Use a named export such as FlagIr for a known flag, or Flag code=CountryCode for runtime selection. Consult countryCodes and hasFlag before accepting untrusted or free-form code values.",
@@ -41439,30 +41454,150 @@
       "line": 177
     },
     {
-      "id": "packages/react-date-picker/src/DatePicker.css:323:7",
-      "name": "--calendar-padding",
-      "value": "var(--vds-space-2, 0.5rem)",
-      "selector": ".vds-picker-mobile-body .vds-calendar",
+      "id": "packages/react-date-picker/src/DatePicker.css:92:5",
+      "name": "--date-picker-calendar-width",
+      "value": "19rem",
+      "selector": ".vds-date-picker-content",
       "conditions": [
-        "@layer design-system.components",
-        "@media (max-width: 42rem)"
+        "@layer design-system.components"
       ],
       "category": "component",
       "sourceId": "packages/react-date-picker/src/DatePicker.css",
-      "line": 323
+      "line": 92
     },
     {
-      "id": "packages/react-date-picker/src/DatePicker.css:324:7",
-      "name": "--calendar-cell-size",
-      "value": "clamp(1.75rem, 12vw, 2.25rem)",
-      "selector": ".vds-picker-mobile-body .vds-calendar",
+      "id": "packages/react-date-picker/src/DatePicker.css:93:5",
+      "name": "--date-picker-presets-width",
+      "value": "0rem",
+      "selector": ".vds-date-picker-content",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DatePicker.css",
+      "line": 93
+    },
+    {
+      "id": "packages/react-date-picker/src/DatePicker.css:94:5",
+      "name": "--date-picker-time-width",
+      "value": "0rem",
+      "selector": ".vds-date-picker-content",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DatePicker.css",
+      "line": 94
+    },
+    {
+      "id": "packages/react-date-picker/src/DatePicker.css:121:5",
+      "name": "--date-picker-calendar-width",
+      "value": "15rem",
+      "selector": ".vds-date-picker-content[data-size=\"2xs\"],\n  .vds-date-picker-content[data-size=\"xs\"]",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DatePicker.css",
+      "line": 121
+    },
+    {
+      "id": "packages/react-date-picker/src/DatePicker.css:125:5",
+      "name": "--date-picker-calendar-width",
+      "value": "17rem",
+      "selector": ".vds-date-picker-content[data-size=\"sm\"]",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DatePicker.css",
+      "line": 125
+    },
+    {
+      "id": "packages/react-date-picker/src/DatePicker.css:129:5",
+      "name": "--date-picker-calendar-width",
+      "value": "21rem",
+      "selector": ".vds-date-picker-content[data-size=\"lg\"]",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DatePicker.css",
+      "line": 129
+    },
+    {
+      "id": "packages/react-date-picker/src/DatePicker.css:133:5",
+      "name": "--date-picker-calendar-width",
+      "value": "23rem",
+      "selector": ".vds-date-picker-content[data-size=\"xl\"]",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DatePicker.css",
+      "line": 133
+    },
+    {
+      "id": "packages/react-date-picker/src/DatePicker.css:137:5",
+      "name": "--date-picker-calendar-width",
+      "value": "25rem",
+      "selector": ".vds-date-picker-content[data-size=\"2xl\"]",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DatePicker.css",
+      "line": 137
+    },
+    {
+      "id": "packages/react-date-picker/src/DatePicker.css:141:5",
+      "name": "--date-picker-presets-width",
+      "value": "10rem",
+      "selector": ".vds-date-picker-content:has(.vds-date-picker-presets)",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DatePicker.css",
+      "line": 141
+    },
+    {
+      "id": "packages/react-date-picker/src/DatePicker.css:145:5",
+      "name": "--date-picker-time-width",
+      "value": "13rem",
+      "selector": ".vds-date-picker-content:has(.vds-date-picker-main[data-layout=\"split\"])",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DatePicker.css",
+      "line": 145
+    },
+    {
+      "id": "packages/react-date-picker/src/DatePicker.css:364:7",
+      "name": "--calendar-padding",
+      "value": "var(--vds-space-2, 0.5rem)",
+      "selector": ":is(.vds-picker-mobile-body, .vds-date-picker-content, .vds-date-range-picker-content) .vds-calendar",
       "conditions": [
         "@layer design-system.components",
         "@media (max-width: 42rem)"
       ],
       "category": "component",
       "sourceId": "packages/react-date-picker/src/DatePicker.css",
-      "line": 324
+      "line": 364
+    },
+    {
+      "id": "packages/react-date-picker/src/DatePicker.css:365:7",
+      "name": "--calendar-cell-size",
+      "value": "clamp(1.75rem, 12vw, 2.25rem)",
+      "selector": ":is(.vds-picker-mobile-body, .vds-date-picker-content, .vds-date-range-picker-content) .vds-calendar",
+      "conditions": [
+        "@layer design-system.components",
+        "@media (max-width: 42rem)"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DatePicker.css",
+      "line": 365
     },
     {
       "id": "packages/react-date-picker/src/DatePicker.tokens.css:12:5",
@@ -41571,6 +41706,198 @@
       "category": "component",
       "sourceId": "packages/react-date-picker/src/DatePicker.tokens.css",
       "line": 21
+    },
+    {
+      "id": "packages/react-date-picker/src/DateRangePicker.css:93:5",
+      "name": "--date-range-picker-calendar-width",
+      "value": "37rem",
+      "selector": ".vds-date-range-picker-content",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DateRangePicker.css",
+      "line": 93
+    },
+    {
+      "id": "packages/react-date-picker/src/DateRangePicker.css:94:5",
+      "name": "--date-range-picker-presets-width",
+      "value": "0rem",
+      "selector": ".vds-date-range-picker-content",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DateRangePicker.css",
+      "line": 94
+    },
+    {
+      "id": "packages/react-date-picker/src/DateRangePicker.css:95:5",
+      "name": "--date-range-picker-time-width",
+      "value": "0rem",
+      "selector": ".vds-date-range-picker-content",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DateRangePicker.css",
+      "line": 95
+    },
+    {
+      "id": "packages/react-date-picker/src/DateRangePicker.css:122:5",
+      "name": "--date-range-picker-calendar-width",
+      "value": "31rem",
+      "selector": ".vds-date-range-picker-content[data-size=\"2xs\"],\n  .vds-date-range-picker-content[data-size=\"xs\"]",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DateRangePicker.css",
+      "line": 122
+    },
+    {
+      "id": "packages/react-date-picker/src/DateRangePicker.css:126:5",
+      "name": "--date-range-picker-calendar-width",
+      "value": "34rem",
+      "selector": ".vds-date-range-picker-content[data-size=\"sm\"]",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DateRangePicker.css",
+      "line": 126
+    },
+    {
+      "id": "packages/react-date-picker/src/DateRangePicker.css:130:5",
+      "name": "--date-range-picker-calendar-width",
+      "value": "42rem",
+      "selector": ".vds-date-range-picker-content[data-size=\"lg\"]",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DateRangePicker.css",
+      "line": 130
+    },
+    {
+      "id": "packages/react-date-picker/src/DateRangePicker.css:134:5",
+      "name": "--date-range-picker-calendar-width",
+      "value": "46rem",
+      "selector": ".vds-date-range-picker-content[data-size=\"xl\"]",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DateRangePicker.css",
+      "line": 134
+    },
+    {
+      "id": "packages/react-date-picker/src/DateRangePicker.css:138:5",
+      "name": "--date-range-picker-calendar-width",
+      "value": "50rem",
+      "selector": ".vds-date-range-picker-content[data-size=\"2xl\"]",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DateRangePicker.css",
+      "line": 138
+    },
+    {
+      "id": "packages/react-date-picker/src/DateRangePicker.css:142:5",
+      "name": "--date-range-picker-calendar-width",
+      "value": "19rem",
+      "selector": ".vds-date-range-picker-content:has(.vds-calendar-months[data-month-count=\"1\"])",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DateRangePicker.css",
+      "line": 142
+    },
+    {
+      "id": "packages/react-date-picker/src/DateRangePicker.css:147:5",
+      "name": "--date-range-picker-calendar-width",
+      "value": "15rem",
+      "selector": ".vds-date-range-picker-content[data-size=\"2xs\"]:has(.vds-calendar-months[data-month-count=\"1\"]),\n  .vds-date-range-picker-content[data-size=\"xs\"]:has(.vds-calendar-months[data-month-count=\"1\"])",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DateRangePicker.css",
+      "line": 147
+    },
+    {
+      "id": "packages/react-date-picker/src/DateRangePicker.css:151:5",
+      "name": "--date-range-picker-calendar-width",
+      "value": "17rem",
+      "selector": ".vds-date-range-picker-content[data-size=\"sm\"]:has(.vds-calendar-months[data-month-count=\"1\"])",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DateRangePicker.css",
+      "line": 151
+    },
+    {
+      "id": "packages/react-date-picker/src/DateRangePicker.css:155:5",
+      "name": "--date-range-picker-calendar-width",
+      "value": "21rem",
+      "selector": ".vds-date-range-picker-content[data-size=\"lg\"]:has(.vds-calendar-months[data-month-count=\"1\"])",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DateRangePicker.css",
+      "line": 155
+    },
+    {
+      "id": "packages/react-date-picker/src/DateRangePicker.css:159:5",
+      "name": "--date-range-picker-calendar-width",
+      "value": "23rem",
+      "selector": ".vds-date-range-picker-content[data-size=\"xl\"]:has(.vds-calendar-months[data-month-count=\"1\"])",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DateRangePicker.css",
+      "line": 159
+    },
+    {
+      "id": "packages/react-date-picker/src/DateRangePicker.css:163:5",
+      "name": "--date-range-picker-calendar-width",
+      "value": "25rem",
+      "selector": ".vds-date-range-picker-content[data-size=\"2xl\"]:has(.vds-calendar-months[data-month-count=\"1\"])",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DateRangePicker.css",
+      "line": 163
+    },
+    {
+      "id": "packages/react-date-picker/src/DateRangePicker.css:167:5",
+      "name": "--date-range-picker-presets-width",
+      "value": "12rem",
+      "selector": ".vds-date-range-picker-content:has(.vds-date-range-picker-presets)",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DateRangePicker.css",
+      "line": 167
+    },
+    {
+      "id": "packages/react-date-picker/src/DateRangePicker.css:171:5",
+      "name": "--date-range-picker-time-width",
+      "value": "14rem",
+      "selector": ".vds-date-range-picker-content:has(.vds-date-range-picker-main[data-layout=\"split\"])",
+      "conditions": [
+        "@layer design-system.components"
+      ],
+      "category": "component",
+      "sourceId": "packages/react-date-picker/src/DateRangePicker.css",
+      "line": 171
     },
     {
       "id": "packages/react-date-picker/src/DateRangePicker.tokens.css:7:5",
@@ -158911,7 +159238,7 @@
       "sourceId": "apps/docs/src/pages/DatePickerPage.tsx",
       "startLine": 114,
       "endLine": 133,
-      "code": "<Section\n        title=\"Sizes\"\n        description=\"Shared ramp with Button / Input / Select.\"\n      >\n        <div\n          style={{\n            display: \"flex\",\n            flexDirection: \"column\",\n            gap: \"var(--vds-space-2)\",\n            maxInlineSize: \"22rem\",\n          }}\n        >\n          {([\"2xs\", \"xs\", \"sm\", \"md\", \"lg\", \"xl\", \"2xl\"] as const).map((s) => (\n            <Row key={s}>\n              <span className=\"docs-size-label\">{s}</span>\n              <DatePicker size={s} aria-label={`${s} size`} />\n            </Row>\n          ))}\n        </div>\n      </Section>",
+      "code": "<Section\n        title=\"Sizes\"\n        description=\"Shared ramp with Button / Input / Select. The overlay scales with the control and collapses multi-month layouts when the viewport is too narrow.\"\n      >\n        <div\n          style={{\n            display: \"flex\",\n            flexDirection: \"column\",\n            gap: \"var(--vds-space-2)\",\n            maxInlineSize: \"22rem\",\n          }}\n        >\n          {([\"2xs\", \"xs\", \"sm\", \"md\", \"lg\", \"xl\", \"2xl\"] as const).map((s) => (\n            <Row key={s}>\n              <span className=\"docs-size-label\">{s}</span>\n              <DatePicker size={s} aria-label={`${s} size`} />\n            </Row>\n          ))}\n        </div>\n      </Section>",
       "imports": [
         "import { CodeBlock as VirtariCodeBlock, InlineCode as VirtariInlineCode } from \"@virtari-packages/react-code\";",
         "import { useState } from \"react\";",
@@ -161341,7 +161668,7 @@
       "sourceId": "apps/docs/src/pages/FlagPage.tsx",
       "startLine": 34,
       "endLine": 49,
-      "code": "<Section\n        title=\"Overview\"\n        description=\"Country flags from flag-icons (MIT), vendored into typed React components via SVGR codegen. 271 flags including ISO 3166-1 alpha-2 plus sub-regions like gb-eng, es-ct.\"\n      >\n        <Row>\n          <FlagIr size=\"xl\" />\n          <FlagUs size=\"xl\" />\n          <FlagGb size=\"xl\" />\n          <FlagDe size=\"xl\" />\n          <FlagFr size=\"xl\" />\n          <FlagJp size=\"xl\" />\n          <FlagBr size=\"xl\" />\n          <FlagIn size=\"xl\" />\n          <FlagSa size=\"xl\" />\n        </Row>\n      </Section>",
+      "code": "<Section\n        title=\"Overview\"\n        description=\"Typed, tree-shakeable country flags. The Iran entry uses the historic Lion and Sun flag; the remaining collection is generated from flag-icons (MIT).\"\n      >\n        <Row>\n          <FlagIr size=\"xl\" title=\"Iran\" />\n          <FlagUs size=\"xl\" />\n          <FlagGb size=\"xl\" />\n          <FlagDe size=\"xl\" />\n          <FlagFr size=\"xl\" />\n          <FlagJp size=\"xl\" />\n          <FlagBr size=\"xl\" />\n          <FlagIn size=\"xl\" />\n          <FlagSa size=\"xl\" />\n        </Row>\n      </Section>",
       "imports": [
         "import { CodeBlock as VirtariCodeBlock } from \"@virtari-packages/react-code\";",
         "import { useState } from \"react\";",
@@ -161362,7 +161689,7 @@
       "sourceId": "apps/docs/src/pages/FlagPage.tsx",
       "startLine": 51,
       "endLine": 62,
-      "code": "<Section title=\"Size ramp\" description=\"Same size scale as Input and Button — flags snap into rows of controls cleanly.\">\n        <Stack>\n          {SIZES.map((s) => (\n            <Row key={s}>\n              <span className=\"docs-size-label\">{s}</span>\n              <Flag code=\"ir\" size={s} />\n              <Flag code=\"us\" size={s} />\n              <Flag code=\"jp\" size={s} />\n            </Row>\n          ))}\n        </Stack>\n      </Section>",
+      "code": "<Section title=\"Size ramp\" description=\"Same size scale as Input and Button — flags snap into rows of controls cleanly.\">\n        <Stack>\n          {SIZES.map((s) => (\n            <Row key={s}>\n              <span className=\"docs-size-label\">{s}</span>\n              <Flag code=\"ir\" size={s} title=\"Iran\" />\n              <Flag code=\"us\" size={s} />\n              <Flag code=\"jp\" size={s} />\n            </Row>\n          ))}\n        </Stack>\n      </Section>",
       "imports": [
         "import { CodeBlock as VirtariCodeBlock } from \"@virtari-packages/react-code\";",
         "import { useState } from \"react\";",
@@ -165027,14 +165354,16 @@
       "page": "select",
       "packageIds": [
         "react-code",
+        "react-flag",
         "react-select"
       ],
       "sourceId": "apps/docs/src/pages/SelectPage.tsx",
-      "startLine": 196,
-      "endLine": 215,
+      "startLine": 197,
+      "endLine": 216,
       "code": "<Section\n        title=\"Select — basic\"\n        description=\"Accessible native-select clone. Use for 2–20 static options. Keeps standard form semantics and first-char typeahead.\"\n      >\n        <div style={{ maxInlineSize: \"18rem\" }}>\n          <Select value={plan} onValueChange={setPlan}>\n            <SelectTrigger aria-label=\"Choose an option\">\n              <SelectValue placeholder=\"Choose a plan…\" />\n            </SelectTrigger>\n            <SelectContent>\n              <SelectItem value=\"free\">Free — 3 projects</SelectItem>\n              <SelectItem value=\"pro\">Pro — $19/mo</SelectItem>\n              <SelectItem value=\"team\">Team — $49/mo</SelectItem>\n              <SelectItem value=\"enterprise\" disabled>\n                Enterprise — contact sales\n              </SelectItem>\n            </SelectContent>\n          </Select>\n        </div>\n      </Section>",
       "imports": [
         "import { CodeBlock as VirtariCodeBlock } from \"@virtari-packages/react-code\";",
+        "import { Flag, type CountryCode } from \"@virtari-packages/react-flag\";",
         "import { useEffect, useState } from \"react\";",
         "import {\n  Select,\n  SelectField,\n  SelectTrigger,\n  SelectValue,\n  SelectContent,\n  SelectItem,\n  SelectGroup,\n  SelectLabel,\n  SelectSeparator,\n  SelectEmpty,\n  Combobox,\n  ComboboxTrigger,\n  ComboboxContent,\n  ComboboxInput,\n  ComboboxList,\n  ComboboxOptions,\n  ComboboxItem,\n  ComboboxEmpty,\n  ComboboxLoading,\n  type ComboboxItemData,\n} from \"@virtari-packages/react-select\";",
         "import { Section, Row } from \"../components\";"
@@ -165046,14 +165375,16 @@
       "page": "select",
       "packageIds": [
         "react-code",
+        "react-flag",
         "react-select"
       ],
       "sourceId": "apps/docs/src/pages/SelectPage.tsx",
-      "startLine": 217,
-      "endLine": 254,
+      "startLine": 218,
+      "endLine": 255,
       "code": "<Section\n        title=\"Field API\"\n        description=\"Use SelectField when the compound Select needs the same label, description, error, and counter controls as Input and Textarea.\"\n      >\n        <div style={{ maxInlineSize: \"22rem\" }}>\n          <SelectField\n            label=\"Billing plan\"\n            description=\"Choose how your workspace is billed.\"\n            error={!plan ? \"Select a plan to continue\" : undefined}\n            counter=\"4 options\"\n            invalid={!plan}\n            metaLayout=\"inline\"\n            descriptionAlign=\"end\"\n            errorAlign=\"start\"\n            counterAlign=\"end\"\n          >\n            {({ controlId, describedBy, invalid }) => (\n              <Select value={plan} onValueChange={setPlan}>\n                <SelectTrigger\n                  id={controlId}\n                  aria-describedby={describedBy}\n                  invalid={invalid}\n                >\n                  <SelectValue placeholder=\"Choose a plan…\" />\n                </SelectTrigger>\n                <SelectContent>\n                  <SelectItem value=\"free\">Free — 3 projects</SelectItem>\n                  <SelectItem value=\"pro\">Pro — $19/mo</SelectItem>\n                  <SelectItem value=\"team\">Team — $49/mo</SelectItem>\n                  <SelectItem value=\"enterprise\">\n                    Enterprise — contact sales\n                  </SelectItem>\n                </SelectContent>\n              </Select>\n            )}\n          </SelectField>\n        </div>\n      </Section>",
       "imports": [
         "import { CodeBlock as VirtariCodeBlock } from \"@virtari-packages/react-code\";",
+        "import { Flag, type CountryCode } from \"@virtari-packages/react-flag\";",
         "import { useEffect, useState } from \"react\";",
         "import {\n  Select,\n  SelectField,\n  SelectTrigger,\n  SelectValue,\n  SelectContent,\n  SelectItem,\n  SelectGroup,\n  SelectLabel,\n  SelectSeparator,\n  SelectEmpty,\n  Combobox,\n  ComboboxTrigger,\n  ComboboxContent,\n  ComboboxInput,\n  ComboboxList,\n  ComboboxOptions,\n  ComboboxItem,\n  ComboboxEmpty,\n  ComboboxLoading,\n  type ComboboxItemData,\n} from \"@virtari-packages/react-select\";",
         "import { Section, Row } from \"../components\";"
@@ -165065,14 +165396,16 @@
       "page": "select",
       "packageIds": [
         "react-code",
+        "react-flag",
         "react-select"
       ],
       "sourceId": "apps/docs/src/pages/SelectPage.tsx",
-      "startLine": 256,
-      "endLine": 272,
+      "startLine": 257,
+      "endLine": 273,
       "code": "<Section title=\"Appearance\" description=\"soft (default), outline, ghost, filled.\">\n        <Row>\n          {([\"soft\", \"outline\", \"ghost\", \"filled\"] as const).map((a) => (\n            <div key={a} style={{ inlineSize: \"14rem\" }}>\n              <Select>\n                <SelectTrigger appearance={a} aria-label={`${a} appearance`}>\n                  <SelectValue placeholder={`${a} appearance`} />\n                </SelectTrigger>\n                <SelectContent>\n                  <SelectItem value=\"a\">Option A</SelectItem>\n                  <SelectItem value=\"b\">Option B</SelectItem>\n                </SelectContent>\n              </Select>\n            </div>\n          ))}\n        </Row>\n      </Section>",
       "imports": [
         "import { CodeBlock as VirtariCodeBlock } from \"@virtari-packages/react-code\";",
+        "import { Flag, type CountryCode } from \"@virtari-packages/react-flag\";",
         "import { useEffect, useState } from \"react\";",
         "import {\n  Select,\n  SelectField,\n  SelectTrigger,\n  SelectValue,\n  SelectContent,\n  SelectItem,\n  SelectGroup,\n  SelectLabel,\n  SelectSeparator,\n  SelectEmpty,\n  Combobox,\n  ComboboxTrigger,\n  ComboboxContent,\n  ComboboxInput,\n  ComboboxList,\n  ComboboxOptions,\n  ComboboxItem,\n  ComboboxEmpty,\n  ComboboxLoading,\n  type ComboboxItemData,\n} from \"@virtari-packages/react-select\";",
         "import { Section, Row } from \"../components\";"
@@ -165084,14 +165417,16 @@
       "page": "select",
       "packageIds": [
         "react-code",
+        "react-flag",
         "react-select"
       ],
       "sourceId": "apps/docs/src/pages/SelectPage.tsx",
-      "startLine": 274,
-      "endLine": 301,
+      "startLine": 275,
+      "endLine": 302,
       "code": "<Section\n        title=\"Sizes\"\n        description=\"Shared height ramp with Button, Input, Toggle.\"\n      >\n        <div\n          style={{\n            display: \"flex\",\n            flexDirection: \"column\",\n            gap: \"var(--vds-space-2)\",\n            maxInlineSize: \"22rem\",\n          }}\n        >\n          {([\"2xs\", \"xs\", \"sm\", \"md\", \"lg\", \"xl\", \"2xl\"] as const).map((s) => (\n            <Row key={s}>\n              <span className=\"docs-size-label\">{s}</span>\n              <Select>\n                <SelectTrigger size={s} aria-label={`${s} size`}>\n                  <SelectValue placeholder={`${s} size`} />\n                </SelectTrigger>\n                <SelectContent size={s}>\n                  <SelectItem value=\"a\">Option A</SelectItem>\n                  <SelectItem value=\"b\">Option B</SelectItem>\n                </SelectContent>\n              </Select>\n            </Row>\n          ))}\n        </div>\n      </Section>",
       "imports": [
         "import { CodeBlock as VirtariCodeBlock } from \"@virtari-packages/react-code\";",
+        "import { Flag, type CountryCode } from \"@virtari-packages/react-flag\";",
         "import { useEffect, useState } from \"react\";",
         "import {\n  Select,\n  SelectField,\n  SelectTrigger,\n  SelectValue,\n  SelectContent,\n  SelectItem,\n  SelectGroup,\n  SelectLabel,\n  SelectSeparator,\n  SelectEmpty,\n  Combobox,\n  ComboboxTrigger,\n  ComboboxContent,\n  ComboboxInput,\n  ComboboxList,\n  ComboboxOptions,\n  ComboboxItem,\n  ComboboxEmpty,\n  ComboboxLoading,\n  type ComboboxItemData,\n} from \"@virtari-packages/react-select\";",
         "import { Section, Row } from \"../components\";"
@@ -165103,14 +165438,16 @@
       "page": "select",
       "packageIds": [
         "react-code",
+        "react-flag",
         "react-select"
       ],
       "sourceId": "apps/docs/src/pages/SelectPage.tsx",
-      "startLine": 303,
-      "endLine": 355,
+      "startLine": 304,
+      "endLine": 356,
       "code": "<Section\n        title=\"States\"\n        description=\"Clearable, loading, invalid. Works alongside existing primitive props.\"\n      >\n        <Row>\n          <div style={{ inlineSize: \"16rem\" }}>\n            <Select value={plan} onValueChange={setPlan}>\n              <SelectTrigger\n                aria-label=\"Billing plan\"\n                clearable\n                onClear={() => setPlan(\"\")}\n              >\n                <SelectValue placeholder=\"Clearable — select then click ×\" />\n              </SelectTrigger>\n              <SelectContent>\n                <SelectItem value=\"free\">Free</SelectItem>\n                <SelectItem value=\"pro\">Pro</SelectItem>\n                <SelectItem value=\"team\">Team</SelectItem>\n              </SelectContent>\n            </Select>\n          </div>\n          <div style={{ inlineSize: \"16rem\" }}>\n            <Select>\n              <SelectTrigger loading aria-label=\"Loading plans\">\n                <SelectValue placeholder=\"Loading plans…\" />\n              </SelectTrigger>\n              <SelectContent>\n                <SelectItem value=\"a\">Option A</SelectItem>\n              </SelectContent>\n            </Select>\n          </div>\n          <div style={{ inlineSize: \"16rem\" }}>\n            <Select>\n              <SelectTrigger invalid aria-label=\"Required plan\">\n                <SelectValue placeholder=\"Invalid — field required\" />\n              </SelectTrigger>\n              <SelectContent>\n                <SelectItem value=\"a\">Option A</SelectItem>\n              </SelectContent>\n            </Select>\n          </div>\n          <div style={{ inlineSize: \"16rem\" }}>\n            <Select disabled>\n              <SelectTrigger aria-label=\"Choose an option\">\n                <SelectValue placeholder=\"Disabled\" />\n              </SelectTrigger>\n              <SelectContent>\n                <SelectItem value=\"a\">Option A</SelectItem>\n              </SelectContent>\n            </Select>\n          </div>\n        </Row>\n      </Section>",
       "imports": [
         "import { CodeBlock as VirtariCodeBlock } from \"@virtari-packages/react-code\";",
+        "import { Flag, type CountryCode } from \"@virtari-packages/react-flag\";",
         "import { useEffect, useState } from \"react\";",
         "import {\n  Select,\n  SelectField,\n  SelectTrigger,\n  SelectValue,\n  SelectContent,\n  SelectItem,\n  SelectGroup,\n  SelectLabel,\n  SelectSeparator,\n  SelectEmpty,\n  Combobox,\n  ComboboxTrigger,\n  ComboboxContent,\n  ComboboxInput,\n  ComboboxList,\n  ComboboxOptions,\n  ComboboxItem,\n  ComboboxEmpty,\n  ComboboxLoading,\n  type ComboboxItemData,\n} from \"@virtari-packages/react-select\";",
         "import { Section, Row } from \"../components\";"
@@ -165122,14 +165459,16 @@
       "page": "select",
       "packageIds": [
         "react-code",
+        "react-flag",
         "react-select"
       ],
       "sourceId": "apps/docs/src/pages/SelectPage.tsx",
-      "startLine": 357,
-      "endLine": 388,
+      "startLine": 358,
+      "endLine": 389,
       "code": "<Section title=\"Grouped\">\n        <div style={{ maxInlineSize: \"18rem\" }}>\n          <Select>\n            <SelectTrigger aria-label=\"Choose an option\">\n              <SelectValue placeholder=\"Pick a timezone…\" />\n            </SelectTrigger>\n            <SelectContent>\n              <SelectGroup>\n                <SelectLabel>Americas</SelectLabel>\n                <SelectItem value=\"est\">Eastern (EST / UTC-5)</SelectItem>\n                <SelectItem value=\"cst\">Central (CST / UTC-6)</SelectItem>\n                <SelectItem value=\"mst\">Mountain (MST / UTC-7)</SelectItem>\n                <SelectItem value=\"pst\">Pacific (PST / UTC-8)</SelectItem>\n              </SelectGroup>\n              <SelectSeparator />\n              <SelectGroup>\n                <SelectLabel>Europe</SelectLabel>\n                <SelectItem value=\"gmt\">GMT (UTC+0)</SelectItem>\n                <SelectItem value=\"cet\">Central European (UTC+1)</SelectItem>\n                <SelectItem value=\"eet\">Eastern European (UTC+2)</SelectItem>\n              </SelectGroup>\n              <SelectSeparator />\n              <SelectGroup>\n                <SelectLabel>Asia</SelectLabel>\n                <SelectItem value=\"ist\">India Standard (UTC+5:30)</SelectItem>\n                <SelectItem value=\"irst\">Iran Standard (UTC+3:30)</SelectItem>\n                <SelectItem value=\"jst\">Japan Standard (UTC+9)</SelectItem>\n              </SelectGroup>\n            </SelectContent>\n          </Select>\n        </div>\n      </Section>",
       "imports": [
         "import { CodeBlock as VirtariCodeBlock } from \"@virtari-packages/react-code\";",
+        "import { Flag, type CountryCode } from \"@virtari-packages/react-flag\";",
         "import { useEffect, useState } from \"react\";",
         "import {\n  Select,\n  SelectField,\n  SelectTrigger,\n  SelectValue,\n  SelectContent,\n  SelectItem,\n  SelectGroup,\n  SelectLabel,\n  SelectSeparator,\n  SelectEmpty,\n  Combobox,\n  ComboboxTrigger,\n  ComboboxContent,\n  ComboboxInput,\n  ComboboxList,\n  ComboboxOptions,\n  ComboboxItem,\n  ComboboxEmpty,\n  ComboboxLoading,\n  type ComboboxItemData,\n} from \"@virtari-packages/react-select\";",
         "import { Section, Row } from \"../components\";"
@@ -165141,14 +165480,16 @@
       "page": "select",
       "packageIds": [
         "react-code",
+        "react-flag",
         "react-select"
       ],
       "sourceId": "apps/docs/src/pages/SelectPage.tsx",
-      "startLine": 390,
-      "endLine": 401,
+      "startLine": 391,
+      "endLine": 402,
       "code": "<Section title=\"Empty state\" description=\"Use <SelectEmpty> when you render no SelectItems.\">\n        <div style={{ maxInlineSize: \"18rem\" }}>\n          <Select>\n            <SelectTrigger aria-label=\"Choose an option\">\n              <SelectValue placeholder=\"No options yet…\" />\n            </SelectTrigger>\n            <SelectContent>\n              <SelectEmpty>No plans available for your region.</SelectEmpty>\n            </SelectContent>\n          </Select>\n        </div>\n      </Section>",
       "imports": [
         "import { CodeBlock as VirtariCodeBlock } from \"@virtari-packages/react-code\";",
+        "import { Flag, type CountryCode } from \"@virtari-packages/react-flag\";",
         "import { useEffect, useState } from \"react\";",
         "import {\n  Select,\n  SelectField,\n  SelectTrigger,\n  SelectValue,\n  SelectContent,\n  SelectItem,\n  SelectGroup,\n  SelectLabel,\n  SelectSeparator,\n  SelectEmpty,\n  Combobox,\n  ComboboxTrigger,\n  ComboboxContent,\n  ComboboxInput,\n  ComboboxList,\n  ComboboxOptions,\n  ComboboxItem,\n  ComboboxEmpty,\n  ComboboxLoading,\n  type ComboboxItemData,\n} from \"@virtari-packages/react-select\";",
         "import { Section, Row } from \"../components\";"
@@ -165160,14 +165501,16 @@
       "page": "select",
       "packageIds": [
         "react-code",
+        "react-flag",
         "react-select"
       ],
       "sourceId": "apps/docs/src/pages/SelectPage.tsx",
-      "startLine": 405,
-      "endLine": 435,
-      "code": "<Section\n        title=\"Combobox — searchable\"\n        description=\"For anything beyond ~20 options, async data, or when users need to filter by typing. Built on Popover + custom listbox — the underlying Select focus model can't host an input.\"\n      >\n        <div style={{ maxInlineSize: \"22rem\" }}>\n          <Combobox\n            items={COUNTRIES}\n            value={country}\n            onValueChange={setCountry}\n            emptyMessage=\"No countries match that search\"\n          >\n            <ComboboxTrigger aria-label=\"Country\" placeholder=\"Select a country…\" clearable />\n            <ComboboxContent>\n              <ComboboxInput placeholder=\"Search countries…\" />\n              <ComboboxList>\n                <ComboboxOptions>\n                  {(item) => (\n                    <ComboboxItem key={item.value} value={item.value}>\n                      <span style={{ marginInlineEnd: \"0.5rem\" }}>\n                        {item.flag as string}\n                      </span>\n                      {item.label}\n                    </ComboboxItem>\n                  )}\n                </ComboboxOptions>\n                <ComboboxEmpty />\n              </ComboboxList>\n            </ComboboxContent>\n          </Combobox>\n        </div>\n      </Section>",
+      "startLine": 406,
+      "endLine": 436,
+      "code": "<Section\n        title=\"Combobox — searchable\"\n        description=\"For anything beyond ~20 options, async data, or when users need to filter by typing. Built on Popover + custom listbox — the underlying Select focus model can't host an input.\"\n      >\n        <div style={{ maxInlineSize: \"22rem\" }}>\n          <Combobox\n            items={COUNTRIES}\n            value={country}\n            onValueChange={setCountry}\n            emptyMessage=\"No countries match that search\"\n          >\n            <ComboboxTrigger aria-label=\"Country\" placeholder=\"Select a country…\" clearable />\n            <ComboboxContent>\n              <ComboboxInput placeholder=\"Search countries…\" />\n              <ComboboxList>\n                <ComboboxOptions>\n                  {(item) => (\n                    <ComboboxItem key={item.value} value={item.value}>\n                      <span style={{ marginInlineEnd: \"0.5rem\" }}>\n                        <Flag code={item.flag as CountryCode} size=\"sm\" />\n                      </span>\n                      {item.label}\n                    </ComboboxItem>\n                  )}\n                </ComboboxOptions>\n                <ComboboxEmpty />\n              </ComboboxList>\n            </ComboboxContent>\n          </Combobox>\n        </div>\n      </Section>",
       "imports": [
         "import { CodeBlock as VirtariCodeBlock } from \"@virtari-packages/react-code\";",
+        "import { Flag, type CountryCode } from \"@virtari-packages/react-flag\";",
         "import { useEffect, useState } from \"react\";",
         "import {\n  Select,\n  SelectField,\n  SelectTrigger,\n  SelectValue,\n  SelectContent,\n  SelectItem,\n  SelectGroup,\n  SelectLabel,\n  SelectSeparator,\n  SelectEmpty,\n  Combobox,\n  ComboboxTrigger,\n  ComboboxContent,\n  ComboboxInput,\n  ComboboxList,\n  ComboboxOptions,\n  ComboboxItem,\n  ComboboxEmpty,\n  ComboboxLoading,\n  type ComboboxItemData,\n} from \"@virtari-packages/react-select\";",
         "import { Section, Row } from \"../components\";"
@@ -165179,14 +165522,16 @@
       "page": "select",
       "packageIds": [
         "react-code",
+        "react-flag",
         "react-select"
       ],
       "sourceId": "apps/docs/src/pages/SelectPage.tsx",
-      "startLine": 437,
-      "endLine": 468,
+      "startLine": 438,
+      "endLine": 469,
       "code": "<Section\n        title=\"Multi-select with chips\"\n        description=\"Selected items render as removable Chips in the trigger. Backspace on empty input removes the last one. Try: search for “next”.\"\n      >\n        <div style={{ maxInlineSize: \"28rem\" }}>\n          <Combobox\n            items={FRAMEWORKS}\n            value={stack}\n            onValueChange={setStack}\n            multiple\n            emptyMessage=\"No frameworks match\"\n          >\n            <ComboboxTrigger aria-label=\"Frameworks\" placeholder=\"Pick your stack…\" clearable />\n            <ComboboxContent>\n              <ComboboxInput placeholder=\"Search frameworks…\" />\n              <ComboboxList>\n                <ComboboxOptions>\n                  {(item) => (\n                    <ComboboxItem key={item.value} value={item.value}>\n                      {item.label}\n                    </ComboboxItem>\n                  )}\n                </ComboboxOptions>\n                <ComboboxEmpty />\n              </ComboboxList>\n            </ComboboxContent>\n          </Combobox>\n        </div>\n        <p className=\"docs-hint\" style={{ marginBlockStart: \"var(--vds-space-2)\" }}>\n          Selected: {Array.isArray(stack) ? stack.length : 0} / {FRAMEWORKS.length}\n        </p>\n      </Section>",
       "imports": [
         "import { CodeBlock as VirtariCodeBlock } from \"@virtari-packages/react-code\";",
+        "import { Flag, type CountryCode } from \"@virtari-packages/react-flag\";",
         "import { useEffect, useState } from \"react\";",
         "import {\n  Select,\n  SelectField,\n  SelectTrigger,\n  SelectValue,\n  SelectContent,\n  SelectItem,\n  SelectGroup,\n  SelectLabel,\n  SelectSeparator,\n  SelectEmpty,\n  Combobox,\n  ComboboxTrigger,\n  ComboboxContent,\n  ComboboxInput,\n  ComboboxList,\n  ComboboxOptions,\n  ComboboxItem,\n  ComboboxEmpty,\n  ComboboxLoading,\n  type ComboboxItemData,\n} from \"@virtari-packages/react-select\";",
         "import { Section, Row } from \"../components\";"
@@ -165198,14 +165543,16 @@
       "page": "select",
       "packageIds": [
         "react-code",
+        "react-flag",
         "react-select"
       ],
       "sourceId": "apps/docs/src/pages/SelectPage.tsx",
-      "startLine": 470,
-      "endLine": 517,
+      "startLine": 471,
+      "endLine": 518,
       "code": "<Section\n        title=\"Async search\"\n        description=\"Consumer owns filtering. Pass onSearchChange and supply filtered items. Built-in loading + empty states.\"\n      >\n        <div style={{ maxInlineSize: \"22rem\" }}>\n          <Combobox\n            items={asyncSearch.items}\n            value={user}\n            onValueChange={setUser}\n            loading={asyncSearch.loading}\n            onSearchChange={asyncSearch.onSearchChange}\n            emptyMessage=\"No teammates found\"\n          >\n            <ComboboxTrigger aria-label=\"Teammate\" placeholder=\"Assign to teammate…\" clearable />\n            <ComboboxContent>\n              <ComboboxInput placeholder=\"Type a name or role…\" />\n              <ComboboxList>\n                <ComboboxLoading>Searching directory…</ComboboxLoading>\n                <ComboboxOptions>\n                  {(item) => (\n                    <ComboboxItem key={item.value} value={item.value}>\n                      <div\n                        style={{\n                          display: \"flex\",\n                          flexDirection: \"column\",\n                          alignItems: \"flex-start\",\n                          gap: \"2px\",\n                        }}\n                      >\n                        <span>{item.label}</span>\n                        <span\n                          style={{\n                            fontSize: \"var(--vds-text-xs)\",\n                            color: \"var(--vds-color-text-muted)\",\n                          }}\n                        >\n                          {item.role as string}\n                        </span>\n                      </div>\n                    </ComboboxItem>\n                  )}\n                </ComboboxOptions>\n                <ComboboxEmpty />\n              </ComboboxList>\n            </ComboboxContent>\n          </Combobox>\n        </div>\n      </Section>",
       "imports": [
         "import { CodeBlock as VirtariCodeBlock } from \"@virtari-packages/react-code\";",
+        "import { Flag, type CountryCode } from \"@virtari-packages/react-flag\";",
         "import { useEffect, useState } from \"react\";",
         "import {\n  Select,\n  SelectField,\n  SelectTrigger,\n  SelectValue,\n  SelectContent,\n  SelectItem,\n  SelectGroup,\n  SelectLabel,\n  SelectSeparator,\n  SelectEmpty,\n  Combobox,\n  ComboboxTrigger,\n  ComboboxContent,\n  ComboboxInput,\n  ComboboxList,\n  ComboboxOptions,\n  ComboboxItem,\n  ComboboxEmpty,\n  ComboboxLoading,\n  type ComboboxItemData,\n} from \"@virtari-packages/react-select\";",
         "import { Section, Row } from \"../components\";"
@@ -165217,14 +165564,16 @@
       "page": "select",
       "packageIds": [
         "react-code",
+        "react-flag",
         "react-select"
       ],
       "sourceId": "apps/docs/src/pages/SelectPage.tsx",
-      "startLine": 519,
-      "endLine": 547,
+      "startLine": 520,
+      "endLine": 548,
       "code": "<Section\n        title=\"Virtualized (2 000 items)\"\n        description=\"Opt into @tanstack/react-virtual with `virtualized`. Arrow keys stay in sync with scrolling.\"\n      >\n        <div style={{ maxInlineSize: \"22rem\" }}>\n          <Combobox\n            items={VIRTUAL_CITIES}\n            value={city}\n            onValueChange={setCity}\n            virtualized\n            emptyMessage=\"No cities match\"\n          >\n            <ComboboxTrigger aria-label=\"District\" placeholder=\"Pick a district…\" clearable />\n            <ComboboxContent>\n              <ComboboxInput placeholder=\"Search 2 000 districts…\" />\n              <ComboboxList>\n                <ComboboxOptions estimateSize={36} maxHeight={280}>\n                  {(item) => (\n                    <ComboboxItem key={item.value} value={item.value}>\n                      {item.label}\n                    </ComboboxItem>\n                  )}\n                </ComboboxOptions>\n                <ComboboxEmpty />\n              </ComboboxList>\n            </ComboboxContent>\n          </Combobox>\n        </div>\n      </Section>",
       "imports": [
         "import { CodeBlock as VirtariCodeBlock } from \"@virtari-packages/react-code\";",
+        "import { Flag, type CountryCode } from \"@virtari-packages/react-flag\";",
         "import { useEffect, useState } from \"react\";",
         "import {\n  Select,\n  SelectField,\n  SelectTrigger,\n  SelectValue,\n  SelectContent,\n  SelectItem,\n  SelectGroup,\n  SelectLabel,\n  SelectSeparator,\n  SelectEmpty,\n  Combobox,\n  ComboboxTrigger,\n  ComboboxContent,\n  ComboboxInput,\n  ComboboxList,\n  ComboboxOptions,\n  ComboboxItem,\n  ComboboxEmpty,\n  ComboboxLoading,\n  type ComboboxItemData,\n} from \"@virtari-packages/react-select\";",
         "import { Section, Row } from \"../components\";"
@@ -165236,14 +165585,16 @@
       "page": "select",
       "packageIds": [
         "react-code",
+        "react-flag",
         "react-select"
       ],
       "sourceId": "apps/docs/src/pages/SelectPage.tsx",
-      "startLine": 549,
-      "endLine": 572,
+      "startLine": 550,
+      "endLine": 573,
       "code": "<Section\n        title=\"Grouped results\"\n        description=\"Region headers between items. Stays correct during search — the header resets at index 0 of every render pass.\"\n      >\n        <div style={{ maxInlineSize: \"22rem\" }}>\n          <Combobox\n            items={COUNTRIES}\n            value={region}\n            onValueChange={setRegion}\n            emptyMessage=\"No countries match\"\n          >\n            <ComboboxTrigger aria-label=\"Country by region\" placeholder=\"Pick a country…\" clearable />\n            <ComboboxContent>\n              <ComboboxInput placeholder=\"Search countries…\" />\n              <ComboboxList>\n                <ComboboxOptions>\n                  {renderCountryWithGroupHeader}\n                </ComboboxOptions>\n                <ComboboxEmpty />\n              </ComboboxList>\n            </ComboboxContent>\n          </Combobox>\n        </div>\n      </Section>",
       "imports": [
         "import { CodeBlock as VirtariCodeBlock } from \"@virtari-packages/react-code\";",
+        "import { Flag, type CountryCode } from \"@virtari-packages/react-flag\";",
         "import { useEffect, useState } from \"react\";",
         "import {\n  Select,\n  SelectField,\n  SelectTrigger,\n  SelectValue,\n  SelectContent,\n  SelectItem,\n  SelectGroup,\n  SelectLabel,\n  SelectSeparator,\n  SelectEmpty,\n  Combobox,\n  ComboboxTrigger,\n  ComboboxContent,\n  ComboboxInput,\n  ComboboxList,\n  ComboboxOptions,\n  ComboboxItem,\n  ComboboxEmpty,\n  ComboboxLoading,\n  type ComboboxItemData,\n} from \"@virtari-packages/react-select\";",
         "import { Section, Row } from \"../components\";"
@@ -165255,14 +165606,16 @@
       "page": "select",
       "packageIds": [
         "react-code",
+        "react-flag",
         "react-select"
       ],
       "sourceId": "apps/docs/src/pages/SelectPage.tsx",
-      "startLine": 574,
-      "endLine": 632,
+      "startLine": 575,
+      "endLine": 633,
       "code": "<Section\n        title=\"Combobox states\"\n        description=\"Same appearance + invalid + loading props as Select. Disabled applies to the whole widget.\"\n      >\n        <Row>\n          <div style={{ inlineSize: \"18rem\" }}>\n            <Combobox items={FRAMEWORKS} invalid>\n              <ComboboxTrigger aria-label=\"Required framework\" placeholder=\"Required\" />\n              <ComboboxContent>\n                <ComboboxInput />\n                <ComboboxList>\n                  <ComboboxOptions>\n                    {(item) => (\n                      <ComboboxItem key={item.value} value={item.value}>\n                        {item.label}\n                      </ComboboxItem>\n                    )}\n                  </ComboboxOptions>\n                </ComboboxList>\n              </ComboboxContent>\n            </Combobox>\n          </div>\n          <div style={{ inlineSize: \"18rem\" }}>\n            <Combobox items={FRAMEWORKS} disabled>\n              <ComboboxTrigger aria-label=\"Disabled framework\" placeholder=\"Disabled\" />\n              <ComboboxContent>\n                <ComboboxInput />\n                <ComboboxList>\n                  <ComboboxOptions>\n                    {(item) => (\n                      <ComboboxItem key={item.value} value={item.value}>\n                        {item.label}\n                      </ComboboxItem>\n                    )}\n                  </ComboboxOptions>\n                </ComboboxList>\n              </ComboboxContent>\n            </Combobox>\n          </div>\n          <div style={{ inlineSize: \"18rem\" }}>\n            <Combobox items={[]} loading>\n              <ComboboxTrigger aria-label=\"Loading frameworks\" placeholder=\"Fetching…\" />\n              <ComboboxContent>\n                <ComboboxInput />\n                <ComboboxList>\n                  <ComboboxLoading>Loading frameworks…</ComboboxLoading>\n                  <ComboboxOptions>\n                    {(item) => (\n                      <ComboboxItem key={item.value} value={item.value}>\n                        {item.label}\n                      </ComboboxItem>\n                    )}\n                  </ComboboxOptions>\n                </ComboboxList>\n              </ComboboxContent>\n            </Combobox>\n          </div>\n        </Row>\n      </Section>",
       "imports": [
         "import { CodeBlock as VirtariCodeBlock } from \"@virtari-packages/react-code\";",
+        "import { Flag, type CountryCode } from \"@virtari-packages/react-flag\";",
         "import { useEffect, useState } from \"react\";",
         "import {\n  Select,\n  SelectField,\n  SelectTrigger,\n  SelectValue,\n  SelectContent,\n  SelectItem,\n  SelectGroup,\n  SelectLabel,\n  SelectSeparator,\n  SelectEmpty,\n  Combobox,\n  ComboboxTrigger,\n  ComboboxContent,\n  ComboboxInput,\n  ComboboxList,\n  ComboboxOptions,\n  ComboboxItem,\n  ComboboxEmpty,\n  ComboboxLoading,\n  type ComboboxItemData,\n} from \"@virtari-packages/react-select\";",
         "import { Section, Row } from \"../components\";"
@@ -165274,14 +165627,16 @@
       "page": "select",
       "packageIds": [
         "react-code",
+        "react-flag",
         "react-select"
       ],
       "sourceId": "apps/docs/src/pages/SelectPage.tsx",
-      "startLine": 636,
-      "endLine": 661,
+      "startLine": 637,
+      "endLine": 662,
       "code": "<Section title=\"Usage — Select\">\n        <VirtariCodeBlock renderer=\"static\" language=\"tsx\" code={`import {\n  Select,\n  SelectTrigger,\n  SelectValue,\n  SelectContent,\n  SelectItem,\n} from \"@virtari-packages/react-select\";\n\n<Select value={plan} onValueChange={setPlan}>\n  <SelectTrigger\n    size=\"md\"\n    appearance=\"outline\"   // soft | outline | ghost | filled\n    clearable              // clear action; update value in onClear\n    invalid                // form error state\n    loading                // spinner replaces chevron\n    onClear={() => setPlan(\"\")}\n  >\n    <SelectValue placeholder=\"Choose a plan…\" />\n  </SelectTrigger>\n  <SelectContent>\n    <SelectItem value=\"free\">Free</SelectItem>\n    <SelectItem value=\"pro\">Pro</SelectItem>\n  </SelectContent>\n</Select>`} />\n      </Section>",
       "imports": [
         "import { CodeBlock as VirtariCodeBlock } from \"@virtari-packages/react-code\";",
+        "import { Flag, type CountryCode } from \"@virtari-packages/react-flag\";",
         "import { useEffect, useState } from \"react\";",
         "import {\n  Select,\n  SelectField,\n  SelectTrigger,\n  SelectValue,\n  SelectContent,\n  SelectItem,\n  SelectGroup,\n  SelectLabel,\n  SelectSeparator,\n  SelectEmpty,\n  Combobox,\n  ComboboxTrigger,\n  ComboboxContent,\n  ComboboxInput,\n  ComboboxList,\n  ComboboxOptions,\n  ComboboxItem,\n  ComboboxEmpty,\n  ComboboxLoading,\n  type ComboboxItemData,\n} from \"@virtari-packages/react-select\";",
         "import { Section, Row } from \"../components\";"
@@ -165293,14 +165648,16 @@
       "page": "select",
       "packageIds": [
         "react-code",
+        "react-flag",
         "react-select"
       ],
       "sourceId": "apps/docs/src/pages/SelectPage.tsx",
-      "startLine": 663,
-      "endLine": 702,
+      "startLine": 664,
+      "endLine": 703,
       "code": "<Section title=\"Usage — Combobox\">\n        <VirtariCodeBlock renderer=\"static\" language=\"tsx\" code={`import {\n  Combobox,\n  ComboboxTrigger,\n  ComboboxContent,\n  ComboboxInput,\n  ComboboxList,\n  ComboboxOptions,\n  ComboboxItem,\n  ComboboxEmpty,\n  ComboboxLoading,\n} from \"@virtari-packages/react-select\";\n\n<Combobox\n  items={users}                  // ComboboxItemData[]: { value, label, ... }\n  value={value}\n  onValueChange={setValue}\n  multiple                       // chips in trigger, Backspace removes last\n  virtualized                    // @tanstack/react-virtual for 500+ items\n  loading={isFetching}\n  onSearchChange={setQuery}      // async mode — consumer owns filtering\n  emptyMessage=\"No matches\"\n>\n  <ComboboxTrigger aria-label=\"Choose an option\" placeholder=\"Assign…\" clearable />\n  <ComboboxContent>\n    <ComboboxInput placeholder=\"Search…\" />\n    <ComboboxList>\n      <ComboboxLoading>Loading…</ComboboxLoading>\n      <ComboboxOptions>\n        {(item) => (\n          <ComboboxItem key={item.value} value={item.value}>\n            {item.label}\n          </ComboboxItem>\n        )}\n      </ComboboxOptions>\n      <ComboboxEmpty />\n    </ComboboxList>\n  </ComboboxContent>\n</Combobox>`} />\n      </Section>",
       "imports": [
         "import { CodeBlock as VirtariCodeBlock } from \"@virtari-packages/react-code\";",
+        "import { Flag, type CountryCode } from \"@virtari-packages/react-flag\";",
         "import { useEffect, useState } from \"react\";",
         "import {\n  Select,\n  SelectField,\n  SelectTrigger,\n  SelectValue,\n  SelectContent,\n  SelectItem,\n  SelectGroup,\n  SelectLabel,\n  SelectSeparator,\n  SelectEmpty,\n  Combobox,\n  ComboboxTrigger,\n  ComboboxContent,\n  ComboboxInput,\n  ComboboxList,\n  ComboboxOptions,\n  ComboboxItem,\n  ComboboxEmpty,\n  ComboboxLoading,\n  type ComboboxItemData,\n} from \"@virtari-packages/react-select\";",
         "import { Section, Row } from \"../components\";"
@@ -168887,8 +169244,8 @@
     },
     {
       "id": "apps/docs/src/pages/DatePickerPage.tsx",
-      "sha256": "78e468963f629b197936be8a2e589bc857022f9e8c1a8e9c0705950d40d7d7d1",
-      "bytes": 15476,
+      "sha256": "362ed9d8dbea4c3c1d455a9578e993327739030f08e5fb69b9989482385d9e82",
+      "bytes": 15579,
       "kind": "tsx"
     },
     {
@@ -168941,8 +169298,8 @@
     },
     {
       "id": "apps/docs/src/pages/FlagPage.tsx",
-      "sha256": "20bab0f957f7e7d912ad5f396fc545bc8c02bb057843820f9153ac5dbc89e3f0",
-      "bytes": 4591,
+      "sha256": "5b1c5905b26c3f9e89eaf5acf607ddb1a70568e91061b9f590c0028f19b403ba",
+      "bytes": 4599,
       "kind": "tsx"
     },
     {
@@ -169079,8 +169436,8 @@
     },
     {
       "id": "apps/docs/src/pages/SelectPage.tsx",
-      "sha256": "64a7620ad1df973f2784487449ede2c880ee5a0b6b0d21bbce78411d05dad110",
-      "bytes": 27584,
+      "sha256": "aef1204fd9044421960f8dde0418296b0c9763273d81f797ba359b724b70299c",
+      "bytes": 27533,
       "kind": "tsx"
     },
     {
@@ -169463,7 +169820,7 @@
     },
     {
       "id": "docs/source-registry.md",
-      "sha256": "44d52aae3b4cda430efb3c2e0d812dba51987c7af687a1d223d5835ebc2b515c",
+      "sha256": "7ccf48df5b654bfc55eac717b20a8d65ef34cbe14a4972b2c3a67649c58ced9e",
       "bytes": 5302,
       "kind": "md"
     },
@@ -169481,7 +169838,7 @@
     },
     {
       "id": "packages/cli/package.json",
-      "sha256": "c83d6bb87aa2f8b5b42e2f155f9e31344b8544a2132d8bdd1b0dc48fd106cee7",
+      "sha256": "2f8fa784d39ab4f649563ed74659a78072f997f2e56e72b44f8a28e195210efd",
       "bytes": 973,
       "kind": "json"
     },
@@ -171323,8 +171680,8 @@
     },
     {
       "id": "packages/react-date-picker/src/DatePicker.css",
-      "sha256": "6b496657a1530763d6bffa5817d02d9d55889601645103615505986efc776933",
-      "bytes": 10337,
+      "sha256": "b0c64214488416a6dfe5e52326daf5a186e09455a21451b4806fb4ca086a713d",
+      "bytes": 11367,
       "kind": "css"
     },
     {
@@ -171335,14 +171692,14 @@
     },
     {
       "id": "packages/react-date-picker/src/DatePicker.tsx",
-      "sha256": "196d7cc7e149f44d46538f442623c27b6ab0a8c73b6aa26a74167e8490dcd189",
-      "bytes": 17849,
+      "sha256": "b8fb434724917ce32d8ff46d88966f169a61ed9871376847ac6a8232e8c32e93",
+      "bytes": 17910,
       "kind": "tsx"
     },
     {
       "id": "packages/react-date-picker/src/DateRangePicker.css",
-      "sha256": "f4fd83a4adcfe424468391dde73939361af8f8918df7b4876177d6dca2d81516",
-      "bytes": 8751,
+      "sha256": "9c71e9f17f7fa656443fa5d060f731c5cf2938e40a09f80569d8c40320bf8cc3",
+      "bytes": 11327,
       "kind": "css"
     },
     {
@@ -171353,8 +171710,8 @@
     },
     {
       "id": "packages/react-date-picker/src/DateRangePicker.tsx",
-      "sha256": "0bfbba2c1cb541fef4c084408be538fd931bec75987fec7abb9bdd4568379068",
-      "bytes": 22225,
+      "sha256": "3f86625ca996d0102122e490b0f1f86415793be99581766a0e901354c06f63d6",
+      "bytes": 22469,
       "kind": "tsx"
     },
     {
@@ -171413,8 +171770,8 @@
     },
     {
       "id": "packages/react-date-picker/src/picker-overlay.tsx",
-      "sha256": "914acb4902c471d2414850dce3c5892cb2dbb0dc13253ccbdd1e60582d392f56",
-      "bytes": 7057,
+      "sha256": "ec5ef247d4d99dc7821f6908771fb9a84736166878c22e0179b139bb371a2296",
+      "bytes": 8402,
       "kind": "tsx"
     },
     {
@@ -172589,8 +172946,8 @@
     },
     {
       "id": "packages/react-flag/src/generated/flags/FlagIr.tsx",
-      "sha256": "8fa1405bb0bb5936e614281fe52b4f09c1c4fa6b70c42603d112a556dbf10769",
-      "bytes": 16172,
+      "sha256": "91a8b665728fb9d8abe2d2f34850573b6a3c91daf44bb1ba35b0d038044dea5f",
+      "bytes": 33900,
       "kind": "tsx"
     },
     {
@@ -174263,8 +174620,8 @@
     },
     {
       "id": "packages/react-phone-input/src/generated/countries.ts",
-      "sha256": "56d51b6885286ab10e0d65c4a848de59de1594fd1639e535013af4d89d10066a",
-      "bytes": 65369,
+      "sha256": "cf1822983e1c6a2fbb9335ff55f298cb51fd17b9dca62a13bb524bbffada668f",
+      "bytes": 65349,
       "kind": "ts"
     },
     {
@@ -175727,7 +176084,7 @@
     },
     {
       "id": "registry.json",
-      "sha256": "478b9f652ab3aa2d2b86ab895174226d07e5072338622c3de3515ad7bc843b52",
+      "sha256": "b06f486ff34643670d9551fc6331d6fe5a12f3f81af0ea46f9f059aff92d6447",
       "bytes": 284286,
       "kind": "json"
     },

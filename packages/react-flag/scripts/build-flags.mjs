@@ -26,6 +26,7 @@ function resolveFlagIconsDir() {
 }
 
 const sourceDir = resolveFlagIconsDir();
+const overrideDir = resolve(root, "assets/overrides");
 const outDir = resolve(root, "src/generated");
 const flagsDir = resolve(outDir, "flags");
 
@@ -39,7 +40,7 @@ function toComponentName(code) {
   );
 }
 
-function jsxSafeChildren(svgInner) {
+function jsxSafeChildren(svgInner, { preserveStyles = false } = {}) {
   // SVG attributes like `clip-path`, `fill-rule`, `xmlns:xlink` need JSX-safe names.
   // Void elements in SVG (<path>, <circle>, <rect>, <use>, <stop>, <line>) are
   // already self-closing in flag-icons' source. Still, handle a few edge cases.
@@ -59,9 +60,31 @@ function jsxSafeChildren(svgInner) {
       .replace(/xml:space=/g, "xmlSpace=")
       // strip stray xmlns:* on inner nodes (rare but breaks JSX)
       .replace(/\s+xmlns:[a-z]+="[^"]*"/g, "")
-      // Strip any inline style="…" — flags don't need it (colors come from fill/stroke)
-      // and some sources embed Inkscape noise that breaks JSX style-object parsing.
-      .replace(/\s+style="[^"]*"/g, "")
+      // Convert presentation styles to React style objects. The upstream icons
+      // normally use SVG attributes, while curated overrides may use compact
+      // presentation styles that must survive code generation.
+      .replace(/\s+style="([^"]*)"/g, (_match, declarations) => {
+        if (!preserveStyles) return "";
+        const properties = declarations
+          .split(";")
+          .map((declaration) => declaration.trim())
+          .filter(Boolean)
+          .map((declaration) => {
+            const separator = declaration.indexOf(":");
+            if (separator === -1) return null;
+            const property = declaration
+              .slice(0, separator)
+              .trim()
+              .replace(/-([a-z])/g, (_value, letter) => letter.toUpperCase());
+            const value = declaration.slice(separator + 1).trim();
+            if (!/^[a-z][A-Za-z0-9]*$/.test(property) || property.startsWith("inkscape")) {
+              return null;
+            }
+            return `${property}: ${JSON.stringify(value)}`;
+          })
+          .filter(Boolean);
+        return properties.length ? ` style={{ ${properties.join(", ")} }}` : "";
+      })
       // Strip Inkscape-internal attributes (sodipodi, inkscape namespaces have been
       // removed above, but the attributes themselves remain as camelCased noise)
       .replace(/\s+(sodipodi|inkscape)[A-Za-z]+="[^"]*"/g, "")
@@ -84,7 +107,13 @@ async function main() {
   let generated = 0;
   for (const code of codes) {
     const componentName = toComponentName(code);
-    const raw = await readFile(join(sourceDir, code + ".svg"), "utf8");
+    const overridePath = join(overrideDir, code + ".svg");
+    const hasOverride = existsSync(overridePath);
+    const sourcePath = hasOverride ? overridePath : join(sourceDir, code + ".svg");
+    const sourceLabel = hasOverride
+      ? `assets/overrides/${code}.svg`
+      : `flag-icons/flags/4x3/${code}.svg`;
+    const raw = await readFile(sourcePath, "utf8");
 
     // Extract <svg …>…</svg>
     const svgMatch = raw.match(/<svg([^>]*)>([\s\S]*)<\/svg>/);
@@ -93,14 +122,14 @@ async function main() {
       continue;
     }
     const rawAttrs = svgMatch[1];
-    const body = jsxSafeChildren(svgMatch[2].trim());
+    const body = jsxSafeChildren(svgMatch[2].trim(), { preserveStyles: hasOverride });
 
     // Keep only viewBox from the original. Everything else (xmlns, width, height)
     // we re-declare on our controlled wrapper.
     const viewBoxMatch = rawAttrs.match(/\sviewBox="([^"]+)"/);
     const viewBox = viewBoxMatch ? viewBoxMatch[1] : "0 0 640 480";
 
-    const out = `// AUTO-GENERATED. DO NOT EDIT. Source: flag-icons/flags/4x3/${code}.svg
+    const out = `// AUTO-GENERATED. DO NOT EDIT. Source: ${sourceLabel}
 import type { FC } from "react";
 import { cn } from "@virtari-packages/utils";
 import type { FlagCoreProps } from "../../Flag";

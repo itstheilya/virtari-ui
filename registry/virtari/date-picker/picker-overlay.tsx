@@ -20,13 +20,23 @@ import {
   DrawerHeader,
   DrawerTitle,
 } from "../drawer";
+import type { DatePickerSize } from "./context";
 
 export type MobilePickerPresentation = "drawer" | "dialog";
 export type MobilePickerSizeMode = "content" | "full";
 export type PickerOverlayMode = "auto" | "popover" | "drawer" | "dialog";
-export type PickerDialogSize = "sm" | "md" | "lg";
+export type PickerDialogSize = "sm" | "md" | "lg" | "xl";
 
 const MOBILE_BREAKPOINT = 42;
+const TWO_MONTH_BREAKPOINT: Record<DatePickerSize, number> = {
+  "2xs": 34,
+  xs: 34,
+  sm: 38,
+  md: 43,
+  lg: 47,
+  xl: 51,
+  "2xl": 55,
+};
 
 export function useIsMobileViewport() {
   const [isMobile, setIsMobile] = useState(() =>
@@ -59,6 +69,39 @@ export function useIsMobileViewport() {
   }, []);
 
   return isMobile;
+}
+
+export function useResponsiveCalendarMonthCount(
+  size: DatePickerSize,
+  forceSingleMonth = false,
+): 1 | 2 {
+  const breakpoint = TWO_MONTH_BREAKPOINT[size];
+  const [hasRoomForTwo, setHasRoomForTwo] = useState(() =>
+    typeof window !== "undefined"
+      ? window.matchMedia(`(min-width: ${breakpoint}rem)`).matches
+      : true,
+  );
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const query = window.matchMedia(`(min-width: ${breakpoint}rem)`);
+    const update = (event: MediaQueryListEvent) => setHasRoomForTwo(event.matches);
+    setHasRoomForTwo(query.matches);
+
+    if ("addEventListener" in query) {
+      query.addEventListener("change", update);
+      return () => query.removeEventListener("change", update);
+    }
+
+    const legacyQuery = query as MediaQueryList & {
+      addListener?: (listener: (event: MediaQueryListEvent) => void) => void;
+      removeListener?: (listener: (event: MediaQueryListEvent) => void) => void;
+    };
+    legacyQuery.addListener?.(update);
+    return () => legacyQuery.removeListener?.(update);
+  }, [breakpoint]);
+
+  return forceSingleMonth || !hasRoomForTwo ? 1 : 2;
 }
 
 interface PickerActionBarProps {

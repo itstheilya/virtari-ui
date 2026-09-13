@@ -41,6 +41,10 @@ yarn add @virtari-packages/react-flag
 import { /* … */ } from "@virtari-packages/react-flag";
 ```
 
+The `ir` entry renders the historic Lion and Sun flag and keeps the same size,
+rounding, lazy-loading, and accessibility contract as every other flag. Its
+public-domain source and provenance are recorded in [ATTRIBUTION.md](./ATTRIBUTION.md).
+
 ### Import styles
 
 ```ts

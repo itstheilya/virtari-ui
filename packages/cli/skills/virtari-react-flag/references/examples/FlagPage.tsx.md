@@ -38,10 +38,10 @@ export function FlagPage() {
     <>
       <Section
         title="Overview"
-        description="Country flags from flag-icons (MIT), vendored into typed React components via SVGR codegen. 271 flags including ISO 3166-1 alpha-2 plus sub-regions like gb-eng, es-ct."
+        description="Typed, tree-shakeable country flags. The Iran entry uses the historic Lion and Sun flag; the remaining collection is generated from flag-icons (MIT)."
       >
         <Row>
-          <FlagIr size="xl" />
+          <FlagIr size="xl" title="Iran" />
           <FlagUs size="xl" />
           <FlagGb size="xl" />
           <FlagDe size="xl" />
@@ -58,7 +58,7 @@ export function FlagPage() {
           {SIZES.map((s) => (
             <Row key={s}>
               <span className="docs-size-label">{s}</span>
-              <Flag code="ir" size={s} />
+              <Flag code="ir" size={s} title="Iran" />
               <Flag code="us" size={s} />
               <Flag code="jp" size={s} />
             </Row>

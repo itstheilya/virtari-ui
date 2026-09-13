@@ -396,21 +396,21 @@ All documentation sections importing this package (some demonstrate another pack
 - `segmented-control/5` — Long labels; source `apps/docs/src/pages/SegmentedControlPage.tsx` lines 66–73.
 - `segmented-control/6` — Disabled; source `apps/docs/src/pages/SegmentedControlPage.tsx` lines 75–88.
 - `segmented-control/7` — Usage; source `apps/docs/src/pages/SegmentedControlPage.tsx` lines 90–101.
-- `select/1` — Select — basic; source `apps/docs/src/pages/SelectPage.tsx` lines 196–215.
-- `select/2` — Field API; source `apps/docs/src/pages/SelectPage.tsx` lines 217–254.
-- `select/3` — Appearance; source `apps/docs/src/pages/SelectPage.tsx` lines 256–272.
-- `select/4` — Sizes; source `apps/docs/src/pages/SelectPage.tsx` lines 274–301.
-- `select/5` — States; source `apps/docs/src/pages/SelectPage.tsx` lines 303–355.
-- `select/6` — Grouped; source `apps/docs/src/pages/SelectPage.tsx` lines 357–388.
-- `select/7` — Empty state; source `apps/docs/src/pages/SelectPage.tsx` lines 390–401.
-- `select/8` — Combobox — searchable; source `apps/docs/src/pages/SelectPage.tsx` lines 405–435.
-- `select/9` — Multi-select with chips; source `apps/docs/src/pages/SelectPage.tsx` lines 437–468.
-- `select/10` — Async search; source `apps/docs/src/pages/SelectPage.tsx` lines 470–517.
-- `select/11` — Virtualized (2 000 items); source `apps/docs/src/pages/SelectPage.tsx` lines 519–547.
-- `select/12` — Grouped results; source `apps/docs/src/pages/SelectPage.tsx` lines 549–572.
-- `select/13` — Combobox states; source `apps/docs/src/pages/SelectPage.tsx` lines 574–632.
-- `select/14` — Usage — Select; source `apps/docs/src/pages/SelectPage.tsx` lines 636–661.
-- `select/15` — Usage — Combobox; source `apps/docs/src/pages/SelectPage.tsx` lines 663–702.
+- `select/1` — Select — basic; source `apps/docs/src/pages/SelectPage.tsx` lines 197–216.
+- `select/2` — Field API; source `apps/docs/src/pages/SelectPage.tsx` lines 218–255.
+- `select/3` — Appearance; source `apps/docs/src/pages/SelectPage.tsx` lines 257–273.
+- `select/4` — Sizes; source `apps/docs/src/pages/SelectPage.tsx` lines 275–302.
+- `select/5` — States; source `apps/docs/src/pages/SelectPage.tsx` lines 304–356.
+- `select/6` — Grouped; source `apps/docs/src/pages/SelectPage.tsx` lines 358–389.
+- `select/7` — Empty state; source `apps/docs/src/pages/SelectPage.tsx` lines 391–402.
+- `select/8` — Combobox — searchable; source `apps/docs/src/pages/SelectPage.tsx` lines 406–436.
+- `select/9` — Multi-select with chips; source `apps/docs/src/pages/SelectPage.tsx` lines 438–469.
+- `select/10` — Async search; source `apps/docs/src/pages/SelectPage.tsx` lines 471–518.
+- `select/11` — Virtualized (2 000 items); source `apps/docs/src/pages/SelectPage.tsx` lines 520–548.
+- `select/12` — Grouped results; source `apps/docs/src/pages/SelectPage.tsx` lines 550–573.
+- `select/13` — Combobox states; source `apps/docs/src/pages/SelectPage.tsx` lines 575–633.
+- `select/14` — Usage — Select; source `apps/docs/src/pages/SelectPage.tsx` lines 637–662.
+- `select/15` — Usage — Combobox; source `apps/docs/src/pages/SelectPage.tsx` lines 664–703.
 - `separator/1` — Horizontal; source `apps/docs/src/pages/SeparatorPage.tsx` lines 8–14.
 - `separator/2` — Vertical; source `apps/docs/src/pages/SeparatorPage.tsx` lines 16–24.
 - `separator/3` — Decorative; source `apps/docs/src/pages/SeparatorPage.tsx` lines 26–34.
