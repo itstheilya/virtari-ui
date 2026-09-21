@@ -1,5 +1,27 @@
 # @virtari-packages/react-color-picker
 
+## 1.0.1
+
+### Patch Changes
+
+- aeb16a1: Unify field and container appearance through bordered, tonal and elevated surface roles. Preserve semantic focus and invalid cues and stable control geometry. Add smart ScrollArea visibility and viewport access, quiet native desktop scrollbars, mode-aware nested card radii and tones, and flex-gap Stack spacing.
+- 35df268: Replace form-control focus outlines with a 4px spread halo using existing primary alpha colors and a soft 180ms shadow transition. Apply the same treatment to selection, date/time, search, file, rich-text and code controls; retain danger alpha for invalid fields. Preserve forced-colors focus indicators and honor reduced-motion preferences without changing token definitions.
+- Updated dependencies [aeb16a1]
+- Updated dependencies [35df268]
+- Updated dependencies [f2badbc]
+- Updated dependencies [c052c05]
+- Updated dependencies [0c1908a]
+- Updated dependencies [35df268]
+- Updated dependencies [800f0f5]
+- Updated dependencies [9b5353a]
+  - @virtari-packages/react-input@1.1.0
+  - @virtari-packages/react-popover@1.1.1
+  - @virtari-packages/react-select@1.1.1
+  - @virtari-packages/react-textarea@0.4.1
+  - @virtari-packages/utils@0.5.0
+  - @virtari-packages/react-button@1.2.0
+  - @virtari-packages/react-icons@0.4.1
+
 ## 1.0.0
 
 ### Major Changes

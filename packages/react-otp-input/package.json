@@ -1,6 +1,6 @@
 {
   "name": "@virtari-packages/react-otp-input",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Virtari otp-input — one-time password / PIN code input with keyboard navigation.",
   "license": "MIT",
   "author": "Virtari",

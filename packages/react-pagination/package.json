@@ -1,6 +1,6 @@
 {
   "name": "@virtari-packages/react-pagination",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Virtari pagination — headless, controlled React component with page numbers, ellipsis, and page-size select.",
   "license": "MIT",
   "author": "Virtari",

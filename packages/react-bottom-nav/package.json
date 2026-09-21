@@ -1,6 +1,6 @@
 {
   "name": "@virtari-packages/react-bottom-nav",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Virtari bottom navigation — mobile-first tab bar with Material 3 / iOS / Floating / Underline variants, FAB, badges, safe-area insets, auto-hide, and animated indicator.",
   "license": "MIT",
   "author": "Virtari",

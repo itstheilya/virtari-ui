@@ -1,5 +1,18 @@
 # @virtari-packages/react-toggle
 
+## 1.1.1
+
+### Patch Changes
+
+- 35df268: Replace form-control focus outlines with a 4px spread halo using existing primary alpha colors and a soft 180ms shadow transition. Apply the same treatment to selection, date/time, search, file, rich-text and code controls; retain danger alpha for invalid fields. Preserve forced-colors focus indicators and honor reduced-motion preferences without changing token definitions.
+- 9b5353a: Establish the Virtari design language with tonal surface roles, purpose-based shape and spacing tokens, and consistent control typography. Remove global optical nudges, allow enlarged text to fit, and standardize logical icon slots across form controls. Existing component APIs and theme modes remain available; defaults intentionally change visually. InputIcon gains an optional logical side.
+- Updated dependencies [35df268]
+- Updated dependencies [f2badbc]
+- Updated dependencies [800f0f5]
+- Updated dependencies [9b5353a]
+  - @virtari-packages/utils@0.5.0
+  - @virtari-packages/primitives@1.1.0
+
 ## 1.1.0
 
 ### Minor Changes

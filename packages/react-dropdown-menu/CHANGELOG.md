@@ -1,5 +1,17 @@
 # @virtari-packages/react-dropdown-menu
 
+## 1.1.1
+
+### Patch Changes
+
+- aeb16a1: Unify field and container appearance through bordered, tonal and elevated surface roles. Preserve semantic focus and invalid cues and stable control geometry. Add smart ScrollArea visibility and viewport access, quiet native desktop scrollbars, mode-aware nested card radii and tones, and flex-gap Stack spacing.
+- Updated dependencies [35df268]
+- Updated dependencies [f2badbc]
+- Updated dependencies [800f0f5]
+- Updated dependencies [9b5353a]
+  - @virtari-packages/utils@0.5.0
+  - @virtari-packages/primitives@1.1.0
+
 ## 1.1.0
 
 ### Minor Changes

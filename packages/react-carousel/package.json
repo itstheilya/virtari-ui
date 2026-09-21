@@ -1,6 +1,6 @@
 {
   "name": "@virtari-packages/react-carousel",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Virtari carousel — Swiper.js wrapped with Virtari design tokens, RTL-safe and a11y-first.",
   "license": "MIT",
   "author": "Virtari",

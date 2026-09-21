@@ -1,5 +1,27 @@
 # @virtari-packages/react-otp-input
 
+## 0.4.1
+
+### Patch Changes
+
+- aeb16a1: Unify field and container appearance through bordered, tonal and elevated surface roles. Preserve semantic focus and invalid cues and stable control geometry. Add smart ScrollArea visibility and viewport access, quiet native desktop scrollbars, mode-aware nested card radii and tones, and flex-gap Stack spacing.
+- 35df268: Fix form-control compatibility: preserve refs and React 19 ref cleanups, honor disabled/read-only controls, retain numeric drafts and tag input focus, batch pasted tags, compose keyboard handlers, and preserve native text editing during IME composition. Stop combobox close from stealing outside focus and move the select clear button outside its trigger button.
+
+  Connect date/time controls to React Aria's native form inputs. Add form association/reset support to composite controls. TagInput submits repeated name/value entries for committed tags; Combobox submits its selected values. OTP supports defaultValue and uncontrolled editing. Phone parsing refreshes when the parser loads and recognizes pasted international numbers.
+
+  Keep Yoopta editor data when readOnly changes and apply external document replacements while retaining the mounted view for ordinary edit echoes. Avoid committing table cells on composition confirmation or browser-window blur.
+
+- f2badbc: Add static package code rendering, accessible clipboard feedback and shared rendered-field metadata. Improve semantic text contrast, control composition, native form reset, keyboard behavior, nested surfaces and containment in reviewed packages.
+
+  Center control text with shared browser font metrics and separate icon/text slots; preserve ordinary line-box fallback where text-box trimming is unsupported.
+
+- 35df268: Replace form-control focus outlines with a 4px spread halo using existing primary alpha colors and a soft 180ms shadow transition. Apply the same treatment to selection, date/time, search, file, rich-text and code controls; retain danger alpha for invalid fields. Preserve forced-colors focus indicators and honor reduced-motion preferences without changing token definitions.
+- 9b5353a: Establish the Virtari design language with tonal surface roles, purpose-based shape and spacing tokens, and consistent control typography. Remove global optical nudges, allow enlarged text to fit, and standardize logical icon slots across form controls. Existing component APIs and theme modes remain available; defaults intentionally change visually. InputIcon gains an optional logical side.
+- Updated dependencies [35df268]
+- Updated dependencies [f2badbc]
+- Updated dependencies [800f0f5]
+  - @virtari-packages/utils@0.5.0
+
 ## 0.4.0
 
 ### Minor Changes

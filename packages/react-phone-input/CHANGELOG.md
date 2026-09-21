@@ -1,5 +1,34 @@
 # @virtari-packages/react-phone-input
 
+## 1.0.2
+
+### Patch Changes
+
+- ac401c7: Use the historic Lion and Sun artwork for Iran, label the country as Iran, and make date-picker overlays responsive across the full component size ramp while keeping Apply and Cancel reachable.
+- 35df268: Fix form-control compatibility: preserve refs and React 19 ref cleanups, honor disabled/read-only controls, retain numeric drafts and tag input focus, batch pasted tags, compose keyboard handlers, and preserve native text editing during IME composition. Stop combobox close from stealing outside focus and move the select clear button outside its trigger button.
+
+  Connect date/time controls to React Aria's native form inputs. Add form association/reset support to composite controls. TagInput submits repeated name/value entries for committed tags; Combobox submits its selected values. OTP supports defaultValue and uncontrolled editing. Phone parsing refreshes when the parser loads and recognizes pasted international numbers.
+
+  Keep Yoopta editor data when readOnly changes and apply external document replacements while retaining the mounted view for ordinary edit echoes. Avoid committing table cells on composition confirmation or browser-window blur.
+
+- e085f4e: Default phone inputs to United States and +1, and add an allowedCountries restriction that selects the first permitted country when US is unavailable.
+- 35df268: Replace form-control focus outlines with a 4px spread halo using existing primary alpha colors and a soft 180ms shadow transition. Apply the same treatment to selection, date/time, search, file, rich-text and code controls; retain danger alpha for invalid fields. Preserve forced-colors focus indicators and honor reduced-motion preferences without changing token definitions.
+- 9b5353a: Establish the Virtari design language with tonal surface roles, purpose-based shape and spacing tokens, and consistent control typography. Remove global optical nudges, allow enlarged text to fit, and standardize logical icon slots across form controls. Existing component APIs and theme modes remain available; defaults intentionally change visually. InputIcon gains an optional logical side.
+- Updated dependencies [ac401c7]
+- Updated dependencies [aeb16a1]
+- Updated dependencies [35df268]
+- Updated dependencies [f2badbc]
+- Updated dependencies [c052c05]
+- Updated dependencies [0c1908a]
+- Updated dependencies [35df268]
+- Updated dependencies [800f0f5]
+- Updated dependencies [9b5353a]
+  - @virtari-packages/react-flag@0.3.1
+  - @virtari-packages/react-input@1.1.0
+  - @virtari-packages/react-select@1.1.1
+  - @virtari-packages/utils@0.5.0
+  - @virtari-packages/primitives@1.1.0
+
 ## 1.0.1
 
 ### Patch Changes

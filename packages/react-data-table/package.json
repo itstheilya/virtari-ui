@@ -1,6 +1,6 @@
 {
   "name": "@virtari-packages/react-data-table",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "Virtari data table — accessible React component built on CSS variables and logical properties.",
   "license": "MIT",
   "author": "Virtari",

@@ -1,5 +1,20 @@
 # @virtari-packages/react-file-upload
 
+## 1.1.1
+
+### Patch Changes
+
+- aeb16a1: Unify field and container appearance through bordered, tonal and elevated surface roles. Preserve semantic focus and invalid cues and stable control geometry. Add smart ScrollArea visibility and viewport access, quiet native desktop scrollbars, mode-aware nested card radii and tones, and flex-gap Stack spacing.
+- 35df268: Replace form-control focus outlines with a 4px spread halo using existing primary alpha colors and a soft 180ms shadow transition. Apply the same treatment to selection, date/time, search, file, rich-text and code controls; retain danger alpha for invalid fields. Preserve forced-colors focus indicators and honor reduced-motion preferences without changing token definitions.
+- Updated dependencies [35df268]
+- Updated dependencies [f2badbc]
+- Updated dependencies [800f0f5]
+- Updated dependencies [9b5353a]
+  - @virtari-packages/utils@0.5.0
+  - @virtari-packages/primitives@1.1.0
+  - @virtari-packages/react-icons@0.4.1
+  - @virtari-packages/react-progress@1.0.1
+
 ## 1.1.0
 
 ### Minor Changes

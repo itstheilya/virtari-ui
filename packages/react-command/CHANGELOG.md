@@ -1,5 +1,31 @@
 # @virtari-packages/react-command
 
+## 0.3.1
+
+### Patch Changes
+
+- 3e03a70: Align command icons and labels in one row, constrain result corner radii, and use the semantic selected-text color. Remove the duplicate dialog backdrop while retaining keyboard selection and focus restoration.
+- aeb16a1: Unify field and container appearance through bordered, tonal and elevated surface roles. Preserve semantic focus and invalid cues and stable control geometry. Add smart ScrollArea visibility and viewport access, quiet native desktop scrollbars, mode-aware nested card radii and tones, and flex-gap Stack spacing.
+- c052c05: Remove clipped primary focus shadows from search fields embedded in command palettes and searchable combobox overlays while preserving forced-colors focus visibility.
+- 35df268: Replace form-control focus outlines with a 4px spread halo using existing primary alpha colors and a soft 180ms shadow transition. Apply the same treatment to selection, date/time, search, file, rich-text and code controls; retain danger alpha for invalid fields. Preserve forced-colors focus indicators and honor reduced-motion preferences without changing token definitions.
+- 800f0f5: Align segmented tracks with field radius roles, distinguish Round from Soft controls, and keep keycaps and small checkboxes appropriately bounded. Resolve nested Flow modes, clamp Editor radius subtraction and use a semantic TimeWheel role.
+
+  Keep tab and segment indicators concentric with their tracks, bound vertical pill tracks, adapt boxed corners to radius modes, and honor explicit/provider/ancestor direction. Publish the styles required by standalone SegmentedControl consumers.
+
+  Add shared platform-aware shortcut formatting and KbdShortcut. Match Windows/Linux Control and Apple Command labels with actual key bindings and ARIA metadata. Ignore handled, composing and repeated hotkey events by default; repeated activation can be opted into.
+
+  Restore the actual opener's focus when a controlled CommandDialog closes, including an input that opened it with a shortcut. Preserve consumer autofocus callbacks and overrides.
+
+- Updated dependencies [aeb16a1]
+- Updated dependencies [35df268]
+- Updated dependencies [f2badbc]
+- Updated dependencies [800f0f5]
+- Updated dependencies [9b5353a]
+  - @virtari-packages/react-dialog@2.0.1
+  - @virtari-packages/utils@0.5.0
+  - @virtari-packages/react-kbd@0.5.0
+  - @virtari-packages/react-icons@0.4.1
+
 ## 0.3.0
 
 ### Minor Changes
