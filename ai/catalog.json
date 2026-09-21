@@ -4,7 +4,7 @@
     {
       "id": "cli",
       "name": "virtari",
-      "version": "0.1.8",
+      "version": "0.1.9",
       "category": "tooling",
       "description": "Source-first CLI that installs editable Virtari React and CSS files with transitive dependencies, conflict protection, diffing, and health checks.",
       "publicSymbols": [],
@@ -31,6 +31,251 @@
         "primitives"
       ],
       "skill": "ai/skills/virtari-cli/SKILL.md"
+    },
+    {
+      "id": "color-engine",
+      "name": "virtari-color-engine",
+      "version": "0.1.0",
+      "category": "foundations",
+      "description": "Framework-agnostic OKLCH scale generation, accent harmony suggestions, WCAG contrast selection and portable Virtari theme export.",
+      "exports": {
+        ".": {
+          "import": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+          },
+          "require": {
+            "types": "./dist/index.d.cts",
+            "default": "./dist/index.cjs"
+          }
+        }
+      },
+      "publicSymbols": [
+        {
+          "name": "Rgb",
+          "kind": "type",
+          "entrypoint": "virtari-color-engine",
+          "sourceId": "packages/color-engine/src/index.ts"
+        },
+        {
+          "name": "Oklch",
+          "kind": "type",
+          "entrypoint": "virtari-color-engine",
+          "sourceId": "packages/color-engine/src/index.ts"
+        },
+        {
+          "name": "ThemeName",
+          "kind": "type",
+          "entrypoint": "virtari-color-engine",
+          "sourceId": "packages/color-engine/src/index.ts"
+        },
+        {
+          "name": "ContrastLevel",
+          "kind": "type",
+          "entrypoint": "virtari-color-engine",
+          "sourceId": "packages/color-engine/src/index.ts"
+        },
+        {
+          "name": "AccentStrategy",
+          "kind": "type",
+          "entrypoint": "virtari-color-engine",
+          "sourceId": "packages/color-engine/src/index.ts"
+        },
+        {
+          "name": "ColorScaleRole",
+          "kind": "type",
+          "entrypoint": "virtari-color-engine",
+          "sourceId": "packages/color-engine/src/index.ts"
+        },
+        {
+          "name": "ColorStep",
+          "kind": "type",
+          "entrypoint": "virtari-color-engine",
+          "sourceId": "packages/color-engine/src/index.ts"
+        },
+        {
+          "name": "ColorScale",
+          "kind": "type",
+          "entrypoint": "virtari-color-engine",
+          "sourceId": "packages/color-engine/src/index.ts"
+        },
+        {
+          "name": "NeutralScaleOptions",
+          "kind": "type",
+          "entrypoint": "virtari-color-engine",
+          "sourceId": "packages/color-engine/src/index.ts"
+        },
+        {
+          "name": "AccentSuggestion",
+          "kind": "type",
+          "entrypoint": "virtari-color-engine",
+          "sourceId": "packages/color-engine/src/index.ts"
+        },
+        {
+          "name": "ForegroundChoice",
+          "kind": "type",
+          "entrypoint": "virtari-color-engine",
+          "sourceId": "packages/color-engine/src/index.ts"
+        },
+        {
+          "name": "VirtariColorTheme",
+          "kind": "type",
+          "entrypoint": "virtari-color-engine",
+          "sourceId": "packages/color-engine/src/index.ts"
+        },
+        {
+          "name": "oklchToRgb",
+          "kind": "export",
+          "entrypoint": "virtari-color-engine",
+          "sourceId": "packages/color-engine/src/index.ts"
+        },
+        {
+          "name": "rgbToOklch",
+          "kind": "export",
+          "entrypoint": "virtari-color-engine",
+          "sourceId": "packages/color-engine/src/index.ts"
+        },
+        {
+          "name": "parseHex",
+          "kind": "export",
+          "entrypoint": "virtari-color-engine",
+          "sourceId": "packages/color-engine/src/index.ts"
+        },
+        {
+          "name": "rgbToHex",
+          "kind": "export",
+          "entrypoint": "virtari-color-engine",
+          "sourceId": "packages/color-engine/src/index.ts"
+        },
+        {
+          "name": "isInSrgbGamut",
+          "kind": "export",
+          "entrypoint": "virtari-color-engine",
+          "sourceId": "packages/color-engine/src/index.ts"
+        },
+        {
+          "name": "gamutMap",
+          "kind": "export",
+          "entrypoint": "virtari-color-engine",
+          "sourceId": "packages/color-engine/src/index.ts"
+        },
+        {
+          "name": "formatOklch",
+          "kind": "export",
+          "entrypoint": "virtari-color-engine",
+          "sourceId": "packages/color-engine/src/index.ts"
+        },
+        {
+          "name": "generateNeutralScale",
+          "kind": "export",
+          "entrypoint": "virtari-color-engine",
+          "sourceId": "packages/color-engine/src/index.ts"
+        },
+        {
+          "name": "generateColorScale",
+          "kind": "export",
+          "entrypoint": "virtari-color-engine",
+          "sourceId": "packages/color-engine/src/index.ts"
+        },
+        {
+          "name": "suggestAccents",
+          "kind": "export",
+          "entrypoint": "virtari-color-engine",
+          "sourceId": "packages/color-engine/src/index.ts"
+        },
+        {
+          "name": "relativeLuminance",
+          "kind": "export",
+          "entrypoint": "virtari-color-engine",
+          "sourceId": "packages/color-engine/src/index.ts"
+        },
+        {
+          "name": "contrastRatio",
+          "kind": "export",
+          "entrypoint": "virtari-color-engine",
+          "sourceId": "packages/color-engine/src/index.ts"
+        },
+        {
+          "name": "chooseForeground",
+          "kind": "export",
+          "entrypoint": "virtari-color-engine",
+          "sourceId": "packages/color-engine/src/index.ts"
+        },
+        {
+          "name": "meetsContrast",
+          "kind": "export",
+          "entrypoint": "virtari-color-engine",
+          "sourceId": "packages/color-engine/src/index.ts"
+        },
+        {
+          "name": "GenerateThemeOptions",
+          "kind": "type",
+          "entrypoint": "virtari-color-engine",
+          "sourceId": "packages/color-engine/src/index.ts"
+        },
+        {
+          "name": "generateVirtariTheme",
+          "kind": "export",
+          "entrypoint": "virtari-color-engine",
+          "sourceId": "packages/color-engine/src/index.ts"
+        },
+        {
+          "name": "parseOklch",
+          "kind": "export",
+          "entrypoint": "virtari-color-engine",
+          "sourceId": "packages/color-engine/src/index.ts"
+        },
+        {
+          "name": "ThemeCssOptions",
+          "kind": "type",
+          "entrypoint": "virtari-color-engine",
+          "sourceId": "packages/color-engine/src/index.ts"
+        },
+        {
+          "name": "themeToCss",
+          "kind": "export",
+          "entrypoint": "virtari-color-engine",
+          "sourceId": "packages/color-engine/src/index.ts"
+        },
+        {
+          "name": "themeToJson",
+          "kind": "export",
+          "entrypoint": "virtari-color-engine",
+          "sourceId": "packages/color-engine/src/index.ts"
+        },
+        {
+          "name": "parseNeutralImport",
+          "kind": "export",
+          "entrypoint": "virtari-color-engine",
+          "sourceId": "packages/color-engine/src/index.ts"
+        }
+      ],
+      "externalReexports": [],
+      "sourceIds": [
+        "packages/color-engine/src/index.ts",
+        "packages/color-engine/package.json"
+      ],
+      "exampleIds": [
+        "color-generator/1",
+        "gray-shade-maker/page"
+      ],
+      "guidance": [
+        "Install 'virtari-color-engine' for headless use, or add its editable source through the Virtari source registry.",
+        "Use generateNeutralScale for tinted gray palettes, suggestAccents for color-theory candidates and generateVirtariTheme for complete light, dark and dark-oled token documents.",
+        "Use themeToCss or themeToJson for portable outputs. The CSS export binds Virtari primitive scales and the canonical on-primary and on-accent foreground roles.",
+        "Use chooseForeground and contrastRatio for opaque sRGB pairs, then validate the final composited interface in its real states."
+      ],
+      "pitfalls": [
+        "The contrast result covers the supplied color pair; it does not establish page-level WCAG conformance.",
+        "Do not present WCAG 3 or APCA as stable conformance standards.",
+        "Do not create parallel color variables when a generated Virtari role already exists."
+      ],
+      "related": [
+        "tokens",
+        "react-color-picker",
+        "react-layout"
+      ],
+      "skill": "ai/skills/virtari-color-engine/SKILL.md"
     },
     {
       "id": "core",
@@ -4334,6 +4579,7 @@
         "card/4",
         "card/5",
         "card/6",
+        "color-generator/1",
         "data-table-users/page",
         "design-guidelines/1",
         "design-guidelines/2",
@@ -4932,6 +5178,7 @@
         "collapsible/1",
         "collapsible/2",
         "collapsible/3",
+        "color-generator/1",
         "colors/1",
         "command/1",
         "command/2",
@@ -5007,6 +5254,7 @@
         "form/2",
         "form/3",
         "form/4",
+        "gray-shade-maker/page",
         "header/1",
         "header/2",
         "header/3",
@@ -5354,11 +5602,13 @@
         "code/10",
         "code/11",
         "code/12",
+        "color-generator/1",
         "design-guidelines/1",
         "design-guidelines/2",
         "design-guidelines/3",
         "design-guidelines/4",
         "design-guidelines/5",
+        "gray-shade-maker/page",
         "introduction/1",
         "introduction/2",
         "introduction/3",
@@ -6953,6 +7203,7 @@
         "packages/react-color-picker/package.json"
       ],
       "exampleIds": [
+        "color-generator/1",
         "color-picker/1",
         "color-picker/2",
         "color-picker/3",
@@ -13837,6 +14088,7 @@
         "chip/13",
         "chip/14",
         "chip/15",
+        "color-generator/1",
         "command/1",
         "command/2",
         "command/3",
@@ -13849,6 +14101,7 @@
         "file-upload/4",
         "file-upload/5",
         "file-upload/6",
+        "gray-shade-maker/page",
         "input/1",
         "input/2",
         "input/3",
@@ -14205,6 +14458,7 @@
         "chip/13",
         "chip/14",
         "chip/15",
+        "color-generator/1",
         "colors/1",
         "data-table-users/page",
         "design-guidelines/1",
@@ -14272,6 +14526,7 @@
         "form/2",
         "form/3",
         "form/4",
+        "gray-shade-maker/page",
         "icons/1",
         "icons/2",
         "icons/3",
@@ -15045,6 +15300,7 @@
         "code/10",
         "code/11",
         "code/12",
+        "color-generator/1",
         "colors/1",
         "composition/1",
         "composition/2",
@@ -15057,6 +15313,7 @@
         "design-guidelines/3",
         "design-guidelines/4",
         "design-guidelines/5",
+        "gray-shade-maker/page",
         "input/1",
         "input/2",
         "input/3",
@@ -16540,6 +16797,7 @@
         "packages/react-segmented-control/package.json"
       ],
       "exampleIds": [
+        "color-generator/1",
         "colors/1",
         "design-guidelines/1",
         "design-guidelines/2",
@@ -17505,6 +17763,7 @@
         "drawer/18",
         "drawer/19",
         "drawer/20",
+        "gray-shade-maker/page",
         "slider/1",
         "slider/2",
         "slider/3",
@@ -17752,6 +18011,7 @@
         "packages/react-stepper/package.json"
       ],
       "exampleIds": [
+        "color-generator/1",
         "stepper/1",
         "stepper/2",
         "stepper/3",
@@ -17918,6 +18178,7 @@
         "drawer/18",
         "drawer/19",
         "drawer/20",
+        "gray-shade-maker/page",
         "input/1",
         "input/2",
         "input/3",
@@ -18788,6 +19049,7 @@
         "packages/react-textarea/package.json"
       ],
       "exampleIds": [
+        "color-generator/1",
         "design-guidelines/1",
         "design-guidelines/2",
         "design-guidelines/3",
@@ -19382,6 +19644,7 @@
         "badge/13",
         "badge/14",
         "badge/15",
+        "color-generator/1",
         "colors/1",
         "data-table-orders/page",
         "data-table/1",
@@ -19409,6 +19672,7 @@
         "flow/3",
         "flow/4",
         "flow/5",
+        "gray-shade-maker/page",
         "toast/1",
         "toast/2",
         "toast/3",
@@ -158249,6 +158513,45 @@
       ]
     },
     {
+      "id": "color-generator/1",
+      "title": "Build a complete brand palette",
+      "page": "color-generator",
+      "packageIds": [
+        "color-engine",
+        "react-badge",
+        "react-button",
+        "react-card",
+        "react-color-picker",
+        "react-icons",
+        "react-input",
+        "react-layout",
+        "react-segmented-control",
+        "react-stepper",
+        "react-textarea",
+        "react-toast"
+      ],
+      "sourceId": "apps/docs/src/pages/ColorGeneratorPage.tsx",
+      "startLine": 248,
+      "endLine": 263,
+      "code": "<Section\n        title=\"Build a complete brand palette\"\n        description=\"Choose three inputs. Virtari generates accessible light and dark tokens, applies them here instantly, and keeps your draft on this device.\"\n      >\n        <Cluster justify=\"between\" align=\"center\" gap=\"md\">\n          <Stepper activeStep={step} size=\"sm\" variant=\"soft\" tone=\"primary\" aria-label=\"Color generator progress\" className=\"docs-color-engine-stepper\">\n            <StepperStep label=\"Primary\" />\n            <StepperStep label=\"Accent\" />\n            <StepperStep label=\"Gray\" />\n            <StepperStep label=\"Export\" />\n          </Stepper>\n          <Button type=\"button\" size=\"sm\" color=\"contrast\" variant=\"ghost\" leftSection={<IconRefresh size={16} aria-hidden />} onClick={resetTheme}>\n            Reset\n          </Button>\n        </Cluster>\n      </Section>",
+      "imports": [
+        "import { useEffect, useMemo, useState } from \"react\";",
+        "import {\n  generateVirtariTheme,\n  parseNeutralImport,\n  suggestAccents,\n  themeToCss,\n  themeToJson,\n  type AccentStrategy,\n  type ColorScale,\n  type ThemeName,\n  type VirtariColorTheme,\n} from \"virtari-color-engine\";",
+        "import { Badge } from \"@virtari-packages/react-badge\";",
+        "import { Button } from \"@virtari-packages/react-button\";",
+        "import {\n  Card,\n  CardContent,\n  CardDescription,\n  CardHeader,\n  CardTitle,\n} from \"@virtari-packages/react-card\";",
+        "import { ColorPicker, rgbaToHexString } from \"@virtari-packages/react-color-picker\";",
+        "import {\n  IconArrowLeft,\n  IconArrowRight,\n  IconCheck,\n  IconDownload,\n  IconRefresh,\n  IconSparkles,\n} from \"@virtari-packages/react-icons\";",
+        "import { Cluster, Grid, Stack } from \"@virtari-packages/react-layout\";",
+        "import {\n  SegmentedControl,\n  SegmentedControlItem,\n} from \"@virtari-packages/react-segmented-control\";",
+        "import { Stepper, StepperStep } from \"@virtari-packages/react-stepper\";",
+        "import { InputField } from \"@virtari-packages/react-input\";",
+        "import { TextareaField } from \"@virtari-packages/react-textarea\";",
+        "import { toast } from \"@virtari-packages/react-toast\";",
+        "import { Section } from \"../components\";"
+      ]
+    },
+    {
       "id": "color-picker/1",
       "title": "Controlled solid color",
       "page": "color-picker",
@@ -162098,6 +162401,39 @@
         "import {\n  Select,\n  SelectContent,\n  SelectItem,\n  SelectTrigger,\n  SelectValue,\n} from \"@virtari-packages/react-select\";",
         "import \"@virtari-packages/react-select/styles\";",
         "import { Section } from \"../components\";"
+      ]
+    },
+    {
+      "id": "gray-shade-maker/page",
+      "title": "gray-shade-maker page",
+      "page": "gray-shade-maker",
+      "packageIds": [
+        "color-engine",
+        "react-button",
+        "react-card",
+        "react-icons",
+        "react-input",
+        "react-layout",
+        "react-slider",
+        "react-switch",
+        "react-toast"
+      ],
+      "sourceId": "apps/docs/src/pages/GrayShadeMakerPage.tsx",
+      "startLine": 1,
+      "endLine": 319,
+      "code": null,
+      "imports": [
+        "import { useEffect, useMemo, useState, type CSSProperties } from \"react\";",
+        "import { Button } from \"@virtari-packages/react-button\";",
+        "import {\n  Card,\n  CardContent,\n  CardDescription,\n  CardFooter,\n  CardHeader,\n  CardTitle,\n} from \"@virtari-packages/react-card\";",
+        "import { IconCheck, IconCopy, IconDownload, IconRefresh } from \"@virtari-packages/react-icons\";",
+        "import { Input } from \"@virtari-packages/react-input\";",
+        "import { Cluster, Stack } from \"@virtari-packages/react-layout\";",
+        "import { Slider } from \"@virtari-packages/react-slider\";",
+        "import { Switch } from \"@virtari-packages/react-switch\";",
+        "import { toast } from \"@virtari-packages/react-toast\";",
+        "import {\n  chooseForeground,\n  generateNeutralScale,\n  oklchToRgb,\n  parseOklch,\n  rgbToHex,\n  type ColorScale,\n  type ColorStep,\n} from \"virtari-color-engine\";",
+        "import { useTranslation } from \"react-i18next\";"
       ]
     },
     {
@@ -168971,8 +169307,8 @@
     },
     {
       "id": "apps/docs/src/App.tsx",
-      "sha256": "437a06986b64aa12664c989c2875e01c4fafdc3d11a32f2e028a91e898816338",
-      "bytes": 11423,
+      "sha256": "7e3f18d8346c51b4a5689dad32d779be11f9af7d5f87e4f9c44886c7f323fd05",
+      "bytes": 11550,
       "kind": "tsx"
     },
     {
@@ -169043,8 +169379,8 @@
     },
     {
       "id": "apps/docs/src/components/navigation.tsx",
-      "sha256": "e989a1ecd9a7db4c9ddf69956b809bb121b2ce6cac1721d34ad568af4c61616a",
-      "bytes": 7809,
+      "sha256": "5e68b2417dbdcecfaee6932c4df6b0a65e2d21434abd522f7b5eff1c7feca95d",
+      "bytes": 8064,
       "kind": "tsx"
     },
     {
@@ -169073,14 +169409,14 @@
     },
     {
       "id": "apps/docs/src/i18n/locales/en/nav.json",
-      "sha256": "f672c4e792b627759580e72b58ab4c3e6a71983f1bea744f05f7b682fe8adc86",
-      "bytes": 2119,
+      "sha256": "037e9a20fd4187873ef193810c2c1966f7668b50996c39e2747f82eaaf001dbb",
+      "bytes": 2201,
       "kind": "json"
     },
     {
       "id": "apps/docs/src/i18n/locales/en/pageMeta.json",
-      "sha256": "93aff54a62bf5e19c4ea3e7b94eff6c9ac297bc6440be81e134911a7991ef0a6",
-      "bytes": 12952,
+      "sha256": "a387a7b18cbee7f5840669f3a1a3db9ec4460b4a89180132ed4e2a4483a796c1",
+      "bytes": 13274,
       "kind": "json"
     },
     {
@@ -169097,14 +169433,14 @@
     },
     {
       "id": "apps/docs/src/i18n/locales/fa/nav.json",
-      "sha256": "5e116fda7be51b0bf7869a1df94a0c997174549a68bac23ac59018f0125f8a32",
-      "bytes": 4908,
+      "sha256": "2fa7d61e23484eadddc6f2b49e59dbf767e4c2ef55ae11bface29e79fe0fe474",
+      "bytes": 5100,
       "kind": "json"
     },
     {
       "id": "apps/docs/src/i18n/locales/fa/pageMeta.json",
-      "sha256": "f9bbc87044427e0a838b153cb9729f6e3c17b0fa205d30be2ec6d5bd5c56cb1a",
-      "bytes": 17129,
+      "sha256": "7ecb3d42a49913125b81f261208597f8020a890c262e2d7ba95c1c5eb44f6109",
+      "bytes": 17554,
       "kind": "json"
     },
     {
@@ -169213,6 +169549,12 @@
       "id": "apps/docs/src/pages/CollapsiblePage.tsx",
       "sha256": "dc4b828801103f5c8f6935ab8fe96c0453fdf7b665ec09c54405ca93aee04589",
       "bytes": 3025,
+      "kind": "tsx"
+    },
+    {
+      "id": "apps/docs/src/pages/ColorGeneratorPage.tsx",
+      "sha256": "ce0a7e8377d3229569db70d921aa6c05ea8f8da56022969b2ab30357d9d41113",
+      "bytes": 19046,
       "kind": "tsx"
     },
     {
@@ -169333,6 +169675,12 @@
       "id": "apps/docs/src/pages/FormPage.tsx",
       "sha256": "faf68a494e895908f3093506bf7b1968272048463418f59183949c3b684fe21e",
       "bytes": 10559,
+      "kind": "tsx"
+    },
+    {
+      "id": "apps/docs/src/pages/GrayShadeMakerPage.tsx",
+      "sha256": "9a136de8792bec20a736e319d25616de372c47769a059b9471d5f3c9dd1723e8",
+      "bytes": 13157,
       "kind": "tsx"
     },
     {
@@ -169601,8 +169949,8 @@
     },
     {
       "id": "apps/docs/src/pages/index.ts",
-      "sha256": "b44d0743f2df8cb091e18327f7cf145b4bf5c50daaf28de13d0043e27b10af03",
-      "bytes": 16538,
+      "sha256": "25166216b47fb3760c67c02659c43cbf6809ef885c6d194e02b806089a8644d6",
+      "bytes": 16952,
       "kind": "ts"
     },
     {
@@ -169630,6 +169978,12 @@
       "kind": "ts"
     },
     {
+      "id": "apps/docs/src/styles/color-generator.css",
+      "sha256": "7d5cd5bd24225913f87b9063191447b11eb46b009147760475581cf6df0fef82",
+      "bytes": 3711,
+      "kind": "css"
+    },
+    {
       "id": "apps/docs/src/styles/docs.css",
       "sha256": "8ffb3a9e1a6a2a7e5a067bc09649f301c328705eded932eb9536280b7641e91e",
       "bytes": 13271,
@@ -169637,8 +169991,14 @@
     },
     {
       "id": "apps/docs/src/styles/global.css",
-      "sha256": "40affd027365b21cd8d8abc7a4ad3be10b472baef313e903cd2bc8fa97fb61aa",
-      "bytes": 3234,
+      "sha256": "c5086492926cb39bbb522688390d6a6add12351acc4794644a73ff64990a6e77",
+      "bytes": 3301,
+      "kind": "css"
+    },
+    {
+      "id": "apps/docs/src/styles/gray-shade-maker.css",
+      "sha256": "d40453caf1d5f0c767a17c4cde80af78142be33aa0534e64d50a39db1640df6e",
+      "bytes": 4119,
       "kind": "css"
     },
     {
@@ -169663,6 +170023,12 @@
       "id": "docs/brand-assets.md",
       "sha256": "ff8d1166697d98bed83ae9a50ec08b9bc6609043e8c39f306a0134d4082708b9",
       "bytes": 1417,
+      "kind": "md"
+    },
+    {
+      "id": "docs/color-engine.md",
+      "sha256": "7c125238151408ac459503f28003de355071dab8b59f33e73b422de5f71ce507",
+      "bytes": 2140,
       "kind": "md"
     },
     {
@@ -169859,9 +170225,21 @@
     },
     {
       "id": "packages/cli/package.json",
-      "sha256": "25fb02f49aef800f25c548ad1a2298f9d09389662be030864ab069890a8f0907",
+      "sha256": "de6df579cb11c431b5956f1e7ab4f7c79a014e83ce65dd736737f13396e6c6d5",
       "bytes": 973,
       "kind": "json"
+    },
+    {
+      "id": "packages/color-engine/package.json",
+      "sha256": "788f085d481315405a90e2522451b0c0fefd5343e29a9e9b7bdd7a5838b125a8",
+      "bytes": 1296,
+      "kind": "json"
+    },
+    {
+      "id": "packages/color-engine/src/index.ts",
+      "sha256": "62a31a3c5e6faa207c10ed38658e25ce54d8a2c6c51cb4a07c1aa9aa26ae6200",
+      "bytes": 15215,
+      "kind": "ts"
     },
     {
       "id": "packages/core/package.json",
@@ -176105,8 +176483,8 @@
     },
     {
       "id": "registry.json",
-      "sha256": "a0b55a78c0186265ee397d294fd2368a60b42601f5c9aed388177c8b9a6a10ed",
-      "bytes": 284286,
+      "sha256": "c127a6e2131a1fe78e61a48bd97a1a16ced7ab68b9a5e64ffb155c7861b57efb",
+      "bytes": 284850,
       "kind": "json"
     },
     {

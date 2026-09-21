@@ -4,6 +4,7 @@
 
 All documentation sections importing this package (some demonstrate another package):
 
+- `color-generator/1` — Build a complete brand palette; source `apps/docs/src/pages/ColorGeneratorPage.tsx` lines 248–263.
 - `color-picker/1` — Controlled solid color; source `apps/docs/src/pages/ColorPickerPage.tsx` lines 98–122.
 - `color-picker/2` — Gradient authoring; source `apps/docs/src/pages/ColorPickerPage.tsx` lines 124–181.
 - `color-picker/3` — Code mode and constrained palettes; source `apps/docs/src/pages/ColorPickerPage.tsx` lines 183–223.

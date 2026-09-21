@@ -11,6 +11,8 @@ const ICONS: Record<string, ReactNode> = {
 
   sizing: <IconRuler {...navIconProps} />,
   colors: <IconPalette {...navIconProps} />,
+  "gray-shade-maker": <IconPalette {...navIconProps} />,
+  "color-generator": <IconPalette {...navIconProps} />,
   typography: <IconTypography {...navIconProps} />,
   icons: <IconIcons {...navIconProps} />,
   composition: <IconLayoutBoard {...navIconProps} />,
@@ -103,6 +105,8 @@ export const NAV_ITEMS: NavGroupData[] = [
       "brand",
       "sizing",
       "colors",
+      "gray-shade-maker",
+      "color-generator",
       "typography",
       "icons",
       "composition",
@@ -199,6 +203,8 @@ export function getPageIcon(path: string) { return ICONS[path] ?? FALLBACK_ICON;
 const INSTALL_ALIASES: Record<string, string> = {
   composition: "layout",
   colors: "virtari-tokens",
+  "gray-shade-maker": "virtari-color-engine",
+  "color-generator": "virtari-color-engine",
   heading: "text",
   sizing: "virtari-tokens",
   typography: "virtari-tokens",

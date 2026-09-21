@@ -94,6 +94,7 @@ All documentation sections importing this package (some demonstrate another pack
 - `drawer/18` — Playground; source `apps/docs/src/pages/DrawerPage.tsx` lines 1723–1728.
 - `drawer/19` — Installation & imports; source `apps/docs/src/pages/DrawerPage.tsx` lines 1730–1742.
 - `drawer/20` — API reference; source `apps/docs/src/pages/DrawerPage.tsx` lines 1744–1788.
+- `gray-shade-maker/page` — gray-shade-maker page; source `apps/docs/src/pages/GrayShadeMakerPage.tsx` lines 1–319.
 - `input/1` — Field composition; source `apps/docs/src/pages/InputPage.tsx` lines 23–28.
 - `input/2` — Sizes; source `apps/docs/src/pages/InputPage.tsx` lines 29–31.
 - `input/3` — Icons and affixes; source `apps/docs/src/pages/InputPage.tsx` lines 32–39.

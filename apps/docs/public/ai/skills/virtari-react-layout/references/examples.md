@@ -54,6 +54,7 @@ All documentation sections importing this package (some demonstrate another pack
 - `code/10` — Live editor; source `apps/docs/src/pages/CodePage.tsx` lines 406–450.
 - `code/11` — Inline code; source `apps/docs/src/pages/CodePage.tsx` lines 453–463.
 - `code/12` — In context — embedded inside a Card; source `apps/docs/src/pages/CodePage.tsx` lines 466–483.
+- `color-generator/1` — Build a complete brand palette; source `apps/docs/src/pages/ColorGeneratorPage.tsx` lines 248–263.
 - `colors/1` — {copy("Color catalog", "فهرست رنگ‌ها")}; source `apps/docs/src/pages/ColorsPage.tsx` lines 43–62.
 - `composition/1` — Stack; source `apps/docs/src/pages/CompositionPage.tsx` lines 28–44.
 - `composition/2` — Cluster; source `apps/docs/src/pages/CompositionPage.tsx` lines 46–65.
@@ -66,6 +67,7 @@ All documentation sections importing this package (some demonstrate another pack
 - `design-guidelines/3` — {copy("Make keyboard use predictable", "کار با کیبورد را پیش‌بینی‌پذیر کنید")}; source `apps/docs/src/pages/DesignGuidelinesPage.tsx` lines 78–88.
 - `design-guidelines/4` — {copy("Compose patterns, not copies", "الگوها را ترکیب کنید، کپی نسازید")}; source `apps/docs/src/pages/DesignGuidelinesPage.tsx` lines 89–91.
 - `design-guidelines/5` — {copy("Design the complete state", "حالت کامل را طراحی کنید")}; source `apps/docs/src/pages/DesignGuidelinesPage.tsx` lines 92–101.
+- `gray-shade-maker/page` — gray-shade-maker page; source `apps/docs/src/pages/GrayShadeMakerPage.tsx` lines 1–319.
 - `input/1` — Field composition; source `apps/docs/src/pages/InputPage.tsx` lines 23–28.
 - `input/2` — Sizes; source `apps/docs/src/pages/InputPage.tsx` lines 29–31.
 - `input/3` — Icons and affixes; source `apps/docs/src/pages/InputPage.tsx` lines 32–39.

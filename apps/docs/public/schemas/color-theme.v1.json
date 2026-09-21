@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://virtari.iamilya.com/schemas/color-theme.v1.json",
+  "title": "Virtari color theme",
+  "type": "object",
+  "required": ["schema", "name", "generatedAt", "source", "themes"],
+  "properties": {
+    "schema": { "const": "https://virtari.iamilya.com/schemas/color-theme.v1.json" },
+    "name": { "type": "string", "minLength": 1 },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "source": {
+      "type": "object",
+      "required": ["primary", "accent", "neutralHue", "neutralChroma"],
+      "properties": {
+        "primary": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
+        "accent": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
+        "neutralHue": { "type": "number", "minimum": 0, "exclusiveMaximum": 360 },
+        "neutralChroma": { "type": "number", "minimum": 0, "maximum": 0.04 }
+      },
+      "additionalProperties": false
+    },
+    "themes": {
+      "type": "object",
+      "required": ["light", "dark"],
+      "properties": {
+        "light": { "$ref": "#/$defs/theme" },
+        "dark": { "$ref": "#/$defs/theme" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "$defs": {
+    "scale": {
+      "type": "object",
+      "required": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],
+      "additionalProperties": { "type": "string", "pattern": "^oklch\\(" }
+    },
+    "foreground": {
+      "type": "object",
+      "required": ["color", "ratio", "aa", "aaLarge", "aaa", "aaaLarge"],
+      "properties": {
+        "color": { "enum": ["#000000", "#FFFFFF"] },
+        "ratio": { "type": "number", "minimum": 1, "maximum": 21 },
+        "aa": { "type": "boolean" },
+        "aaLarge": { "type": "boolean" },
+        "aaa": { "type": "boolean" },
+        "aaaLarge": { "type": "boolean" }
+      },
+      "additionalProperties": false
+    },
+    "theme": {
+      "type": "object",
+      "required": ["neutral", "primary", "accent", "foreground"],
+      "properties": {
+        "neutral": { "$ref": "#/$defs/scale" },
+        "primary": { "$ref": "#/$defs/scale" },
+        "accent": { "$ref": "#/$defs/scale" },
+        "foreground": {
+          "type": "object",
+          "required": ["primary", "accent"],
+          "properties": {
+            "primary": { "$ref": "#/$defs/foreground" },
+            "accent": { "$ref": "#/$defs/foreground" }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

@@ -65,6 +65,7 @@ All documentation sections importing this package (some demonstrate another pack
 - `chip/13` — Example — Product card meta; source `apps/docs/src/pages/ChipPage.tsx` lines 504–616.
 - `chip/14` — Example — Event metadata; source `apps/docs/src/pages/ChipPage.tsx` lines 619–643.
 - `chip/15` — Usage; source `apps/docs/src/pages/ChipPage.tsx` lines 646–670.
+- `color-generator/1` — Build a complete brand palette; source `apps/docs/src/pages/ColorGeneratorPage.tsx` lines 248–263.
 - `colors/1` — {copy("Color catalog", "فهرست رنگ‌ها")}; source `apps/docs/src/pages/ColorsPage.tsx` lines 43–62.
 - `data-table-users/page` — data-table-users page; source `apps/docs/src/pages/DataTableUsersPage.tsx` lines 1–1553.
 - `design-guidelines/1` — {copy("Make every field understandable", "هر فیلد را قابل‌فهم کنید")}; source `apps/docs/src/pages/DesignGuidelinesPage.tsx` lines 61–69.
@@ -132,6 +133,7 @@ All documentation sections importing this package (some demonstrate another pack
 - `form/2` — Signup form; source `apps/docs/src/pages/FormPage.tsx` lines 239–244.
 - `form/3` — Mixed controls; source `apps/docs/src/pages/FormPage.tsx` lines 246–251.
 - `form/4` — Usage; source `apps/docs/src/pages/FormPage.tsx` lines 253–296.
+- `gray-shade-maker/page` — gray-shade-maker page; source `apps/docs/src/pages/GrayShadeMakerPage.tsx` lines 1–319.
 - `icons/1` — Browse; source `apps/docs/src/pages/IconsPage.tsx` lines 120–204.
 - `icons/2` — Grid; source `apps/docs/src/pages/IconsPage.tsx` lines 206–215.
 - `icons/3` — Usage; source `apps/docs/src/pages/IconsPage.tsx` lines 217–232.

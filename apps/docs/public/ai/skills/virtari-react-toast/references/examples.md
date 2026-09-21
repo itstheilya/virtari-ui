@@ -19,6 +19,7 @@ All documentation sections importing this package (some demonstrate another pack
 - `badge/13` — Composition patterns; source `apps/docs/src/pages/BadgePage.tsx` lines 667–700.
 - `badge/14` — API reference; source `apps/docs/src/pages/BadgePage.tsx` lines 706–726.
 - `badge/15` — Accessibility; source `apps/docs/src/pages/BadgePage.tsx` lines 732–761.
+- `color-generator/1` — Build a complete brand palette; source `apps/docs/src/pages/ColorGeneratorPage.tsx` lines 248–263.
 - `colors/1` — {copy("Color catalog", "فهرست رنگ‌ها")}; source `apps/docs/src/pages/ColorsPage.tsx` lines 43–62.
 - `data-table-orders/page` — data-table-orders page; source `apps/docs/src/pages/DataTableOrdersPage.tsx` lines 1–490.
 - `data-table/1` — Basic; source `apps/docs/src/pages/DataTablePage.tsx` lines 1087–1092.
@@ -46,6 +47,7 @@ All documentation sections importing this package (some demonstrate another pack
 - `flow/3` — Layered Layout; source `apps/docs/src/pages/FlowPage.tsx` lines 805–810.
 - `flow/4` — Persistence + Handoff; source `apps/docs/src/pages/FlowPage.tsx` lines 812–817.
 - `flow/5` — Best Practices 2026; source `apps/docs/src/pages/FlowPage.tsx` lines 819–828.
+- `gray-shade-maker/page` — gray-shade-maker page; source `apps/docs/src/pages/GrayShadeMakerPage.tsx` lines 1–319.
 - `toast/1` — Live Toaster controls; source `apps/docs/src/pages/ToastPage.tsx` lines 261–382.
 - `toast/2` — Variants; source `apps/docs/src/pages/ToastPage.tsx` lines 388–451.
 - `toast/3` — Positions; source `apps/docs/src/pages/ToastPage.tsx` lines 461–489.

@@ -1,0 +1,58 @@
+{
+  "name": "virtari-color-engine",
+  "version": "0.1.0",
+  "description": "Framework-agnostic OKLCH palette generation, contrast selection, and Virtari token export.",
+  "license": "MIT",
+  "author": "Ilya",
+  "homepage": "https://virtari.iamilya.com/#/color-engine",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itstheilya/virtari-ui.git",
+    "directory": "packages/color-engine"
+  },
+  "bugs": {
+    "url": "https://github.com/itstheilya/virtari-ui/issues"
+  },
+  "keywords": [
+    "color",
+    "design-system",
+    "oklch",
+    "contrast",
+    "wcag",
+    "tokens",
+    "virtari"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "scripts": {
+    "build": "tsup",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit",
+    "test": "pnpm build && node --test test/*.test.mjs"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "tsup": "^8.0.0"
+  }
+}

@@ -310,5 +310,13 @@
   "brand": {
     "title": "Brand",
     "description": "Virtari marks, app icons and loading states."
+  },
+  "gray-shade-maker": {
+    "title": "Gray Shade Maker",
+    "description": "Build a perceptual neutral scale and export it in Virtari portable token format."
+  },
+  "color-generator": {
+    "title": "Color Generator",
+    "description": "Turn brand colors and neutral shades into an accessible, live Virtari theme."
   }
 }

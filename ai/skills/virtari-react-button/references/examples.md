@@ -65,6 +65,7 @@ All documentation sections importing this package (some demonstrate another pack
 - `collapsible/1` — Basic; source `apps/docs/src/pages/CollapsiblePage.tsx` lines 16–42.
 - `collapsible/2` — Default Open; source `apps/docs/src/pages/CollapsiblePage.tsx` lines 44–57.
 - `collapsible/3` — Usage; source `apps/docs/src/pages/CollapsiblePage.tsx` lines 59–70.
+- `color-generator/1` — Build a complete brand palette; source `apps/docs/src/pages/ColorGeneratorPage.tsx` lines 248–263.
 - `colors/1` — {copy("Color catalog", "فهرست رنگ‌ها")}; source `apps/docs/src/pages/ColorsPage.tsx` lines 43–62.
 - `command/1` — Overview; source `apps/docs/src/pages/CommandPage.tsx` lines 273–280.
 - `command/2` — Inline palette; source `apps/docs/src/pages/CommandPage.tsx` lines 282–287.
@@ -140,6 +141,7 @@ All documentation sections importing this package (some demonstrate another pack
 - `form/2` — Signup form; source `apps/docs/src/pages/FormPage.tsx` lines 239–244.
 - `form/3` — Mixed controls; source `apps/docs/src/pages/FormPage.tsx` lines 246–251.
 - `form/4` — Usage; source `apps/docs/src/pages/FormPage.tsx` lines 253–296.
+- `gray-shade-maker/page` — gray-shade-maker page; source `apps/docs/src/pages/GrayShadeMakerPage.tsx` lines 1–319.
 - `header/1` — Structure; source `apps/docs/src/pages/HeaderPage.tsx` lines 148–174.
 - `header/2` — Basic — single row; source `apps/docs/src/pages/HeaderPage.tsx` lines 176–205.
 - `header/3` — All three rows — sticky: always; source `apps/docs/src/pages/HeaderPage.tsx` lines 207–270.

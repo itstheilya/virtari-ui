@@ -65,4 +65,6 @@
 
 /* Docs app styles */
 @import "./docs.css";
+@import "./gray-shade-maker.css";
+@import "./color-generator.css";
 @import "./shell.css";

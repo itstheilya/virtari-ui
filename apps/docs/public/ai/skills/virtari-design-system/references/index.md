@@ -5,6 +5,7 @@ These paths are relative to the installed skill bundle root. Load the focused sk
 ## Packages
 
 - `virtari-cli/SKILL.md` — Source-first CLI that installs editable Virtari React and CSS files with transitive dependencies, conflict protection, diffing, and health checks.
+- `virtari-color-engine/SKILL.md` — Framework-agnostic OKLCH scale generation, accent harmony suggestions, WCAG contrast selection and portable Virtari theme export.
 - `virtari-core/SKILL.md` — Global CSS reset, cascade ordering, base typography, focus, native scrolling and visually hidden helpers.
 - `virtari-primitives/SKILL.md` — Headless React behavior primitives underlying Virtari components, exposed through explicit package subpaths.
 - `virtari-react-accordion/SKILL.md` — Single or multiple disclosure groups, semantic heading triggers, and a data-driven FAQ wrapper.

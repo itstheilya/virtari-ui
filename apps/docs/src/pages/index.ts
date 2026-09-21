@@ -17,6 +17,8 @@ export { SelectPage } from "./SelectPage";
 export { DialogPage } from "./DialogPage";
 export { DrawerPage } from "./DrawerPage";
 export { ColorsPage } from "./ColorsPage";
+export { GrayShadeMakerPage } from "./GrayShadeMakerPage";
+export { ColorGeneratorPage } from "./ColorGeneratorPage";
 export { TypographyPage } from "./TypographyPage";
 export { SizingPage } from "./SizingPage";
 export { TooltipPage } from "./TooltipPage";
@@ -86,6 +88,8 @@ export const PAGE_META: Record<string, { title: string; description: string }> =
   installation: { title: "Source installation", description: "Add one component or the complete Virtari system as editable project source." },
   sizing: { title: "Sizing", description: "Unified size system, height ramp, WCAG compliance." },
   colors: { title: "Colors", description: "OKLCH color palette and semantic token reference." },
+  "gray-shade-maker": { title: "Gray Shade Maker", description: "Build a perceptual neutral scale and export it in Virtari's portable token format." },
+  "color-generator": { title: "Color Generator", description: "Turn brand colors and neutral shades into an accessible, live Virtari theme." },
   typography: { title: "Typography", description: "Font scale, weights, and font family tokens." },
   button: { title: "Button", description: "Five appearance variants, eight sizes, icon slots, loading and deliberate motion options." },
   "button-group": {

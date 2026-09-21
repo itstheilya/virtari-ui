@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://virtari.iamilya.com/schemas/neutral-palette.v1.json",
+  "title": "Virtari neutral palette",
+  "type": "object",
+  "required": ["schema", "kind", "generatedAt", "settings", "themes"],
+  "properties": {
+    "schema": { "const": "https://virtari.iamilya.com/schemas/neutral-palette.v1.json" },
+    "kind": { "const": "virtari-neutral-scale" },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "settings": {
+      "type": "object",
+      "required": ["hue", "chroma", "oled"],
+      "properties": {
+        "hue": { "type": "number", "minimum": 0, "maximum": 360 },
+        "chroma": { "type": "number", "minimum": 0, "maximum": 0.04 },
+        "oled": { "type": "boolean" }
+      },
+      "additionalProperties": false
+    },
+    "themes": {
+      "type": "object",
+      "required": ["light", "dark"],
+      "properties": {
+        "light": { "$ref": "#/$defs/theme" },
+        "dark": { "$ref": "#/$defs/theme" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "$defs": {
+    "scale": {
+      "type": "object",
+      "required": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],
+      "additionalProperties": { "type": "string", "pattern": "^oklch\\(" }
+    },
+    "theme": {
+      "type": "object",
+      "required": ["neutral"],
+      "properties": { "neutral": { "$ref": "#/$defs/scale" } },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
