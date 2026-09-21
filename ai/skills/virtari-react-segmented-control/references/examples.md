@@ -4,7 +4,7 @@
 
 All documentation sections importing this package (some demonstrate another package):
 
-- `color-generator/1` — Build a complete brand palette; source `apps/docs/src/pages/ColorGeneratorPage.tsx` lines 248–263.
+- `color-generator/1` — Build your color system; source `apps/docs/src/pages/ColorGeneratorPage.tsx` lines 155–160.
 - `colors/1` — {copy("Color catalog", "فهرست رنگ‌ها")}; source `apps/docs/src/pages/ColorsPage.tsx` lines 43–62.
 - `design-guidelines/1` — {copy("Make every field understandable", "هر فیلد را قابل‌فهم کنید")}; source `apps/docs/src/pages/DesignGuidelinesPage.tsx` lines 61–69.
 - `design-guidelines/2` — {copy("Give actions a clear hierarchy", "به اقدام‌ها سلسله‌مراتب بدهید")}; source `apps/docs/src/pages/DesignGuidelinesPage.tsx` lines 70–77.

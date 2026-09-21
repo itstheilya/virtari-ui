@@ -4579,7 +4579,6 @@
         "card/4",
         "card/5",
         "card/6",
-        "color-generator/1",
         "data-table-users/page",
         "design-guidelines/1",
         "design-guidelines/2",
@@ -5602,13 +5601,11 @@
         "code/10",
         "code/11",
         "code/12",
-        "color-generator/1",
         "design-guidelines/1",
         "design-guidelines/2",
         "design-guidelines/3",
         "design-guidelines/4",
         "design-guidelines/5",
-        "gray-shade-maker/page",
         "introduction/1",
         "introduction/2",
         "introduction/3",
@@ -16291,6 +16288,7 @@
         "packages/react-popover/package.json"
       ],
       "exampleIds": [
+        "color-generator/1",
         "popover/1",
         "popover/2",
         "popover/3"
@@ -158514,36 +158512,34 @@
     },
     {
       "id": "color-generator/1",
-      "title": "Build a complete brand palette",
+      "title": "Build your color system",
       "page": "color-generator",
       "packageIds": [
         "color-engine",
-        "react-badge",
         "react-button",
-        "react-card",
         "react-color-picker",
         "react-icons",
         "react-input",
         "react-layout",
+        "react-popover",
         "react-segmented-control",
         "react-stepper",
         "react-textarea",
         "react-toast"
       ],
       "sourceId": "apps/docs/src/pages/ColorGeneratorPage.tsx",
-      "startLine": 248,
-      "endLine": 263,
-      "code": "<Section\n        title=\"Build a complete brand palette\"\n        description=\"Choose three inputs. Virtari generates accessible light and dark tokens, applies them here instantly, and keeps your draft on this device.\"\n      >\n        <Cluster justify=\"between\" align=\"center\" gap=\"md\">\n          <Stepper activeStep={step} size=\"sm\" variant=\"soft\" tone=\"primary\" aria-label=\"Color generator progress\" className=\"docs-color-engine-stepper\">\n            <StepperStep label=\"Primary\" />\n            <StepperStep label=\"Accent\" />\n            <StepperStep label=\"Gray\" />\n            <StepperStep label=\"Export\" />\n          </Stepper>\n          <Button type=\"button\" size=\"sm\" color=\"contrast\" variant=\"ghost\" leftSection={<IconRefresh size={16} aria-hidden />} onClick={resetTheme}>\n            Reset\n          </Button>\n        </Cluster>\n      </Section>",
+      "startLine": 155,
+      "endLine": 160,
+      "code": "<Section title=\"Build your color system\" description=\"Pick a primary, choose one supporting relationship, select a neutral palette, then export production-ready Virtari tokens.\">\n      <div className=\"docs-color-engine-toolbar\">\n        <Stepper activeStep={step} size=\"sm\" variant=\"soft\" tone=\"primary\" aria-label=\"Color generator progress\" className=\"docs-color-engine-stepper\"><StepperStep label=\"Primary\" /><StepperStep label=\"Supporting\" /><StepperStep label=\"Neutral\" /><StepperStep label=\"Export\" /></Stepper>\n        <Button type=\"button\" size=\"sm\" color=\"contrast\" variant=\"outline\" leftSection={<IconRefresh size={16} aria-hidden />} onClick={resetTheme}>Reset choices</Button>\n      </div>\n    </Section>",
       "imports": [
         "import { useEffect, useMemo, useState } from \"react\";",
         "import {\n  generateVirtariTheme,\n  parseNeutralImport,\n  suggestAccents,\n  themeToCss,\n  themeToJson,\n  type AccentStrategy,\n  type ColorScale,\n  type ThemeName,\n  type VirtariColorTheme,\n} from \"virtari-color-engine\";",
-        "import { Badge } from \"@virtari-packages/react-badge\";",
         "import { Button } from \"@virtari-packages/react-button\";",
-        "import {\n  Card,\n  CardContent,\n  CardDescription,\n  CardHeader,\n  CardTitle,\n} from \"@virtari-packages/react-card\";",
         "import { ColorPicker, rgbaToHexString } from \"@virtari-packages/react-color-picker\";",
-        "import {\n  IconArrowLeft,\n  IconArrowRight,\n  IconCheck,\n  IconDownload,\n  IconRefresh,\n  IconSparkles,\n} from \"@virtari-packages/react-icons\";",
-        "import { Cluster, Grid, Stack } from \"@virtari-packages/react-layout\";",
-        "import {\n  SegmentedControl,\n  SegmentedControlItem,\n} from \"@virtari-packages/react-segmented-control\";",
+        "import { IconArrowLeft, IconArrowRight, IconCheck, IconDownload, IconRefresh } from \"@virtari-packages/react-icons\";",
+        "import { Cluster, Stack } from \"@virtari-packages/react-layout\";",
+        "import { Popover, PopoverContent, PopoverTrigger } from \"@virtari-packages/react-popover\";",
+        "import { SegmentedControl, SegmentedControlItem } from \"@virtari-packages/react-segmented-control\";",
         "import { Stepper, StepperStep } from \"@virtari-packages/react-stepper\";",
         "import { InputField } from \"@virtari-packages/react-input\";",
         "import { TextareaField } from \"@virtari-packages/react-textarea\";",
@@ -162410,7 +162406,6 @@
       "packageIds": [
         "color-engine",
         "react-button",
-        "react-card",
         "react-icons",
         "react-input",
         "react-layout",
@@ -162420,12 +162415,11 @@
       ],
       "sourceId": "apps/docs/src/pages/GrayShadeMakerPage.tsx",
       "startLine": 1,
-      "endLine": 319,
+      "endLine": 163,
       "code": null,
       "imports": [
         "import { useEffect, useMemo, useState, type CSSProperties } from \"react\";",
         "import { Button } from \"@virtari-packages/react-button\";",
-        "import {\n  Card,\n  CardContent,\n  CardDescription,\n  CardFooter,\n  CardHeader,\n  CardTitle,\n} from \"@virtari-packages/react-card\";",
         "import { IconCheck, IconCopy, IconDownload, IconRefresh } from \"@virtari-packages/react-icons\";",
         "import { Input } from \"@virtari-packages/react-input\";",
         "import { Cluster, Stack } from \"@virtari-packages/react-layout\";",
@@ -169553,8 +169547,8 @@
     },
     {
       "id": "apps/docs/src/pages/ColorGeneratorPage.tsx",
-      "sha256": "ce0a7e8377d3229569db70d921aa6c05ea8f8da56022969b2ab30357d9d41113",
-      "bytes": 19046,
+      "sha256": "06847f237753f810179dd6339f0f16bea824b9a9a829b2c431c3ebfa344c35a4",
+      "bytes": 18902,
       "kind": "tsx"
     },
     {
@@ -169679,8 +169673,8 @@
     },
     {
       "id": "apps/docs/src/pages/GrayShadeMakerPage.tsx",
-      "sha256": "9a136de8792bec20a736e319d25616de372c47769a059b9471d5f3c9dd1723e8",
-      "bytes": 13157,
+      "sha256": "8a9cc3a00e51f8892f41a05a5cd1c87025825f101ee81df9f5818499cd34e4bc",
+      "bytes": 13340,
       "kind": "tsx"
     },
     {
@@ -169979,8 +169973,8 @@
     },
     {
       "id": "apps/docs/src/styles/color-generator.css",
-      "sha256": "7d5cd5bd24225913f87b9063191447b11eb46b009147760475581cf6df0fef82",
-      "bytes": 3711,
+      "sha256": "48a348119451188f3dd867596c61168f9fc2b5f9a3aa972fff4a5dcd17b28bfd",
+      "bytes": 11252,
       "kind": "css"
     },
     {
@@ -169997,8 +169991,8 @@
     },
     {
       "id": "apps/docs/src/styles/gray-shade-maker.css",
-      "sha256": "d40453caf1d5f0c767a17c4cde80af78142be33aa0534e64d50a39db1640df6e",
-      "bytes": 4119,
+      "sha256": "05bd3a22bf316c096580ba597f48afcd093297a681897ae0ce336ac17bf2f4ad",
+      "bytes": 6328,
       "kind": "css"
     },
     {

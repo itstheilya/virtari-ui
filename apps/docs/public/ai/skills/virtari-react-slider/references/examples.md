@@ -24,7 +24,7 @@ All documentation sections importing this package (some demonstrate another pack
 - `drawer/18` — Playground; source `apps/docs/src/pages/DrawerPage.tsx` lines 1723–1728.
 - `drawer/19` — Installation & imports; source `apps/docs/src/pages/DrawerPage.tsx` lines 1730–1742.
 - `drawer/20` — API reference; source `apps/docs/src/pages/DrawerPage.tsx` lines 1744–1788.
-- `gray-shade-maker/page` — gray-shade-maker page; source `apps/docs/src/pages/GrayShadeMakerPage.tsx` lines 1–319.
+- `gray-shade-maker/page` — gray-shade-maker page; source `apps/docs/src/pages/GrayShadeMakerPage.tsx` lines 1–163.
 - `slider/1` — Basic; source `apps/docs/src/pages/SliderPage.tsx` lines 8–12.
 - `slider/2` — Range; source `apps/docs/src/pages/SliderPage.tsx` lines 14–18.
 - `slider/3` — Disabled; source `apps/docs/src/pages/SliderPage.tsx` lines 20–24.

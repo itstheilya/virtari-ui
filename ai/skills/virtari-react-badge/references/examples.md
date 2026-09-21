@@ -25,7 +25,6 @@ All documentation sections importing this package (some demonstrate another pack
 - `card/4` — Pricing Layout; source `apps/docs/src/pages/CardPage.tsx` lines 185–264.
 - `card/5` — Nested surfaces; source `apps/docs/src/pages/CardPage.tsx` lines 266–282.
 - `card/6` — Usage; source `apps/docs/src/pages/CardPage.tsx` lines 284–315.
-- `color-generator/1` — Build a complete brand palette; source `apps/docs/src/pages/ColorGeneratorPage.tsx` lines 248–263.
 - `data-table-users/page` — data-table-users page; source `apps/docs/src/pages/DataTableUsersPage.tsx` lines 1–1553.
 - `design-guidelines/1` — {copy("Make every field understandable", "هر فیلد را قابل‌فهم کنید")}; source `apps/docs/src/pages/DesignGuidelinesPage.tsx` lines 61–69.
 - `design-guidelines/2` — {copy("Give actions a clear hierarchy", "به اقدام‌ها سلسله‌مراتب بدهید")}; source `apps/docs/src/pages/DesignGuidelinesPage.tsx` lines 70–77.
