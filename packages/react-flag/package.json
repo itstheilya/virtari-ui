@@ -73,6 +73,6 @@
     "flag-icons": "^7.2.3",
     "react": "^19.2.5",
     "tsup": "^8.0.0",
-    "typescript": "^5.5.0"
+    "typescript": "^7.0.2"
   }
 }
