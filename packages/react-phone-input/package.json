@@ -62,16 +62,16 @@
     "@virtari-packages/react-input": "workspace:*",
     "@virtari-packages/react-select": "workspace:*",
     "@virtari-packages/utils": "workspace:*",
-    "libphonenumber-js": "^1.11.0"
+    "libphonenumber-js": "^1.13.13"
   },
   "peerDependencies": {
     "react": "^18.0.0 || ^19.0.0",
     "react-dom": "^18.0.0 || ^19.0.0"
   },
   "devDependencies": {
-    "@types/react": "^19.2.14",
+    "@types/react": "^19.3.0",
     "i18n-iso-countries": "^7.14.0",
-    "react": "^19.2.5",
+    "react": "^19.3.0",
     "tsup": "^8.0.0",
     "typescript": "^5.5.0",
     "world-countries": "^5.1.0"

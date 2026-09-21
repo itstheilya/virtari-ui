@@ -94,12 +94,12 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@internationalized/date": "^3.5.6",
-    "@react-aria/calendar": "^3.5.14",
-    "@react-aria/datepicker": "^3.11.5",
-    "@react-aria/i18n": "^3.12.3",
-    "@react-stately/calendar": "^3.5.5",
-    "@react-stately/datepicker": "^3.10.3",
+    "@internationalized/date": "^3.12.4",
+    "@react-aria/calendar": "^3.10.1",
+    "@react-aria/datepicker": "^3.17.1",
+    "@react-aria/i18n": "^3.13.1",
+    "@react-stately/calendar": "^3.10.1",
+    "@react-stately/datepicker": "^3.17.1",
     "@virtari-packages/primitives": "workspace:*",
     "@virtari-packages/react-button": "workspace:*",
     "@virtari-packages/react-dialog": "workspace:*",
@@ -109,14 +109,14 @@
     "@virtari-packages/utils": "workspace:*"
   },
   "peerDependencies": {
-    "@tabler/icons-react": "^3.0.0",
+    "@tabler/icons-react": "^3.46.0",
     "react": "^18.0.0 || ^19.0.0",
     "react-dom": "^18.0.0 || ^19.0.0"
   },
   "devDependencies": {
-    "@tabler/icons-react": "^3.0.0",
-    "react": "^19.2.5",
-    "@types/react": "^19.2.14",
+    "@tabler/icons-react": "^3.46.0",
+    "react": "^19.3.0",
+    "@types/react": "^19.3.0",
     "typescript": "^5.5.0",
     "tsup": "^8.0.0"
   }
