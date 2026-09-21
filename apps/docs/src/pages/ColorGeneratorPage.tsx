@@ -1,7 +1,9 @@
 import { useEffect, useMemo, useState } from "react";
 import {
+  NEUTRAL_PALETTE_PRESETS,
   generateVirtariTheme,
   parseNeutralImport,
+  recommendNeutralPalette,
   suggestAccents,
   themeToCss,
   themeToJson,
@@ -27,8 +29,8 @@ const STYLE_ID = "virtari-custom-color-theme";
 const DEFAULT_PRIMARY = "#6246EA";
 const DEFAULT_ACCENT_STRATEGY: AccentStrategy = "analogous";
 
-type NeutralPreset = "balanced" | "cool" | "warm" | "pure" | "imported";
-type AccentMode = AccentStrategy | "custom";
+type NeutralPreset = string | "auto" | "imported";
+type AccentMode = AccentStrategy | "custom" | "no-accent";
 
 type SavedGeneratorState = {
   name: string;
@@ -48,20 +50,19 @@ const PRIMARY_PRESETS = [
   { name: "Rose", value: "#E11D48" }, { name: "Pink", value: "#DB2777" },
 ] as const;
 
-const NEUTRAL_PRESETS: Record<Exclude<NeutralPreset, "imported">, { label: string; description: string; hue: number; chroma: number }> = {
-  balanced: { label: "Balanced", description: "A quiet violet-gray for most products", hue: 270, chroma: 0.012 },
-  cool: { label: "Cool", description: "Blue-gray for technical interfaces", hue: 245, chroma: 0.016 },
-  warm: { label: "Warm", description: "Soft stone gray for editorial surfaces", hue: 70, chroma: 0.014 },
-  pure: { label: "Pure", description: "Colorless neutral for strict contrast", hue: 0, chroma: 0 },
-};
-
 const COLOR_FAMILIES = ["neutral", "primary", "accent"] as const;
 
 function readSavedState(): SavedGeneratorState {
-  const fallback: SavedGeneratorState = { name: "My Virtari theme", primary: DEFAULT_PRIMARY, accentMode: DEFAULT_ACCENT_STRATEGY, customAccent: "#24B39B", neutralPreset: "balanced" };
+  const fallback: SavedGeneratorState = { name: "My Virtari theme", primary: DEFAULT_PRIMARY, accentMode: DEFAULT_ACCENT_STRATEGY, customAccent: "#24B39B", neutralPreset: "auto" };
   try {
     const raw = window.localStorage.getItem(STORAGE_KEY);
-    return raw ? { ...fallback, ...(JSON.parse(raw) as Partial<SavedGeneratorState>) } : fallback;
+    if (!raw) return fallback;
+    const saved = { ...fallback, ...(JSON.parse(raw) as Partial<SavedGeneratorState>) };
+    if (saved.neutralPreset === "cool") saved.neutralPreset = "slate";
+    if (saved.neutralPreset === "warm") saved.neutralPreset = "stone";
+    if (saved.neutralPreset === "pure") saved.neutralPreset = "natural-gray";
+    const validNeutral = saved.neutralPreset === "auto" || saved.neutralPreset === "imported" || NEUTRAL_PALETTE_PRESETS.some(preset => preset.id === saved.neutralPreset);
+    return { ...saved, neutralPreset: validNeutral ? saved.neutralPreset : "auto" };
   } catch { return fallback; }
 }
 
@@ -112,8 +113,10 @@ export function ColorGeneratorPage() {
   const suggestions = useMemo(() => suggestAccents(safePrimary), [safePrimary]);
   const selectedSuggestion = suggestions.find(item => item.strategy === accentMode);
   const safeAccent = accentMode === "custom" ? (isHex(customAccent) ? customAccent : suggestions[0].color) : (selectedSuggestion?.color ?? suggestions[0].color);
-  const neutralOptions = neutralPreset === "imported" ? { neutralScales: importedNeutrals } : { neutral: NEUTRAL_PRESETS[neutralPreset] };
-  const theme = useMemo(() => generateVirtariTheme({ name, primary: safePrimary, accent: safeAccent, ...neutralOptions }), [name, safePrimary, safeAccent, neutralPreset, importedNeutrals]);
+  const autoNeutral = useMemo(() => recommendNeutralPalette(safePrimary, accentMode === "no-accent" ? undefined : safeAccent), [safePrimary, safeAccent, accentMode]);
+  const selectedNeutral = NEUTRAL_PALETTE_PRESETS.find(preset => preset.id === neutralPreset);
+  const neutralOptions = neutralPreset === "imported" ? { neutralScales: importedNeutrals } : { neutral: neutralPreset === "auto" ? autoNeutral : (selectedNeutral ?? autoNeutral) };
+  const theme = useMemo(() => generateVirtariTheme({ name, primary: safePrimary, accent: safeAccent, neutralAccent: accentMode === "no-accent", ...neutralOptions }), [name, safePrimary, safeAccent, accentMode, neutralPreset, importedNeutrals, autoNeutral]);
 
   useEffect(() => {
     const state: SavedGeneratorState = { name, primary: safePrimary, accentMode, customAccent, neutralPreset, importedNeutrals };
@@ -134,7 +137,7 @@ export function ColorGeneratorPage() {
   }
 
   function resetTheme() {
-    setStep(0); setName("My Virtari theme"); setPrimary(DEFAULT_PRIMARY); setAccentMode(DEFAULT_ACCENT_STRATEGY); setCustomAccent("#24B39B"); setNeutralPreset("balanced"); setImportedNeutrals(undefined); setNeutralJson(""); setImportError("");
+    setStep(0); setName("My Virtari theme"); setPrimary(DEFAULT_PRIMARY); setAccentMode(DEFAULT_ACCENT_STRATEGY); setCustomAccent("#24B39B"); setNeutralPreset("auto"); setImportedNeutrals(undefined); setNeutralJson(""); setImportError("");
     try { window.localStorage.removeItem(STORAGE_KEY); } catch {}
     document.getElementById(STYLE_ID)?.remove();
     [document.documentElement, document.querySelector<HTMLElement>(".docs-app")].filter(Boolean).forEach(element => { const target = element as HTMLElement; clearThemeVariables(target); target.removeAttribute("data-brand"); });
@@ -148,7 +151,6 @@ export function ColorGeneratorPage() {
     <Section title="Build your color system" description="Pick a primary, choose an accent relationship, select a neutral palette, then export production-ready Virtari tokens.">
       <div className="docs-color-engine-toolbar">
         <Stepper activeStep={step} size="sm" variant="soft" tone="primary" aria-label="Color generator progress" className="docs-color-engine-stepper"><StepperStep label="Primary" /><StepperStep label="Accent" /><StepperStep label="Neutral" /><StepperStep label="Export" /></Stepper>
-        <Button type="button" size="sm" color="contrast" variant="outline" leftSection={<IconRefresh size={16} aria-hidden />} onClick={resetTheme}>Reset choices</Button>
       </div>
     </Section>
 
@@ -162,26 +164,26 @@ export function ColorGeneratorPage() {
 
       {step === 1 && <>
         <header className="docs-color-engine-stage-head"><span>2 / 4</span><div><h2>Choose an accent color</h2><p>Virtari has one generated accent role. Choose the relationship that best fits the primary.</p></div></header>
-        <div className="docs-color-engine-theories">{suggestions.map(suggestion => { const selected = accentMode === suggestion.strategy; return <Button key={suggestion.strategy} type="button" color="contrast" variant="soft" className="docs-color-engine-theory" aria-pressed={selected} onClick={() => setAccentMode(suggestion.strategy)}><span className="docs-color-engine-theory-pair" aria-hidden><i style={{ backgroundColor: safePrimary }} /><i style={{ backgroundColor: suggestion.color }} /></span><span><strong>{suggestion.label}</strong><small>{suggestion.strategy === "complementary" ? "Opposite hue · strongest contrast" : suggestion.strategy === "analogous" ? "Neighboring hue · calm pairing" : suggestion.strategy === "triadic" ? "Equal thirds · balanced energy" : "Two near-opposites · flexible contrast"}</small></span>{selected && <span className="docs-color-engine-check"><IconCheck size={15} aria-hidden /></span>}</Button>; })}</div>
+        <div className="docs-color-engine-theories">{suggestions.map(suggestion => { const selected = accentMode === suggestion.strategy; return <Button key={suggestion.strategy} type="button" color="contrast" variant="soft" className="docs-color-engine-theory" aria-pressed={selected} onClick={() => setAccentMode(suggestion.strategy)}><span className="docs-color-engine-theory-pair" aria-hidden><i style={{ backgroundColor: safePrimary }} /><i style={{ backgroundColor: suggestion.color }} /></span><span><strong>{suggestion.label}</strong><small>{suggestion.strategy === "complementary" ? "Opposite hue · strongest contrast" : suggestion.strategy === "analogous" ? "Neighboring hue · calm pairing" : suggestion.strategy === "triadic" ? "Equal thirds · balanced energy" : "Two near-opposites · flexible contrast"}</small></span>{selected && <span className="docs-color-engine-check"><IconCheck size={15} aria-hidden /></span>}</Button>; })}<Button type="button" color="contrast" variant="soft" className="docs-color-engine-theory" aria-pressed={accentMode === "no-accent"} onClick={() => setAccentMode("no-accent")}><span className="docs-color-engine-theory-pair docs-color-engine-theory-pair-neutral" aria-hidden><i style={{ backgroundColor: safePrimary }} /><i /></span><span><strong>No Accent</strong><small>Use the generated neutral scale for accent roles</small></span>{accentMode === "no-accent" && <span className="docs-color-engine-check"><IconCheck size={15} aria-hidden /></span>}</Button></div>
         <div className="docs-color-engine-custom-row"><div><strong>Custom accent</strong><span>Replace the suggestion with an existing brand color.</span></div><Popover><PopoverTrigger asChild><Button type="button" color="contrast" variant="outline" aria-pressed={accentMode === "custom"} onClick={() => setAccentMode("custom")}><ColorTrigger color={safeAccent} label="Choose custom" /></Button></PopoverTrigger><PopoverContent size="lg" align="end" className="docs-color-engine-picker-popover"><ColorPicker mode="solid" value={customAccent} allowAlpha={false} appearance="flat" swatches={PRIMARY_PRESETS.map(item => item.value)} onValueChange={(_, detail) => setCustomAccent(rgbaToHexString(detail.activeColor, false))} /></PopoverContent></Popover></div>
-        <div className="docs-color-engine-selection-preview"><div><strong>Generated accent scale</strong><span>Mapped to Virtari accent tokens</span></div><PaletteStrip label="Accent" scale={theme.themes.light.accent} /><span className="docs-color-engine-ratio">On solid: {accentForeground.color} · {accentForeground.ratio}:1 · {accentForeground.aaa ? "AAA" : "AA"}</span></div>
+        <div className="docs-color-engine-selection-preview"><div><strong>{accentMode === "no-accent" ? "Neutral accent roles" : "Generated accent scale"}</strong><span>{accentMode === "no-accent" ? "Accent tokens inherit the selected neutral scale" : "Mapped to Virtari accent tokens"}</span></div><PaletteStrip label="Accent" scale={theme.themes.light.accent} /><span className="docs-color-engine-ratio">On solid: {accentForeground.color} · {accentForeground.ratio}:1 · {accentForeground.aaa ? "AAA" : "AA"}</span></div>
       </>}
 
       {step === 2 && <>
-        <header className="docs-color-engine-stage-head"><span>3 / 4</span><div><h2>Select a neutral palette</h2><p>Compare the full scale before choosing, or import one from Gray Shade Maker.</p></div></header>
-        <div className="docs-color-engine-neutral-options">{Object.entries(NEUTRAL_PRESETS).map(([value, preset]) => { const preview = generateVirtariTheme({ primary: safePrimary, accent: safeAccent, neutral: preset }).themes.light.neutral; const selected = neutralPreset === value; return <Button key={value} type="button" color="contrast" variant="soft" className="docs-color-engine-neutral-option" aria-pressed={selected} onClick={() => setNeutralPreset(value as NeutralPreset)}><span><strong>{preset.label}</strong><small>{preset.description}</small></span><PaletteStrip label={preset.label} scale={preview} />{selected && <span className="docs-color-engine-check"><IconCheck size={15} aria-hidden /></span>}</Button>; })}{importedNeutrals && <Button type="button" color="contrast" variant="soft" className="docs-color-engine-neutral-option" aria-pressed={neutralPreset === "imported"} onClick={() => setNeutralPreset("imported")}><span><strong>Imported</strong><small>Your Gray Shade Maker palette</small></span><PaletteStrip label="Imported" scale={importedNeutrals.light ?? theme.themes.light.neutral} />{neutralPreset === "imported" && <span className="docs-color-engine-check"><IconCheck size={15} aria-hidden /></span>}</Button>}</div>
+        <header className="docs-color-engine-stage-head"><span>3 / 4</span><div><h2>Select a neutral palette</h2><p>Let Auto Gray match the active brand colors, choose a crafted palette, or import one from Gray Shade Maker.</p></div></header>
+        <div className="docs-color-engine-neutral-options"><Button type="button" color="contrast" variant="soft" className="docs-color-engine-neutral-option" aria-pressed={neutralPreset === "auto"} onClick={() => setNeutralPreset("auto")}><span className="docs-color-engine-neutral-meta"><strong>Auto Gray</strong><small>{autoNeutral.description}</small></span><PaletteStrip label="Auto Gray" scale={generateVirtariTheme({ primary: safePrimary, accent: safeAccent, neutralAccent: accentMode === "no-accent", neutral: autoNeutral }).themes.light.neutral} />{neutralPreset === "auto" && <span className="docs-color-engine-check"><IconCheck size={15} aria-hidden /></span>}</Button>{NEUTRAL_PALETTE_PRESETS.map(preset => { const preview = generateVirtariTheme({ primary: safePrimary, accent: safeAccent, neutral: preset }).themes.light.neutral; const selected = neutralPreset === preset.id; return <Button key={preset.id} type="button" color="contrast" variant="soft" className="docs-color-engine-neutral-option" aria-pressed={selected} onClick={() => setNeutralPreset(preset.id)}><span className="docs-color-engine-neutral-meta"><strong>{preset.label}</strong><small>{preset.description}</small></span><PaletteStrip label={preset.label} scale={preview} />{selected && <span className="docs-color-engine-check"><IconCheck size={15} aria-hidden /></span>}</Button>; })}{importedNeutrals && <Button type="button" color="contrast" variant="soft" className="docs-color-engine-neutral-option" aria-pressed={neutralPreset === "imported"} onClick={() => setNeutralPreset("imported")}><span className="docs-color-engine-neutral-meta"><strong>Imported</strong><small>Your Gray Shade Maker palette</small></span><PaletteStrip label="Imported" scale={importedNeutrals.light ?? theme.themes.light.neutral} />{neutralPreset === "imported" && <span className="docs-color-engine-check"><IconCheck size={15} aria-hidden /></span>}</Button>}</div>
         <Accordion type="single" collapsible variant="filled" size="sm" color="neutral" iconType="plus-minus" headingLevel="h3" className="docs-color-engine-import"><AccordionItem value="gray-import"><AccordionTrigger>Import Gray Shade JSON</AccordionTrigger><AccordionContent><Stack gap="md"><TextareaField label="Palette JSON" description="Paste a Gray Shade Maker export with steps 1–12." error={importError || undefined} value={neutralJson} onChange={event => setNeutralJson(event.target.value)} rows={5} spellCheck={false} /><Cluster justify="end"><Button type="button" size="sm" color="contrast" variant="outline" disabled={!neutralJson.trim()} onClick={importNeutralScale}>Import palette</Button></Cluster></Stack></AccordionContent></AccordionItem></Accordion>
       </>}
 
       {step === 3 && <>
         <header className="docs-color-engine-stage-head"><span>4 / 4</span><div><h2>Export the token set</h2><p>Review the three roles, name the theme and download the format your project needs.</p></div></header>
         <InputField label="Theme name" value={name} onChange={event => setName(event.target.value)} />
-        <div className="docs-color-engine-summary"><div><span>Primary</span><PaletteStrip label="Primary" scale={theme.themes.light.primary} /><code>{safePrimary}</code></div><div><span>Accent</span><PaletteStrip label="Accent" scale={theme.themes.light.accent} /><code>{safeAccent}</code></div><div><span>Neutral</span><PaletteStrip label="Neutral" scale={theme.themes.light.neutral} /><code>{neutralPreset}</code></div></div>
+        <div className="docs-color-engine-summary"><div><span>Primary</span><PaletteStrip label="Primary" scale={theme.themes.light.primary} /><code>{safePrimary}</code></div><div><span>Accent</span><PaletteStrip label="Accent" scale={theme.themes.light.accent} /><code>{accentMode === "no-accent" ? "Neutral" : safeAccent}</code></div><div><span>Neutral</span><PaletteStrip label="Neutral" scale={theme.themes.light.neutral} /><code>{neutralPreset}</code></div></div>
         <div className="docs-color-engine-downloads"><Button type="button" leftSection={<IconDownload size={17} aria-hidden />} onClick={() => downloadFile("virtari-theme.json", themeToJson(theme), "application/json")}>Download JSON</Button><Button type="button" color="contrast" variant="outline" leftSection={<IconDownload size={17} aria-hidden />} onClick={() => downloadFile("virtari-theme.css", themeToCss(theme), "text/css")}>Download CSS</Button></div>
         <p className="docs-color-engine-note">The CSS overrides Virtari color tokens for light, dark and dark OLED themes. Load it after the base token stylesheet.</p>
       </>}
 
-      <footer className="docs-color-engine-navigation"><Button type="button" color="contrast" variant="outline" disabled={step === 0} leftSection={<IconArrowLeft size={17} aria-hidden />} onClick={() => setStep(value => Math.max(0, value - 1))}>Back</Button>{step < 3 && <Button type="button" rightSection={<IconArrowRight size={17} aria-hidden />} onClick={() => setStep(value => Math.min(3, value + 1))}>Continue</Button>}</footer>
+      <footer className="docs-color-engine-navigation"><Button type="button" color="contrast" variant="outline" disabled={step === 0} leftSection={<IconArrowLeft size={17} aria-hidden />} onClick={() => setStep(value => Math.max(0, value - 1))}>Back</Button><Button type="button" size="sm" color="contrast" variant="ghost" className="docs-color-engine-reset" leftSection={<IconRefresh size={16} aria-hidden />} onClick={resetTheme}>Reset choices</Button>{step < 3 ? <Button type="button" rightSection={<IconArrowRight size={17} aria-hidden />} onClick={() => setStep(value => Math.min(3, value + 1))}>Continue</Button> : <span aria-hidden />}</footer>
     </section>
   </Stack>;
 }

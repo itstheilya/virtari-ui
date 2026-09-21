@@ -7,6 +7,7 @@ import { Slider } from "@virtari-packages/react-slider";
 import { Switch } from "@virtari-packages/react-switch";
 import { toast } from "@virtari-packages/react-toast";
 import {
+  NEUTRAL_PALETTE_PRESETS,
   chooseForeground,
   generateNeutralScale,
   oklchToRgb,
@@ -21,15 +22,6 @@ const STORAGE_KEY = "virtari.color-engine.gray-shade-maker.v2";
 const DEFAULT_SETTINGS = { hue: 270, chroma: 0.012, oled: false };
 
 type GraySettings = typeof DEFAULT_SETTINGS;
-
-const GRAY_PRESETS = [
-  { id: "pure", label: "Pure", description: "Strictly colorless", hue: 0, chroma: 0 },
-  { id: "slate", label: "Slate", description: "Cool and technical", hue: 245, chroma: 0.016 },
-  { id: "balanced", label: "Balanced", description: "Quiet and versatile", hue: 270, chroma: 0.012 },
-  { id: "blue", label: "Blue gray", description: "Crisp product surfaces", hue: 220, chroma: 0.018 },
-  { id: "stone", label: "Stone", description: "Soft and editorial", hue: 70, chroma: 0.014 },
-  { id: "taupe", label: "Taupe", description: "Warm premium tone", hue: 45, chroma: 0.018 },
-] as const;
 
 interface NeutralPaletteDocument {
   schema: "https://virtari.iamilya.com/schemas/neutral-palette.v1.json";
@@ -90,7 +82,7 @@ export function GrayShadeMakerPage() {
   const [settings, setSettings] = useState<GraySettings>(readSettings);
   const light = useMemo(() => generateNeutralScale("light", settings), [settings]);
   const dark = useMemo(() => generateNeutralScale("dark", settings), [settings]);
-  const activePreset = GRAY_PRESETS.find(preset => preset.hue === settings.hue && preset.chroma === settings.chroma)?.id;
+  const activePreset = NEUTRAL_PALETTE_PRESETS.find(preset => preset.hue === settings.hue && preset.chroma === settings.chroma)?.id;
 
   useEffect(() => {
     try { window.localStorage.setItem(STORAGE_KEY, JSON.stringify(settings)); } catch {}
@@ -123,9 +115,9 @@ export function GrayShadeMakerPage() {
 
     <section className="gray-maker-section" aria-labelledby="gray-maker-presets">
       <div className="gray-maker-section-head"><div><h2 id="gray-maker-presets">{text("Choose a starting palette", "انتخاب پالت پایه")}</h2><p>{text("Each option is a complete 12-step neutral scale, not a single gray.", "هر گزینه یک طیف خنثی کامل ۱۲ مرحله‌ای است، نه یک خاکستری منفرد.")}</p></div></div>
-      <div className="gray-maker-presets">{GRAY_PRESETS.map(preset => {
+      <div className="gray-maker-presets">{NEUTRAL_PALETTE_PRESETS.map(preset => {
         const preview = generateNeutralScale("light", { hue: preset.hue, chroma: preset.chroma, oled: settings.oled });
-        return <Button key={preset.id} type="button" color="contrast" variant="outline" className="gray-maker-preset" aria-pressed={activePreset === preset.id} onClick={() => update({ hue: preset.hue, chroma: preset.chroma })}><span><strong>{preset.label}</strong><small>{preset.description}</small></span><PaletteStrip scale={preview} label={preset.label} />{activePreset === preset.id && <IconCheck size={17} aria-hidden />}</Button>;
+        return <Button key={preset.id} type="button" color="contrast" variant="soft" className="gray-maker-preset" aria-pressed={activePreset === preset.id} onClick={() => update({ hue: preset.hue, chroma: preset.chroma })}><span><strong>{preset.label}</strong><small>{preset.description}</small></span><PaletteStrip scale={preview} label={preset.label} />{activePreset === preset.id && <IconCheck size={17} aria-hidden />}</Button>;
       })}</div>
     </section>
 

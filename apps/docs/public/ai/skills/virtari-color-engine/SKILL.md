@@ -1,6 +1,6 @@
 ---
 name: virtari-color-engine
-description: "Use when building, reviewing, or troubleshooting virtari-color-engine. Framework-agnostic OKLCH scale generation, accent harmony suggestions, WCAG contrast selection and portable Virtari theme export."
+description: "Use when building, reviewing, or troubleshooting virtari-color-engine. Framework-agnostic OKLCH scale generation, brand-aware neutral recommendations, accent harmony suggestions, WCAG contrast selection and portable Virtari theme export."
 ---
 
 # virtari-color-engine
@@ -18,7 +18,9 @@ Use the existing package and its composition API. Verify the installed version a
 ## Integration rules
 
 - Install 'virtari-color-engine' for headless use, or add its editable source through the Virtari source registry.
+- Use NEUTRAL_PALETTE_PRESETS for curated named gray foundations and recommendNeutralPalette(primary, accent?) for an automatic brand-aware neutral tint.
 - Use generateNeutralScale for tinted gray palettes, suggestAccents for color-theory candidates and generateVirtariTheme for complete light, dark and dark-oled token documents.
+- For a No Accent system, pass neutralAccent: true. Components retain their accent token roles, but those roles resolve to the neutral scale; do not introduce another brand color role.
 - Use themeToCss or themeToJson for portable outputs. The CSS export binds Virtari primitive scales and the canonical on-primary and on-accent foreground roles.
 - Use chooseForeground and contrastRatio for opaque sRGB pairs, then validate the final composited interface in its real states.
 
@@ -26,6 +28,7 @@ Use the existing package and its composition API. Verify the installed version a
 
 - The contrast result covers the supplied color pair; it does not establish page-level WCAG conformance.
 - Do not present WCAG 3 or APCA as stable conformance standards.
+- Virtari color themes use Primary, Accent and Neutral roles. Keep Accent naming consistent across code and documentation.
 - Do not create parallel color variables when a generated Virtari role already exists.
 
 Related package IDs: `tokens`, `react-color-picker`, `react-layout`. Discover their focused skills from the catalog; do not load all packages at once.

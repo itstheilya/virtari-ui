@@ -11,13 +11,13 @@
   .gray-maker-section-head p { margin-block-start: var(--vds-space-1); color: var(--vds-color-text-muted); font-size: var(--vds-text-sm); line-height: var(--vds-leading-relaxed); }
 
   .gray-maker-presets { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--vds-space-2); }
-  .gray-maker-preset.vds-button { block-size: auto; min-block-size: 5rem; min-inline-size: 0; padding: var(--vds-space-3); justify-content: stretch; }
+  .gray-maker-preset.vds-button { block-size: auto; min-block-size: 5rem; min-inline-size: 0; padding: var(--vds-space-3); justify-content: stretch; border-color: transparent; }
   .gray-maker-preset .vds-button-label { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--vds-space-2); align-items: center; inline-size: 100%; min-inline-size: 0; text-align: start; }
   .gray-maker-preset .vds-button-label > span:first-child { display: grid; gap: var(--vds-space-1); }
   .gray-maker-preset small { color: var(--vds-color-text-muted); font-size: var(--vds-text-xs); font-weight: var(--vds-font-weight-regular); }
   .gray-maker-preset .vds-button-label > svg { color: var(--vds-color-primary-10); }
-  .gray-maker-preset[aria-pressed="true"] { border-color: var(--vds-color-primary-8); background-color: var(--vds-color-primary-2); box-shadow: 0 0 0 2px var(--vds-color-primary-a4, color-mix(in srgb, var(--vds-color-primary-8) 22%, transparent)); }
-  .gray-maker-palette { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); grid-column: 1 / -1; min-block-size: 1.5rem; overflow: hidden; border: 1px solid var(--vds-color-border-muted); border-radius: var(--vds-radius-control); }
+  .gray-maker-preset[aria-pressed="true"] { border-color: transparent; background-color: var(--vds-color-primary-3); box-shadow: none; }
+  .gray-maker-palette { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); grid-column: 1 / -1; min-block-size: 1.5rem; overflow: hidden; border-radius: var(--vds-radius-control); }
   .gray-maker-palette i { min-inline-size: 0; }
 
   .gray-maker-workspace { display: grid; grid-template-columns: minmax(16rem, .72fr) minmax(0, 1.45fr); align-items: stretch; gap: var(--vds-space-4); }

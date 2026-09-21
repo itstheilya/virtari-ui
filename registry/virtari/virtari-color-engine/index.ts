@@ -14,6 +14,17 @@ export interface NeutralScaleOptions {
   oled?: boolean;
 }
 
+export interface NeutralPalettePreset extends Required<Pick<NeutralScaleOptions, "hue" | "chroma">> {
+  id: string;
+  label: string;
+  description: string;
+}
+
+export interface NeutralRecommendation extends Required<Pick<NeutralScaleOptions, "hue" | "chroma">> {
+  relationship: "single-brand" | "analogous" | "balanced" | "opposed";
+  description: string;
+}
+
 export interface AccentSuggestion {
   strategy: AccentStrategy;
   label: string;
@@ -42,6 +53,43 @@ export interface VirtariColorTheme {
     foreground: { primary: ForegroundChoice; accent: ForegroundChoice };
   }>;
 }
+
+export const NEUTRAL_PALETTE_PRESETS: readonly NeutralPalettePreset[] = [
+  { id: "natural-gray", label: "Natural Gray", description: "Zero tint, neutral by design", hue: 0, chroma: 0 },
+  { id: "onyx", label: "Onyx", description: "Polished near-black neutral", hue: 265, chroma: 0.006 },
+  { id: "obsidian", label: "Obsidian", description: "Dark mineral violet cast", hue: 285, chroma: 0.01 },
+  { id: "charcoal", label: "Charcoal", description: "Soft dark architectural gray", hue: 250, chroma: 0.008 },
+  { id: "graphite", label: "Graphite", description: "Dense studio neutral", hue: 265, chroma: 0.008 },
+  { id: "carbon", label: "Carbon", description: "Crisp dark interface", hue: 255, chroma: 0.01 },
+  { id: "ink", label: "Ink", description: "Quiet blue-black cast", hue: 250, chroma: 0.014 },
+  { id: "midnight", label: "Midnight", description: "Deep navy atmosphere", hue: 235, chroma: 0.02 },
+  { id: "night-blue", label: "Night Blue", description: "Dark saturated blue gray", hue: 240, chroma: 0.024 },
+  { id: "petrol-black", label: "Petrol Black", description: "Dark cyan industrial tint", hue: 205, chroma: 0.022 },
+  { id: "slate", label: "Slate", description: "Technical blue gray", hue: 245, chroma: 0.016 },
+  { id: "steel", label: "Steel", description: "Controlled cool metal", hue: 230, chroma: 0.014 },
+  { id: "storm", label: "Storm", description: "Moody cloud neutral", hue: 225, chroma: 0.018 },
+  { id: "glacier", label: "Glacier", description: "Clean icy surface", hue: 215, chroma: 0.016 },
+  { id: "mist", label: "Mist", description: "Airy cool foundation", hue: 205, chroma: 0.01 },
+  { id: "sage", label: "Sage", description: "Calm botanical gray", hue: 145, chroma: 0.016 },
+  { id: "eucalyptus", label: "Eucalyptus", description: "Fresh green neutral", hue: 165, chroma: 0.018 },
+  { id: "moss", label: "Moss", description: "Earthy muted green", hue: 120, chroma: 0.018 },
+  { id: "forest-black", label: "Forest Black", description: "Deep evergreen neutral", hue: 150, chroma: 0.022 },
+  { id: "olive-black", label: "Olive Black", description: "Dark muted olive cast", hue: 105, chroma: 0.02 },
+  { id: "sand", label: "Sand", description: "Soft sunlit neutral", hue: 85, chroma: 0.014 },
+  { id: "stone", label: "Stone", description: "Natural warm gray", hue: 70, chroma: 0.014 },
+  { id: "linen", label: "Linen", description: "Light editorial warmth", hue: 62, chroma: 0.012 },
+  { id: "parchment", label: "Parchment", description: "Refined paper tint", hue: 78, chroma: 0.018 },
+  { id: "taupe", label: "Taupe", description: "Premium brown gray", hue: 45, chroma: 0.018 },
+  { id: "clay", label: "Clay", description: "Muted earthen warmth", hue: 38, chroma: 0.02 },
+  { id: "cocoa", label: "Cocoa", description: "Rich warm foundation", hue: 32, chroma: 0.018 },
+  { id: "espresso", label: "Espresso", description: "Dark roasted brown neutral", hue: 42, chroma: 0.024 },
+  { id: "burgundy-smoke", label: "Burgundy Smoke", description: "Deep wine-tinted neutral", hue: 355, chroma: 0.022 },
+  { id: "rose-smoke", label: "Rose Smoke", description: "Soft cosmetic neutral", hue: 15, chroma: 0.016 },
+  { id: "plum-smoke", label: "Plum Smoke", description: "Elegant violet neutral", hue: 310, chroma: 0.016 },
+  { id: "aubergine", label: "Aubergine", description: "Dark purple editorial cast", hue: 325, chroma: 0.024 },
+  { id: "orchid-ash", label: "Orchid Ash", description: "Modern purple gray", hue: 290, chroma: 0.018 },
+  { id: "balanced", label: "Balanced", description: "Versatile Virtari neutral", hue: 270, chroma: 0.012 },
+] as const;
 
 const LIGHT_LIGHTNESS = [0.985, 0.975, 0.945, 0.92, 0.89, 0.855, 0.81, 0.745, 0.58, 0.53, 0.43, 0.18];
 const DARK_LIGHTNESS = [0.178, 0.21, 0.245, 0.275, 0.305, 0.345, 0.395, 0.46, 0.53, 0.58, 0.72, 0.93];
@@ -197,6 +245,56 @@ export function suggestAccents(primary: string): AccentSuggestion[] {
   });
 }
 
+function circularMeanHue(colors: Array<{ hue: number; weight: number }>) {
+  const vector = colors.reduce((result, color) => {
+    const angle = normalizeHue(color.hue) * Math.PI / 180;
+    return { x: result.x + Math.cos(angle) * color.weight, y: result.y + Math.sin(angle) * color.weight };
+  }, { x: 0, y: 0 });
+  return normalizeHue(Math.atan2(vector.y, vector.x) * 180 / Math.PI);
+}
+
+function hueDistance(a: number, b: number) {
+  const distance = Math.abs(normalizeHue(a) - normalizeHue(b));
+  return Math.min(distance, 360 - distance);
+}
+
+export function recommendNeutralPalette(primary: string, accent?: string): NeutralRecommendation {
+  const primaryColor = rgbToOklch(parseHex(primary));
+  if (!accent) {
+    return {
+      hue: round(primaryColor.h, 1),
+      chroma: round(clamp(0.008 + primaryColor.c * 0.035, 0.008, 0.018), 3),
+      relationship: "single-brand",
+      description: "Tinted from the primary while keeping neutral surfaces quiet.",
+    };
+  }
+
+  const accentColor = rgbToOklch(parseHex(accent));
+  const distance = hueDistance(primaryColor.h, accentColor.h);
+  if (distance <= 72) {
+    return {
+      hue: round(circularMeanHue([{ hue: primaryColor.h, weight: 0.58 }, { hue: accentColor.h, weight: 0.42 }]), 1),
+      chroma: round(clamp(0.009 + Math.max(primaryColor.c, accentColor.c) * 0.03, 0.009, 0.018), 3),
+      relationship: "analogous",
+      description: "Blends related brand hues into one calm neutral family.",
+    };
+  }
+  if (distance >= 145) {
+    return {
+      hue: round(primaryColor.h, 1),
+      chroma: round(clamp(0.007 + primaryColor.c * 0.025, 0.007, 0.014), 3),
+      relationship: "opposed",
+      description: "Follows the primary with reduced tint so opposing colors stay balanced.",
+    };
+  }
+  return {
+    hue: round(circularMeanHue([{ hue: primaryColor.h, weight: 0.72 }, { hue: accentColor.h, weight: 0.28 }]), 1),
+    chroma: round(clamp(0.008 + (primaryColor.c + accentColor.c) * 0.014, 0.008, 0.016), 3),
+    relationship: "balanced",
+    description: "Biases the neutral toward the primary while acknowledging the accent.",
+  };
+}
+
 export function relativeLuminance(color: string | Rgb) {
   const rgb = typeof color === "string" ? parseHex(color) : color;
   const r = srgbToLinear(clamp(rgb.r));
@@ -238,6 +336,7 @@ export interface GenerateThemeOptions {
   accentStrategy?: AccentStrategy;
   neutral?: NeutralScaleOptions;
   neutralScales?: Partial<Record<ThemeName, ColorScale>>;
+  neutralAccent?: boolean;
 }
 
 export function generateVirtariTheme(options: GenerateThemeOptions): VirtariColorTheme {
@@ -247,10 +346,11 @@ export function generateVirtariTheme(options: GenerateThemeOptions): VirtariColo
   const neutralChroma = options.neutral?.chroma ?? 0.012;
   const build = (theme: ThemeName) => {
     const primary = generateColorScale(options.primary, theme);
-    const accentScale = generateColorScale(accent, theme, "accent");
     const importedNeutral = options.neutralScales?.[theme];
+    const neutral = importedNeutral ? validateColorScale(importedNeutral, `${theme} neutral`) : generateNeutralScale(theme, options.neutral);
+    const accentScale = options.neutralAccent ? neutral : generateColorScale(accent, theme, "accent");
     return {
-      neutral: importedNeutral ? validateColorScale(importedNeutral, `${theme} neutral`) : generateNeutralScale(theme, options.neutral),
+      neutral,
       primary,
       accent: accentScale,
       foreground: {
@@ -263,7 +363,7 @@ export function generateVirtariTheme(options: GenerateThemeOptions): VirtariColo
     schema: "https://virtari.iamilya.com/schemas/color-theme.v1.json",
     name: options.name?.trim() || "Custom Virtari theme",
     generatedAt: new Date().toISOString(),
-    source: { primary: options.primary.toUpperCase(), accent: accent.toUpperCase(), neutralHue, neutralChroma },
+    source: { primary: options.primary.toUpperCase(), accent: options.neutralAccent ? "NEUTRAL" : accent.toUpperCase(), neutralHue, neutralChroma },
     themes: { light: build("light"), dark: build("dark") },
   };
 }

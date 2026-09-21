@@ -1,6 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import {
+  NEUTRAL_PALETTE_PRESETS,
   chooseForeground,
   contrastRatio,
   generateColorScale,
@@ -10,9 +11,15 @@ import {
   oklchToRgb,
   parseOklch,
   parseNeutralImport,
+  recommendNeutralPalette,
   suggestAccents,
   themeToCss,
 } from "../dist/index.js";
+
+test("ships a broad named neutral palette library", () => {
+  assert.ok(NEUTRAL_PALETTE_PRESETS.length >= 20);
+  assert.equal(new Set(NEUTRAL_PALETTE_PRESETS.map(item => item.id)).size, NEUTRAL_PALETTE_PRESETS.length);
+});
 
 test("generates complete 12-step neutral scales", () => {
   const scale = generateNeutralScale("light", { hue: 250, chroma: 0.01 });
@@ -33,6 +40,18 @@ test("suggests deterministic accent harmonies", () => {
   assert.ok(suggestions.every(item => /^#[0-9A-F]{6}$/.test(item.color)));
 });
 
+test("recommends brand-aware neutral settings", () => {
+  const solo = recommendNeutralPalette("#4F46E5");
+  const analogous = recommendNeutralPalette("#4F46E5", "#6246EA");
+  const opposed = recommendNeutralPalette("#4F46E5", "#D6B100");
+  for (const result of [solo, analogous, opposed]) {
+    assert.ok(result.hue >= 0 && result.hue < 360);
+    assert.ok(result.chroma >= 0 && result.chroma <= 0.04);
+  }
+  assert.equal(solo.relationship, "single-brand");
+  assert.notEqual(analogous.relationship, "single-brand");
+});
+
 test("exports Virtari-compatible JSON and CSS", () => {
   const theme = generateVirtariTheme({ primary: "#4F46E5", accentStrategy: "triadic" });
   assert.equal(theme.themes.light.foreground.primary.aa, true);
@@ -43,6 +62,13 @@ test("exports Virtari-compatible JSON and CSS", () => {
   assert.match(css, /data-theme="dark-oled"/);
   assert.match(css, /\[data-theme="dark"\] \[data-brand="custom"\]/);
   assert.equal(parseNeutralImport(JSON.stringify(theme)).light?.["12"], theme.themes.light.neutral["12"]);
+});
+
+test("maps accent roles to neutral when No Accent is selected", () => {
+  const theme = generateVirtariTheme({ primary: "#4F46E5", neutralAccent: true, neutral: recommendNeutralPalette("#4F46E5") });
+  assert.equal(theme.source.accent, "NEUTRAL");
+  assert.deepEqual(theme.themes.light.accent, theme.themes.light.neutral);
+  assert.deepEqual(theme.themes.dark.accent, theme.themes.dark.neutral);
 });
 
 test("uses the Virtari accent role curve", () => {

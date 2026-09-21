@@ -37,7 +37,7 @@
       "name": "virtari-color-engine",
       "version": "0.1.0",
       "category": "foundations",
-      "description": "Framework-agnostic OKLCH scale generation, accent harmony suggestions, WCAG contrast selection and portable Virtari theme export.",
+      "description": "Framework-agnostic OKLCH scale generation, brand-aware neutral recommendations, accent harmony suggestions, WCAG contrast selection and portable Virtari theme export.",
       "exports": {
         ".": {
           "import": {
@@ -106,6 +106,18 @@
           "sourceId": "packages/color-engine/src/index.ts"
         },
         {
+          "name": "NeutralPalettePreset",
+          "kind": "type",
+          "entrypoint": "virtari-color-engine",
+          "sourceId": "packages/color-engine/src/index.ts"
+        },
+        {
+          "name": "NeutralRecommendation",
+          "kind": "type",
+          "entrypoint": "virtari-color-engine",
+          "sourceId": "packages/color-engine/src/index.ts"
+        },
+        {
           "name": "AccentSuggestion",
           "kind": "type",
           "entrypoint": "virtari-color-engine",
@@ -120,6 +132,12 @@
         {
           "name": "VirtariColorTheme",
           "kind": "type",
+          "entrypoint": "virtari-color-engine",
+          "sourceId": "packages/color-engine/src/index.ts"
+        },
+        {
+          "name": "NEUTRAL_PALETTE_PRESETS",
+          "kind": "export",
           "entrypoint": "virtari-color-engine",
           "sourceId": "packages/color-engine/src/index.ts"
         },
@@ -179,6 +197,12 @@
         },
         {
           "name": "suggestAccents",
+          "kind": "export",
+          "entrypoint": "virtari-color-engine",
+          "sourceId": "packages/color-engine/src/index.ts"
+        },
+        {
+          "name": "recommendNeutralPalette",
           "kind": "export",
           "entrypoint": "virtari-color-engine",
           "sourceId": "packages/color-engine/src/index.ts"
@@ -261,13 +285,16 @@
       ],
       "guidance": [
         "Install 'virtari-color-engine' for headless use, or add its editable source through the Virtari source registry.",
+        "Use NEUTRAL_PALETTE_PRESETS for curated named gray foundations and recommendNeutralPalette(primary, accent?) for an automatic brand-aware neutral tint.",
         "Use generateNeutralScale for tinted gray palettes, suggestAccents for color-theory candidates and generateVirtariTheme for complete light, dark and dark-oled token documents.",
+        "For a No Accent system, pass neutralAccent: true. Components retain their accent token roles, but those roles resolve to the neutral scale; do not introduce another brand color role.",
         "Use themeToCss or themeToJson for portable outputs. The CSS export binds Virtari primitive scales and the canonical on-primary and on-accent foreground roles.",
         "Use chooseForeground and contrastRatio for opaque sRGB pairs, then validate the final composited interface in its real states."
       ],
       "pitfalls": [
         "The contrast result covers the supplied color pair; it does not establish page-level WCAG conformance.",
         "Do not present WCAG 3 or APCA as stable conformance standards.",
+        "Virtari color themes use Primary, Accent and Neutral roles. Keep Accent naming consistent across code and documentation.",
         "Do not create parallel color variables when a generated Virtari role already exists."
       ],
       "related": [
@@ -158528,12 +158555,12 @@
         "react-toast"
       ],
       "sourceId": "apps/docs/src/pages/ColorGeneratorPage.tsx",
-      "startLine": 148,
-      "endLine": 153,
-      "code": "<Section title=\"Build your color system\" description=\"Pick a primary, choose an accent relationship, select a neutral palette, then export production-ready Virtari tokens.\">\n      <div className=\"docs-color-engine-toolbar\">\n        <Stepper activeStep={step} size=\"sm\" variant=\"soft\" tone=\"primary\" aria-label=\"Color generator progress\" className=\"docs-color-engine-stepper\"><StepperStep label=\"Primary\" /><StepperStep label=\"Accent\" /><StepperStep label=\"Neutral\" /><StepperStep label=\"Export\" /></Stepper>\n        <Button type=\"button\" size=\"sm\" color=\"contrast\" variant=\"outline\" leftSection={<IconRefresh size={16} aria-hidden />} onClick={resetTheme}>Reset choices</Button>\n      </div>\n    </Section>",
+      "startLine": 151,
+      "endLine": 155,
+      "code": "<Section title=\"Build your color system\" description=\"Pick a primary, choose an accent relationship, select a neutral palette, then export production-ready Virtari tokens.\">\n      <div className=\"docs-color-engine-toolbar\">\n        <Stepper activeStep={step} size=\"sm\" variant=\"soft\" tone=\"primary\" aria-label=\"Color generator progress\" className=\"docs-color-engine-stepper\"><StepperStep label=\"Primary\" /><StepperStep label=\"Accent\" /><StepperStep label=\"Neutral\" /><StepperStep label=\"Export\" /></Stepper>\n      </div>\n    </Section>",
       "imports": [
         "import { useEffect, useMemo, useState } from \"react\";",
-        "import {\n  generateVirtariTheme,\n  parseNeutralImport,\n  suggestAccents,\n  themeToCss,\n  themeToJson,\n  type AccentStrategy,\n  type ColorScale,\n  type ThemeName,\n  type VirtariColorTheme,\n} from \"virtari-color-engine\";",
+        "import {\n  NEUTRAL_PALETTE_PRESETS,\n  generateVirtariTheme,\n  parseNeutralImport,\n  recommendNeutralPalette,\n  suggestAccents,\n  themeToCss,\n  themeToJson,\n  type AccentStrategy,\n  type ColorScale,\n  type ThemeName,\n  type VirtariColorTheme,\n} from \"virtari-color-engine\";",
         "import { Button } from \"@virtari-packages/react-button\";",
         "import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from \"@virtari-packages/react-accordion\";",
         "import { ColorPicker, rgbaToHexString } from \"@virtari-packages/react-color-picker\";",
@@ -162415,7 +162442,7 @@
       ],
       "sourceId": "apps/docs/src/pages/GrayShadeMakerPage.tsx",
       "startLine": 1,
-      "endLine": 163,
+      "endLine": 155,
       "code": null,
       "imports": [
         "import { useEffect, useMemo, useState, type CSSProperties } from \"react\";",
@@ -162426,7 +162453,7 @@
         "import { Slider } from \"@virtari-packages/react-slider\";",
         "import { Switch } from \"@virtari-packages/react-switch\";",
         "import { toast } from \"@virtari-packages/react-toast\";",
-        "import {\n  chooseForeground,\n  generateNeutralScale,\n  oklchToRgb,\n  parseOklch,\n  rgbToHex,\n  type ColorScale,\n  type ColorStep,\n} from \"virtari-color-engine\";",
+        "import {\n  NEUTRAL_PALETTE_PRESETS,\n  chooseForeground,\n  generateNeutralScale,\n  oklchToRgb,\n  parseOklch,\n  rgbToHex,\n  type ColorScale,\n  type ColorStep,\n} from \"virtari-color-engine\";",
         "import { useTranslation } from \"react-i18next\";"
       ]
     },
@@ -169547,8 +169574,8 @@
     },
     {
       "id": "apps/docs/src/pages/ColorGeneratorPage.tsx",
-      "sha256": "9bdff67ff252baaad1e146dcc95f4104df26c3de03e231c1de6824d35931a8b4",
-      "bytes": 18374,
+      "sha256": "a8c17f11bb55561549f8d3c4ab3c4a7f5edafa8a3aebf2a30c6edd06c841752b",
+      "bytes": 20221,
       "kind": "tsx"
     },
     {
@@ -169673,8 +169700,8 @@
     },
     {
       "id": "apps/docs/src/pages/GrayShadeMakerPage.tsx",
-      "sha256": "8a9cc3a00e51f8892f41a05a5cd1c87025825f101ee81df9f5818499cd34e4bc",
-      "bytes": 13340,
+      "sha256": "5227ff26528601d11dcc01414f646526ab1f8fdf7ffa2d0fa22cf8ce8660180f",
+      "bytes": 12777,
       "kind": "tsx"
     },
     {
@@ -169973,8 +170000,8 @@
     },
     {
       "id": "apps/docs/src/styles/color-generator.css",
-      "sha256": "6d38b77e06151398daf7780fcd03e7efbf97ef931d485702a37df297194182ac",
-      "bytes": 9149,
+      "sha256": "cd5165908fc8d2071b0adbb8a4795b404ea8544e00aa83299ead49bb2c112301",
+      "bytes": 9539,
       "kind": "css"
     },
     {
@@ -169991,8 +170018,8 @@
     },
     {
       "id": "apps/docs/src/styles/gray-shade-maker.css",
-      "sha256": "05bd3a22bf316c096580ba597f48afcd093297a681897ae0ce336ac17bf2f4ad",
-      "bytes": 6328,
+      "sha256": "3c17ad67facd11dd9b807c83c96fd90bca2f3461b190894a9ce7685cdf1ad7c6",
+      "bytes": 6193,
       "kind": "css"
     },
     {
@@ -170107,6 +170134,12 @@
       "id": "docs/page-audit/code.md",
       "sha256": "9dd2ce0bc08cb64d3e91750b32c62a40b169fb7b31808161ec3bc32b3bdf9961",
       "bytes": 3433,
+      "kind": "md"
+    },
+    {
+      "id": "docs/page-audit/color-engine.md",
+      "sha256": "ffe5b9795642e19274176c832bd2eb37ccc417a6e1dfe3a00282a6f4a1c77901",
+      "bytes": 1483,
       "kind": "md"
     },
     {
@@ -170231,8 +170264,8 @@
     },
     {
       "id": "packages/color-engine/src/index.ts",
-      "sha256": "62a31a3c5e6faa207c10ed38658e25ce54d8a2c6c51cb4a07c1aa9aa26ae6200",
-      "bytes": 15215,
+      "sha256": "c8f4acb2e82ded85a761ea9f6af357345056fecd5b59a4528eee70596e7ac3a3",
+      "bytes": 21369,
       "kind": "ts"
     },
     {

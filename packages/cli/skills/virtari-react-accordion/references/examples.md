@@ -11,6 +11,6 @@ All documentation sections importing this package (some demonstrate another pack
 - `accordion/5` — Multiple open; source `apps/docs/src/pages/AccordionPage.tsx` lines 193–211.
 - `accordion/6` — FAQ (SEO-friendly); source `apps/docs/src/pages/AccordionPage.tsx` lines 214–244.
 - `accordion/7` — Usage; source `apps/docs/src/pages/AccordionPage.tsx` lines 247–267.
-- `color-generator/1` — Build your color system; source `apps/docs/src/pages/ColorGeneratorPage.tsx` lines 148–153.
+- `color-generator/1` — Build your color system; source `apps/docs/src/pages/ColorGeneratorPage.tsx` lines 151–155.
 
 MCP: `get_record({collection:"examples",id:"<example ID>"})`; then `read_source` for full page context. A section fragment may reference imports, state, helper components, assets, docs CSS or shared page scaffolding.

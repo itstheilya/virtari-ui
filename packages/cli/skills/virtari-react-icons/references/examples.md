@@ -79,7 +79,7 @@ All documentation sections importing this package (some demonstrate another pack
 - `chip/13` — Example — Product card meta; source `apps/docs/src/pages/ChipPage.tsx` lines 504–616.
 - `chip/14` — Example — Event metadata; source `apps/docs/src/pages/ChipPage.tsx` lines 619–643.
 - `chip/15` — Usage; source `apps/docs/src/pages/ChipPage.tsx` lines 646–670.
-- `color-generator/1` — Build your color system; source `apps/docs/src/pages/ColorGeneratorPage.tsx` lines 148–153.
+- `color-generator/1` — Build your color system; source `apps/docs/src/pages/ColorGeneratorPage.tsx` lines 151–155.
 - `command/1` — Overview; source `apps/docs/src/pages/CommandPage.tsx` lines 273–280.
 - `command/2` — Inline palette; source `apps/docs/src/pages/CommandPage.tsx` lines 282–287.
 - `command/3` — CommandDialog with a keyboard shortcut; source `apps/docs/src/pages/CommandPage.tsx` lines 289–294.
@@ -92,7 +92,7 @@ All documentation sections importing this package (some demonstrate another pack
 - `file-upload/4` — Multi-file; source `apps/docs/src/pages/FileUploadPage.tsx` lines 276–281.
 - `file-upload/5` — Validation & rejections; source `apps/docs/src/pages/FileUploadPage.tsx` lines 283–288.
 - `file-upload/6` — Usage; source `apps/docs/src/pages/FileUploadPage.tsx` lines 290–331.
-- `gray-shade-maker/page` — gray-shade-maker page; source `apps/docs/src/pages/GrayShadeMakerPage.tsx` lines 1–163.
+- `gray-shade-maker/page` — gray-shade-maker page; source `apps/docs/src/pages/GrayShadeMakerPage.tsx` lines 1–155.
 - `input/1` — Field composition; source `apps/docs/src/pages/InputPage.tsx` lines 23–28.
 - `input/2` — Sizes; source `apps/docs/src/pages/InputPage.tsx` lines 29–31.
 - `input/3` — Icons and affixes; source `apps/docs/src/pages/InputPage.tsx` lines 32–39.

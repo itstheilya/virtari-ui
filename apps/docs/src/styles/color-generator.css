@@ -1,6 +1,6 @@
 @layer docs {
   .docs-color-engine { inline-size: 100%; min-inline-size: 0; }
-  .docs-color-engine-toolbar { display: flex; align-items: center; justify-content: space-between; gap: var(--vds-space-4); }
+  .docs-color-engine-toolbar { display: block; }
   .docs-color-engine-stepper { flex: 1 1 34rem; max-inline-size: 48rem; }
   .docs-color-engine-stage { display: grid; gap: var(--vds-space-5); min-inline-size: 0; padding: var(--vds-space-5); background-color: var(--vds-color-surface-container-low, var(--vds-color-bg-subtle)); border: 1px solid var(--vds-color-border-muted); border-radius: var(--vds-radius-card); }
   .docs-color-engine-stage-head { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: var(--vds-space-3); align-items: start; }
@@ -10,8 +10,8 @@
   .docs-color-engine-stage-head p, .docs-color-engine-custom-row span, .docs-color-engine-selection-preview > div > span, .docs-color-engine-note { color: var(--vds-color-text-muted); font-size: var(--vds-text-sm); line-height: var(--vds-leading-relaxed); }
   .docs-color-engine-stage-head p { margin-block-start: var(--vds-space-1); }
 
-  .docs-color-engine-primary-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--vds-space-2); }
-  .docs-color-engine-primary-option.vds-button { block-size: auto; min-block-size: 3.5rem; min-inline-size: 0; padding: var(--vds-space-2) var(--vds-space-3); justify-content: stretch; border-color: transparent; }
+  .docs-color-engine-primary-grid, .docs-color-engine-neutral-options { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--vds-space-2); }
+  .docs-color-engine-primary-option.vds-button, .docs-color-engine-neutral-option.vds-button { block-size: auto; min-block-size: 3.5rem; min-inline-size: 0; padding: var(--vds-space-2) var(--vds-space-3); justify-content: stretch; border-color: transparent; }
   .docs-color-engine-primary-option .vds-button-label { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: var(--vds-space-2); align-items: center; inline-size: 100%; min-inline-size: 0; text-align: start; }
   .docs-color-engine-primary-meta { display: grid; gap: 0; min-inline-size: 0; }
   .docs-color-engine-primary-meta code { color: var(--vds-color-text-subtle); font-size: var(--vds-text-2xs); line-height: 1.35; }
@@ -40,39 +40,46 @@
   .docs-color-engine-theory-pair { display: inline-flex; align-items: center; min-inline-size: 2.25rem; }
   .docs-color-engine-theory-pair i { inline-size: 1.375rem; block-size: 1.375rem; border-radius: var(--vds-radius-full); box-shadow: inset 0 0 0 1px rgb(0 0 0 / 12%); }
   .docs-color-engine-theory-pair i + i { margin-inline-start: -.5rem; box-shadow: 0 0 0 2px var(--vds-color-neutral-3), inset 0 0 0 1px rgb(0 0 0 / 12%); }
+  .docs-color-engine-theory-pair-neutral i:last-child { background-color: var(--vds-color-neutral-9); }
 
-  .docs-color-engine-neutral-options, .docs-color-engine-summary { display: grid; gap: var(--vds-space-2); }
-  .docs-color-engine-neutral-option.vds-button { block-size: auto; min-block-size: 4.5rem; min-inline-size: 0; padding: var(--vds-space-3); justify-content: stretch; border-color: transparent; }
-  .docs-color-engine-neutral-option .vds-button-label { display: grid; grid-template-columns: minmax(10rem, .6fr) minmax(15rem, 1.4fr) auto; gap: var(--vds-space-4); align-items: center; inline-size: 100%; min-inline-size: 0; text-align: start; }
-  .docs-color-engine-neutral-option .vds-button-label > span:first-child { display: grid; gap: var(--vds-space-1); }
+  .docs-color-engine-summary { display: grid; gap: var(--vds-space-2); }
+  .docs-color-engine-neutral-option.vds-button { min-block-size: 6.25rem; }
+  .docs-color-engine-neutral-option .vds-button-label { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--vds-space-2); align-items: center; inline-size: 100%; min-inline-size: 0; text-align: start; }
+  .docs-color-engine-neutral-meta { display: grid; gap: 0; min-inline-size: 0; }
+  .docs-color-engine-neutral-option .docs-color-engine-palette { grid-column: 1 / -1; min-block-size: 1.5rem; }
   .docs-color-engine-import { inline-size: 100%; }
 
   .docs-color-engine-summary > div { display: grid; grid-template-columns: 7rem minmax(0, 1fr) 7rem; gap: var(--vds-space-3); align-items: center; padding-block: var(--vds-space-2); border-block-end: 1px solid var(--vds-color-border-muted); }
   .docs-color-engine-summary code { color: var(--vds-color-text-subtle); font-size: var(--vds-text-xs); text-align: end; }
-  .docs-color-engine-downloads, .docs-color-engine-navigation { display: flex; align-items: center; justify-content: flex-end; gap: var(--vds-space-2); }
-  .docs-color-engine-navigation { justify-content: space-between; padding-block-start: var(--vds-space-4); border-block-start: 1px solid var(--vds-color-border-muted); }
+  .docs-color-engine-downloads { display: flex; align-items: center; justify-content: flex-end; gap: var(--vds-space-2); }
+  .docs-color-engine-navigation { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: var(--vds-space-2); padding-block-start: var(--vds-space-4); border-block-start: 1px solid var(--vds-color-border-muted); }
+  .docs-color-engine-navigation > :first-child { justify-self: start; }
+  .docs-color-engine-navigation > :last-child { justify-self: end; }
+  .docs-color-engine-reset { justify-self: center; color: var(--vds-color-text-muted); }
   .docs-color-engine-note { margin: 0; }
   .docs-color-engine .vds-button { background-image: none; }
 
   @media (max-width: 860px) {
-    .docs-color-engine-primary-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .docs-color-engine-primary-grid, .docs-color-engine-neutral-options { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     .docs-color-engine-selection-preview { grid-template-columns: minmax(0, 1fr); }
     .docs-color-engine-ratio { white-space: normal; }
   }
   @media (max-width: 640px) {
-    .docs-color-engine-toolbar, .docs-color-engine-custom-row { align-items: stretch; flex-direction: column; }
+    .docs-color-engine-custom-row { align-items: stretch; flex-direction: column; }
     .docs-color-engine-stepper { --stepper-horizontal-item-min: 4rem; --stepper-gap: var(--vds-space-1); flex: 0 1 auto; inline-size: 100%; max-inline-size: none; }
     .docs-color-engine-stepper[data-orientation="horizontal"] { grid-auto-columns: minmax(0, 1fr); overflow-x: hidden; }
     .docs-color-engine-stepper[data-orientation="horizontal"] .vds-stepper-step { min-inline-size: 0; }
     .docs-color-engine-stage { gap: var(--vds-space-4); padding: var(--vds-space-4); }
-    .docs-color-engine-primary-grid, .docs-color-engine-theories { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .docs-color-engine-primary-grid, .docs-color-engine-theories, .docs-color-engine-neutral-options { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .docs-color-engine-theory .vds-button-label { grid-template-columns: auto minmax(0, 1fr) auto; }
     .docs-color-engine-theory-color { display: none; }
-    .docs-color-engine-neutral-option .vds-button-label, .docs-color-engine-summary > div { grid-template-columns: minmax(0, 1fr) auto; }
-    .docs-color-engine-neutral-option .docs-color-engine-palette, .docs-color-engine-summary .docs-color-engine-palette { grid-column: 1 / -1; grid-row: 2; }
+    .docs-color-engine-summary > div { grid-template-columns: minmax(0, 1fr) auto; }
+    .docs-color-engine-summary .docs-color-engine-palette { grid-column: 1 / -1; grid-row: 2; }
   }
   @media (max-width: 430px) {
-    .docs-color-engine-primary-grid, .docs-color-engine-theories { grid-template-columns: minmax(0, 1fr); }
+    .docs-color-engine-primary-grid, .docs-color-engine-theories, .docs-color-engine-neutral-options { grid-template-columns: minmax(0, 1fr); }
     .docs-color-engine-downloads { align-items: stretch; flex-direction: column; }
+    .docs-color-engine-navigation { grid-template-columns: 1fr 1fr; }
+    .docs-color-engine-reset { grid-column: 1 / -1; grid-row: 2; inline-size: 100%; }
   }
 }

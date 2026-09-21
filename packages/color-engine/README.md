@@ -7,13 +7,15 @@ pnpm add virtari-color-engine
 ```
 
 ```ts
-import { generateVirtariTheme, themeToCss } from "virtari-color-engine";
+import { generateVirtariTheme, recommendNeutralPalette, themeToCss } from "virtari-color-engine";
+
+const neutral = recommendNeutralPalette("#4F46E5", "#24B39B");
 
 const theme = generateVirtariTheme({
   name: "Acme",
   primary: "#4F46E5",
   accentStrategy: "complementary",
-  neutral: { hue: 265, chroma: 0.012 },
+  neutral,
 });
 
 document.documentElement.dataset.brand = "custom";
@@ -27,6 +29,8 @@ The generator returns twelve-step light and dark neutral, primary, and accent sc
 ## API
 
 - `generateNeutralScale(theme, options)` creates neutral or tinted-gray scales.
+- `NEUTRAL_PALETTE_PRESETS` provides more than twenty named neutral foundations.
+- `recommendNeutralPalette(primary, accent?)` derives a quiet neutral tint from the active brand relationship.
 - `generateColorScale(seed, theme, role)` creates a primary or accent scale from a hex seed. The optional role defaults to `primary`.
 - `suggestAccents(primary)` returns complementary, analogous, triadic, and split-complementary candidates.
 - `chooseForeground(background)` returns black or white and AA/AAA results.
@@ -34,6 +38,8 @@ The generator returns twelve-step light and dark neutral, primary, and accent sc
 - `generateVirtariTheme(options)` creates the versioned portable theme document.
 - `themeToJson(theme)` and `themeToCss(theme, { brand })` create downloadable outputs. Brand names are restricted to safe CSS identifier characters.
 - `parseNeutralImport(json)` validates a Gray Shade Maker or full-theme JSON payload.
+
+Pass `neutralAccent: true` to `generateVirtariTheme` for a **No Accent** system. Accent token roles remain available to components, but they resolve to the generated neutral scale instead of introducing another brand color.
 
 ## Accessibility scope
 

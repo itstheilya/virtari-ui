@@ -30,9 +30,12 @@ Use CSS entry points only if they appear in this map. Foundation CSS packages ex
 - `ColorStep` (type) from `virtari-color-engine`; source: `packages/color-engine/src/index.ts`.
 - `ColorScale` (type) from `virtari-color-engine`; source: `packages/color-engine/src/index.ts`.
 - `NeutralScaleOptions` (type) from `virtari-color-engine`; source: `packages/color-engine/src/index.ts`.
+- `NeutralPalettePreset` (type) from `virtari-color-engine`; source: `packages/color-engine/src/index.ts`.
+- `NeutralRecommendation` (type) from `virtari-color-engine`; source: `packages/color-engine/src/index.ts`.
 - `AccentSuggestion` (type) from `virtari-color-engine`; source: `packages/color-engine/src/index.ts`.
 - `ForegroundChoice` (type) from `virtari-color-engine`; source: `packages/color-engine/src/index.ts`.
 - `VirtariColorTheme` (type) from `virtari-color-engine`; source: `packages/color-engine/src/index.ts`.
+- `NEUTRAL_PALETTE_PRESETS` (export) from `virtari-color-engine`; source: `packages/color-engine/src/index.ts`.
 - `oklchToRgb` (export) from `virtari-color-engine`; source: `packages/color-engine/src/index.ts`.
 - `rgbToOklch` (export) from `virtari-color-engine`; source: `packages/color-engine/src/index.ts`.
 - `parseHex` (export) from `virtari-color-engine`; source: `packages/color-engine/src/index.ts`.
@@ -43,6 +46,7 @@ Use CSS entry points only if they appear in this map. Foundation CSS packages ex
 - `generateNeutralScale` (export) from `virtari-color-engine`; source: `packages/color-engine/src/index.ts`.
 - `generateColorScale` (export) from `virtari-color-engine`; source: `packages/color-engine/src/index.ts`.
 - `suggestAccents` (export) from `virtari-color-engine`; source: `packages/color-engine/src/index.ts`.
+- `recommendNeutralPalette` (export) from `virtari-color-engine`; source: `packages/color-engine/src/index.ts`.
 - `relativeLuminance` (export) from `virtari-color-engine`; source: `packages/color-engine/src/index.ts`.
 - `contrastRatio` (export) from `virtari-color-engine`; source: `packages/color-engine/src/index.ts`.
 - `chooseForeground` (export) from `virtari-color-engine`; source: `packages/color-engine/src/index.ts`.
@@ -112,6 +116,25 @@ export interface NeutralScaleOptions {
   hue?: number;
   chroma?: number;
   oled?: boolean;
+}
+```
+
+Source: `packages/color-engine/src/index.ts`
+
+```tsx
+export interface NeutralPalettePreset extends Required<Pick<NeutralScaleOptions, "hue" | "chroma">> {
+  id: string;
+  label: string;
+  description: string;
+}
+```
+
+Source: `packages/color-engine/src/index.ts`
+
+```tsx
+export interface NeutralRecommendation extends Required<Pick<NeutralScaleOptions, "hue" | "chroma">> {
+  relationship: "single-brand" | "analogous" | "balanced" | "opposed";
+  description: string;
 }
 ```
 
@@ -219,6 +242,12 @@ export function suggestAccents(primary: string): AccentSuggestion[];
 Source: `packages/color-engine/src/index.ts`
 
 ```tsx
+export function recommendNeutralPalette(primary: string, accent?: string): NeutralRecommendation;
+```
+
+Source: `packages/color-engine/src/index.ts`
+
+```tsx
 export function relativeLuminance(color: string | Rgb);
 ```
 
@@ -250,6 +279,7 @@ export interface GenerateThemeOptions {
   accentStrategy?: AccentStrategy;
   neutral?: NeutralScaleOptions;
   neutralScales?: Partial<Record<ThemeName, ColorScale>>;
+  neutralAccent?: boolean;
 }
 ```
 
