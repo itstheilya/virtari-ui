@@ -60,14 +60,14 @@
     "@virtari-packages/utils": "workspace:*"
   },
   "peerDependencies": {
-    "@tabler/icons-react": "^3.0.0",
+    "@tabler/icons-react": "^3.46.0",
     "react": "^18.0.0 || ^19.0.0",
     "react-dom": "^18.0.0 || ^19.0.0"
   },
   "devDependencies": {
-    "@tabler/icons-react": "^3.0.0",
-    "react": "^19.2.5",
-    "@types/react": "^19.2.14",
+    "@tabler/icons-react": "^3.46.0",
+    "react": "^19.3.0",
+    "@types/react": "^19.3.0",
     "typescript": "^5.5.0",
     "tsup": "^8.0.0"
   }

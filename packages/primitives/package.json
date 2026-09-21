@@ -531,21 +531,21 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@floating-ui/react-dom": "^2.1.8",
+    "@floating-ui/react-dom": "^2.1.9",
     "aria-hidden": "^1.2.6",
     "react-remove-scroll": "^2.7.2",
-    "use-sync-external-store": "^1.6.0"
+    "use-sync-external-store": "^1.7.0"
   },
   "peerDependencies": {
     "react": "^18.0.0 || ^19.0.0",
     "react-dom": "^18.0.0 || ^19.0.0"
   },
   "devDependencies": {
-    "react": "^19.2.5",
-    "react-dom": "^19.2.5",
-    "@types/react": "^19.2.14",
-    "@types/react-dom": "^19.2.4",
-    "@types/use-sync-external-store": "^1.5.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/use-sync-external-store": "^1.7.0",
     "@types/node": "^22.0.0",
     "typescript": "^5.5.0",
     "tsup": "^8.0.0"
