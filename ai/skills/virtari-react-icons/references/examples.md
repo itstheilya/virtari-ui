@@ -79,7 +79,7 @@ All documentation sections importing this package (some demonstrate another pack
 - `chip/13` — Example — Product card meta; source `apps/docs/src/pages/ChipPage.tsx` lines 504–616.
 - `chip/14` — Example — Event metadata; source `apps/docs/src/pages/ChipPage.tsx` lines 619–643.
 - `chip/15` — Usage; source `apps/docs/src/pages/ChipPage.tsx` lines 646–670.
-- `color-generator/1` — Build your color system; source `apps/docs/src/pages/ColorGeneratorPage.tsx` lines 155–160.
+- `color-generator/1` — Build your color system; source `apps/docs/src/pages/ColorGeneratorPage.tsx` lines 148–153.
 - `command/1` — Overview; source `apps/docs/src/pages/CommandPage.tsx` lines 273–280.
 - `command/2` — Inline palette; source `apps/docs/src/pages/CommandPage.tsx` lines 282–287.
 - `command/3` — CommandDialog with a keyboard shortcut; source `apps/docs/src/pages/CommandPage.tsx` lines 289–294.

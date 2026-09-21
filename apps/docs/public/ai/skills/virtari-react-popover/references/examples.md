@@ -4,7 +4,7 @@
 
 All documentation sections importing this package (some demonstrate another package):
 
-- `color-generator/1` — Build your color system; source `apps/docs/src/pages/ColorGeneratorPage.tsx` lines 155–160.
+- `color-generator/1` — Build your color system; source `apps/docs/src/pages/ColorGeneratorPage.tsx` lines 148–153.
 - `popover/1` — Basic; source `apps/docs/src/pages/PopoverPage.tsx` lines 9–33.
 - `popover/2` — Placements; source `apps/docs/src/pages/PopoverPage.tsx` lines 35–56.
 - `popover/3` — Usage; source `apps/docs/src/pages/PopoverPage.tsx` lines 58–69.

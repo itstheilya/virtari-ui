@@ -4,7 +4,7 @@
 
 All documentation sections importing this package (some demonstrate another package):
 
-- `color-generator/1` — Build your color system; source `apps/docs/src/pages/ColorGeneratorPage.tsx` lines 155–160.
+- `color-generator/1` — Build your color system; source `apps/docs/src/pages/ColorGeneratorPage.tsx` lines 148–153.
 - `stepper/1` — Interactive Card Stepper; source `apps/docs/src/pages/StepperPage.tsx` lines 58–99.
 - `stepper/2` — Soft Fulfillment; source `apps/docs/src/pages/StepperPage.tsx` lines 101–117.
 - `stepper/3` — Variants; source `apps/docs/src/pages/StepperPage.tsx` lines 119–146.

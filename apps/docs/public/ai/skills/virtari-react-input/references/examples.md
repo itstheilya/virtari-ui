@@ -65,7 +65,7 @@ All documentation sections importing this package (some demonstrate another pack
 - `chip/13` — Example — Product card meta; source `apps/docs/src/pages/ChipPage.tsx` lines 504–616.
 - `chip/14` — Example — Event metadata; source `apps/docs/src/pages/ChipPage.tsx` lines 619–643.
 - `chip/15` — Usage; source `apps/docs/src/pages/ChipPage.tsx` lines 646–670.
-- `color-generator/1` — Build your color system; source `apps/docs/src/pages/ColorGeneratorPage.tsx` lines 155–160.
+- `color-generator/1` — Build your color system; source `apps/docs/src/pages/ColorGeneratorPage.tsx` lines 148–153.
 - `colors/1` — {copy("Color catalog", "فهرست رنگ‌ها")}; source `apps/docs/src/pages/ColorsPage.tsx` lines 43–62.
 - `data-table-users/page` — data-table-users page; source `apps/docs/src/pages/DataTableUsersPage.tsx` lines 1–1553.
 - `design-guidelines/1` — {copy("Make every field understandable", "هر فیلد را قابل‌فهم کنید")}; source `apps/docs/src/pages/DesignGuidelinesPage.tsx` lines 61–69.

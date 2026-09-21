@@ -3991,7 +3991,8 @@
         "accordion/4",
         "accordion/5",
         "accordion/6",
-        "accordion/7"
+        "accordion/7",
+        "color-generator/1"
       ],
       "guidance": [
         "Compose Accordion > AccordionItem(value) > AccordionTrigger + AccordionContent. Root type is required: single uses a string value; multiple uses string arrays. In single mode pass collapsible to allow all items to close.",
@@ -16795,7 +16796,6 @@
         "packages/react-segmented-control/package.json"
       ],
       "exampleIds": [
-        "color-generator/1",
         "colors/1",
         "design-guidelines/1",
         "design-guidelines/2",
@@ -158516,30 +158516,30 @@
       "page": "color-generator",
       "packageIds": [
         "color-engine",
+        "react-accordion",
         "react-button",
         "react-color-picker",
         "react-icons",
         "react-input",
         "react-layout",
         "react-popover",
-        "react-segmented-control",
         "react-stepper",
         "react-textarea",
         "react-toast"
       ],
       "sourceId": "apps/docs/src/pages/ColorGeneratorPage.tsx",
-      "startLine": 155,
-      "endLine": 160,
-      "code": "<Section title=\"Build your color system\" description=\"Pick a primary, choose one supporting relationship, select a neutral palette, then export production-ready Virtari tokens.\">\n      <div className=\"docs-color-engine-toolbar\">\n        <Stepper activeStep={step} size=\"sm\" variant=\"soft\" tone=\"primary\" aria-label=\"Color generator progress\" className=\"docs-color-engine-stepper\"><StepperStep label=\"Primary\" /><StepperStep label=\"Supporting\" /><StepperStep label=\"Neutral\" /><StepperStep label=\"Export\" /></Stepper>\n        <Button type=\"button\" size=\"sm\" color=\"contrast\" variant=\"outline\" leftSection={<IconRefresh size={16} aria-hidden />} onClick={resetTheme}>Reset choices</Button>\n      </div>\n    </Section>",
+      "startLine": 148,
+      "endLine": 153,
+      "code": "<Section title=\"Build your color system\" description=\"Pick a primary, choose an accent relationship, select a neutral palette, then export production-ready Virtari tokens.\">\n      <div className=\"docs-color-engine-toolbar\">\n        <Stepper activeStep={step} size=\"sm\" variant=\"soft\" tone=\"primary\" aria-label=\"Color generator progress\" className=\"docs-color-engine-stepper\"><StepperStep label=\"Primary\" /><StepperStep label=\"Accent\" /><StepperStep label=\"Neutral\" /><StepperStep label=\"Export\" /></Stepper>\n        <Button type=\"button\" size=\"sm\" color=\"contrast\" variant=\"outline\" leftSection={<IconRefresh size={16} aria-hidden />} onClick={resetTheme}>Reset choices</Button>\n      </div>\n    </Section>",
       "imports": [
         "import { useEffect, useMemo, useState } from \"react\";",
         "import {\n  generateVirtariTheme,\n  parseNeutralImport,\n  suggestAccents,\n  themeToCss,\n  themeToJson,\n  type AccentStrategy,\n  type ColorScale,\n  type ThemeName,\n  type VirtariColorTheme,\n} from \"virtari-color-engine\";",
         "import { Button } from \"@virtari-packages/react-button\";",
+        "import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from \"@virtari-packages/react-accordion\";",
         "import { ColorPicker, rgbaToHexString } from \"@virtari-packages/react-color-picker\";",
         "import { IconArrowLeft, IconArrowRight, IconCheck, IconDownload, IconRefresh } from \"@virtari-packages/react-icons\";",
         "import { Cluster, Stack } from \"@virtari-packages/react-layout\";",
         "import { Popover, PopoverContent, PopoverTrigger } from \"@virtari-packages/react-popover\";",
-        "import { SegmentedControl, SegmentedControlItem } from \"@virtari-packages/react-segmented-control\";",
         "import { Stepper, StepperStep } from \"@virtari-packages/react-stepper\";",
         "import { InputField } from \"@virtari-packages/react-input\";",
         "import { TextareaField } from \"@virtari-packages/react-textarea\";",
@@ -169547,8 +169547,8 @@
     },
     {
       "id": "apps/docs/src/pages/ColorGeneratorPage.tsx",
-      "sha256": "06847f237753f810179dd6339f0f16bea824b9a9a829b2c431c3ebfa344c35a4",
-      "bytes": 18902,
+      "sha256": "9bdff67ff252baaad1e146dcc95f4104df26c3de03e231c1de6824d35931a8b4",
+      "bytes": 18374,
       "kind": "tsx"
     },
     {
@@ -169973,8 +169973,8 @@
     },
     {
       "id": "apps/docs/src/styles/color-generator.css",
-      "sha256": "48a348119451188f3dd867596c61168f9fc2b5f9a3aa972fff4a5dcd17b28bfd",
-      "bytes": 11252,
+      "sha256": "6d38b77e06151398daf7780fcd03e7efbf97ef931d485702a37df297194182ac",
+      "bytes": 9149,
       "kind": "css"
     },
     {

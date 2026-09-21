@@ -19,7 +19,7 @@ All documentation sections importing this package (some demonstrate another pack
 - `badge/13` — Composition patterns; source `apps/docs/src/pages/BadgePage.tsx` lines 667–700.
 - `badge/14` — API reference; source `apps/docs/src/pages/BadgePage.tsx` lines 706–726.
 - `badge/15` — Accessibility; source `apps/docs/src/pages/BadgePage.tsx` lines 732–761.
-- `color-generator/1` — Build your color system; source `apps/docs/src/pages/ColorGeneratorPage.tsx` lines 155–160.
+- `color-generator/1` — Build your color system; source `apps/docs/src/pages/ColorGeneratorPage.tsx` lines 148–153.
 - `colors/1` — {copy("Color catalog", "فهرست رنگ‌ها")}; source `apps/docs/src/pages/ColorsPage.tsx` lines 43–62.
 - `data-table-orders/page` — data-table-orders page; source `apps/docs/src/pages/DataTableOrdersPage.tsx` lines 1–490.
 - `data-table/1` — Basic; source `apps/docs/src/pages/DataTablePage.tsx` lines 1087–1092.

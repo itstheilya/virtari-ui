@@ -65,7 +65,7 @@ All documentation sections importing this package (some demonstrate another pack
 - `collapsible/1` — Basic; source `apps/docs/src/pages/CollapsiblePage.tsx` lines 16–42.
 - `collapsible/2` — Default Open; source `apps/docs/src/pages/CollapsiblePage.tsx` lines 44–57.
 - `collapsible/3` — Usage; source `apps/docs/src/pages/CollapsiblePage.tsx` lines 59–70.
-- `color-generator/1` — Build your color system; source `apps/docs/src/pages/ColorGeneratorPage.tsx` lines 155–160.
+- `color-generator/1` — Build your color system; source `apps/docs/src/pages/ColorGeneratorPage.tsx` lines 148–153.
 - `colors/1` — {copy("Color catalog", "فهرست رنگ‌ها")}; source `apps/docs/src/pages/ColorsPage.tsx` lines 43–62.
 - `command/1` — Overview; source `apps/docs/src/pages/CommandPage.tsx` lines 273–280.
 - `command/2` — Inline palette; source `apps/docs/src/pages/CommandPage.tsx` lines 282–287.

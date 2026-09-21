@@ -54,7 +54,7 @@ All documentation sections importing this package (some demonstrate another pack
 - `code/10` — Live editor; source `apps/docs/src/pages/CodePage.tsx` lines 406–450.
 - `code/11` — Inline code; source `apps/docs/src/pages/CodePage.tsx` lines 453–463.
 - `code/12` — In context — embedded inside a Card; source `apps/docs/src/pages/CodePage.tsx` lines 466–483.
-- `color-generator/1` — Build your color system; source `apps/docs/src/pages/ColorGeneratorPage.tsx` lines 155–160.
+- `color-generator/1` — Build your color system; source `apps/docs/src/pages/ColorGeneratorPage.tsx` lines 148–153.
 - `colors/1` — {copy("Color catalog", "فهرست رنگ‌ها")}; source `apps/docs/src/pages/ColorsPage.tsx` lines 43–62.
 - `composition/1` — Stack; source `apps/docs/src/pages/CompositionPage.tsx` lines 28–44.
 - `composition/2` — Cluster; source `apps/docs/src/pages/CompositionPage.tsx` lines 46–65.
