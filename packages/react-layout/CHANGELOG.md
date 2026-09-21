@@ -1,5 +1,15 @@
 # @virtari-packages/react-layout
 
+## 0.3.2
+
+### Patch Changes
+
+- aeb16a1: Unify field and container appearance through bordered, tonal and elevated surface roles. Preserve semantic focus and invalid cues and stable control geometry. Add smart ScrollArea visibility and viewport access, quiet native desktop scrollbars, mode-aware nested card radii and tones, and flex-gap Stack spacing.
+- Updated dependencies [35df268]
+- Updated dependencies [f2badbc]
+- Updated dependencies [800f0f5]
+  - @virtari-packages/utils@0.5.0
+
 ## 0.3.1
 
 ### Patch Changes

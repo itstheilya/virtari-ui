@@ -1,6 +1,6 @@
 {
   "name": "@virtari-packages/react-code",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Virtari code — read-only viewer, live editor, and inline snippet powered by CodeMirror 6 with token-driven theming.",
   "license": "MIT",
   "author": "Virtari",

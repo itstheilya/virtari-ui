@@ -1,6 +1,6 @@
 {
   "name": "@virtari-packages/react-command",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Virtari command palette — cmdk wrapper with grouped results, keyboard shortcuts, and Dialog container.",
   "license": "MIT",
   "author": "Virtari",

@@ -1,6 +1,6 @@
 {
   "name": "@virtari-packages/react-card",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Virtari card — accessible React component built on CSS variables and logical properties.",
   "license": "MIT",
   "author": "Virtari",

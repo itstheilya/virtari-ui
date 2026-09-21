@@ -1,6 +1,6 @@
 {
   "name": "@virtari-packages/primitives",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Virtari headless primitives — accessible, unstyled React behaviour layer (focus management, positioning, keyboard navigation) powering @virtari-packages/react-*.",
   "license": "MIT",
   "author": "Virtari",

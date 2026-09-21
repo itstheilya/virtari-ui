@@ -1,6 +1,6 @@
 {
   "name": "@virtari-packages/react-button-group",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "description": "Virtari button group — segmented row of buttons that inherits size/variant/color from one place.",
   "license": "MIT",
   "author": "Virtari",

@@ -1,6 +1,6 @@
 {
   "name": "@virtari-packages/react-flow",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Virtari React Flow wrapper — token-aware surfaces, node shells, labeled edges, layout helpers, and persistence hooks for workflow builders.",
   "license": "MIT",
   "author": "Virtari",

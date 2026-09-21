@@ -1,6 +1,6 @@
 {
   "name": "@virtari-packages/react-yoopta-editor",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Virtari block editor - Yoopta-Editor wrapped with Virtari design tokens and primitives.",
   "license": "MIT",
   "author": "Virtari",

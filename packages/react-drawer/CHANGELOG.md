@@ -1,5 +1,32 @@
 # @virtari-packages/react-drawer
 
+## 1.1.1
+
+### Patch Changes
+
+- aeb16a1: Unify field and container appearance through bordered, tonal and elevated surface roles. Preserve semantic focus and invalid cues and stable control geometry. Add smart ScrollArea visibility and viewport access, quiet native desktop scrollbars, mode-aware nested card radii and tones, and flex-gap Stack spacing.
+- 35df268: Round all four corners when a drawer has a positive edge offset, using the existing drawer radius in every direction.
+
+  Apply floating gaps on every viewport edge and reserve both opening-axis gaps when calculating available size. Remove the panel's double scrollbar gutter so header, body, and footer own their padding without extra horizontal space.
+
+- 35df268: End dragging when mouse or pen movement reports that the primary button is no longer pressed, before consuming the new position. Capture release events so child components cannot swallow them, and ignore secondary-button releases while the primary button remains held.
+- 35df268: Give the opening translation a soft ease-out with subtle overshoot. Keep opacity, size settling, dragging, and closing on their existing curves, and retain reduced-motion timing.
+- 35df268: Replace overdrag scaling with a bounded size extension along the opening axis. The docked edge stays fixed and content remains unscaled. The free edge extends by at most 14px and returns smoothly on release. Disable the extension with stretch={false}; reduced motion and virtual keyboard interactions also suppress it.
+
+  Add bounded elastic handle feedback when pulling past the open limit, with a primary alpha halo and a soft release. Support all drawer directions and reduced motion without scaling the panel.
+
+- f2badbc: Add static package code rendering, accessible clipboard feedback and shared rendered-field metadata. Improve semantic text contrast, control composition, native form reset, keyboard behavior, nested surfaces and containment in reviewed packages.
+
+  Center control text with shared browser font metrics and separate icon/text slots; preserve ordinary line-box fallback where text-box trimming is unsupported.
+
+- 9b5353a: Establish the Virtari design language with tonal surface roles, purpose-based shape and spacing tokens, and consistent control typography. Remove global optical nudges, allow enlarged text to fit, and standardize logical icon slots across form controls. Existing component APIs and theme modes remain available; defaults intentionally change visually. InputIcon gains an optional logical side.
+- Updated dependencies [35df268]
+- Updated dependencies [f2badbc]
+- Updated dependencies [800f0f5]
+- Updated dependencies [9b5353a]
+  - @virtari-packages/utils@0.5.0
+  - @virtari-packages/primitives@1.1.0
+
 ## 1.1.0
 
 ### Minor Changes

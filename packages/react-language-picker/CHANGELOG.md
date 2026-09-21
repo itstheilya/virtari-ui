@@ -1,5 +1,29 @@
 # @virtari-packages/react-language-picker
 
+## 0.6.1
+
+### Patch Changes
+
+- 35df268: Replace form-control focus outlines with a 4px spread halo using existing primary alpha colors and a soft 180ms shadow transition. Apply the same treatment to selection, date/time, search, file, rich-text and code controls; retain danger alpha for invalid fields. Preserve forced-colors focus indicators and honor reduced-motion preferences without changing token definitions.
+- Updated dependencies [ac401c7]
+- Updated dependencies [aeb16a1]
+- Updated dependencies [35df268]
+- Updated dependencies [35df268]
+- Updated dependencies [35df268]
+- Updated dependencies [35df268]
+- Updated dependencies [35df268]
+- Updated dependencies [f2badbc]
+- Updated dependencies [c052c05]
+- Updated dependencies [0c1908a]
+- Updated dependencies [35df268]
+- Updated dependencies [800f0f5]
+- Updated dependencies [9b5353a]
+  - @virtari-packages/react-flag@0.3.1
+  - @virtari-packages/react-drawer@1.1.1
+  - @virtari-packages/react-select@1.1.1
+  - @virtari-packages/utils@0.5.0
+  - @virtari-packages/react-button@1.2.0
+
 ## 0.6.0
 
 ### Minor Changes

@@ -1,6 +1,6 @@
 {
   "name": "@virtari-packages/react-file-upload",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Virtari file upload — compound dropzone + file list with controlled/uncontrolled state, built on react-dropzone.",
   "license": "MIT",
   "author": "Virtari",

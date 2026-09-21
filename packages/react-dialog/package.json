@@ -1,6 +1,6 @@
 {
   "name": "@virtari-packages/react-dialog",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Virtari dialog — accessible React component built on CSS variables and logical properties.",
   "license": "MIT",
   "author": "Virtari",

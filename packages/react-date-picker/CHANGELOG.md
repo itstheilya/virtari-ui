@@ -1,5 +1,52 @@
 # @virtari-packages/react-date-picker
 
+## 1.1.1
+
+### Patch Changes
+
+- ac401c7: Use the historic Lion and Sun artwork for Iran, label the country as Iran, and make date-picker overlays responsive across the full component size ramp while keeping Apply and Cancel reachable.
+- aeb16a1: Unify field and container appearance through bordered, tonal and elevated surface roles. Preserve semantic focus and invalid cues and stable control geometry. Add smart ScrollArea visibility and viewport access, quiet native desktop scrollbars, mode-aware nested card radii and tones, and flex-gap Stack spacing.
+- 35df268: Fix form-control compatibility: preserve refs and React 19 ref cleanups, honor disabled/read-only controls, retain numeric drafts and tag input focus, batch pasted tags, compose keyboard handlers, and preserve native text editing during IME composition. Stop combobox close from stealing outside focus and move the select clear button outside its trigger button.
+
+  Connect date/time controls to React Aria's native form inputs. Add form association/reset support to composite controls. TagInput submits repeated name/value entries for committed tags; Combobox submits its selected values. OTP supports defaultValue and uncontrolled editing. Phone parsing refreshes when the parser loads and recognizes pasted international numbers.
+
+  Keep Yoopta editor data when readOnly changes and apply external document replacements while retaining the mounted view for ordinary edit echoes. Avoid committing table cells on composition confirmation or browser-window blur.
+
+- 0c1908a: Soften surface boundaries and add inherited default/strong field tones that preserve tinted backgrounds. Resolve semantic colors within nested themes while retaining appearance intent and honoring contrast preferences.
+
+  Keep button icon/text spacing, section slots and loading content consistent through asChild composition. Add an explicit iconOnly prop, preserve disabled link behavior, bound badge/chip SVG geometry and stabilize field metadata keys.
+
+  Let ScrollArea inherit live ancestor direction unless an explicit direction is supplied.
+
+- 35df268: Replace form-control focus outlines with a 4px spread halo using existing primary alpha colors and a soft 180ms shadow transition. Apply the same treatment to selection, date/time, search, file, rich-text and code controls; retain danger alpha for invalid fields. Preserve forced-colors focus indicators and honor reduced-motion preferences without changing token definitions.
+- 800f0f5: Align segmented tracks with field radius roles, distinguish Round from Soft controls, and keep keycaps and small checkboxes appropriately bounded. Resolve nested Flow modes, clamp Editor radius subtraction and use a semantic TimeWheel role.
+
+  Keep tab and segment indicators concentric with their tracks, bound vertical pill tracks, adapt boxed corners to radius modes, and honor explicit/provider/ancestor direction. Publish the styles required by standalone SegmentedControl consumers.
+
+  Add shared platform-aware shortcut formatting and KbdShortcut. Match Windows/Linux Control and Apple Command labels with actual key bindings and ARIA metadata. Ignore handled, composing and repeated hotkey events by default; repeated activation can be opted into.
+
+  Restore the actual opener's focus when a controlled CommandDialog closes, including an input that opened it with a shortcut. Preserve consumer autofocus callbacks and overrides.
+
+- 9b5353a: Establish the Virtari design language with tonal surface roles, purpose-based shape and spacing tokens, and consistent control typography. Remove global optical nudges, allow enlarged text to fit, and standardize logical icon slots across form controls. Existing component APIs and theme modes remain available; defaults intentionally change visually. InputIcon gains an optional logical side.
+- Updated dependencies [aeb16a1]
+- Updated dependencies [35df268]
+- Updated dependencies [35df268]
+- Updated dependencies [35df268]
+- Updated dependencies [35df268]
+- Updated dependencies [35df268]
+- Updated dependencies [f2badbc]
+- Updated dependencies [0c1908a]
+- Updated dependencies [35df268]
+- Updated dependencies [800f0f5]
+- Updated dependencies [9b5353a]
+  - @virtari-packages/react-dialog@2.0.1
+  - @virtari-packages/react-drawer@1.1.1
+  - @virtari-packages/react-radio-group@1.1.1
+  - @virtari-packages/utils@0.5.0
+  - @virtari-packages/primitives@1.1.0
+  - @virtari-packages/react-button@1.2.0
+  - @virtari-packages/react-icons@0.4.1
+
 ## 1.1.0
 
 ### Minor Changes

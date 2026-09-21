@@ -1,6 +1,6 @@
 {
   "name": "@virtari-packages/react-sidebar",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Virtari sidebar — accessible React component built on CSS variables and logical properties.",
   "license": "MIT",
   "author": "Virtari",
