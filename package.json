@@ -30,15 +30,15 @@
     "release:cli:check": "node scripts/check-cli-release.mjs && pnpm registry:check && pnpm registry:test && pnpm --filter virtari pack --dry-run"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.31.0",
-    "autoprefixer": "^10.5.0",
+    "@changesets/cli": "^3.0.3",
+    "autoprefixer": "^10.6.1",
     "postcss": "^8.5.28",
-    "postcss-cli": "^11.0.1",
-    "postcss-custom-media": "^11.0.0",
-    "postcss-import": "^16.1.1",
-    "postcss-nesting": "^14.0.0",
+    "postcss-cli": "^12.0.0",
+    "postcss-custom-media": "^12.0.1",
+    "postcss-import": "^17.0.0",
+    "postcss-nesting": "^14.0.1",
     "tsup": "^8.0.0",
-    "typescript": "^5.5.0"
+    "typescript": "^7.0.2"
   },
   "version": "1.0.0",
   "description": "<div align=\"center\">",
