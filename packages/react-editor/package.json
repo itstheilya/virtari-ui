@@ -71,20 +71,20 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@lexical/code": "^0.38.2",
-    "@lexical/extension": "^0.38.2",
-    "@lexical/history": "^0.38.2",
-    "@lexical/html": "^0.38.2",
-    "@lexical/link": "^0.38.2",
-    "@lexical/list": "^0.38.2",
-    "@lexical/mark": "^0.38.2",
-    "@lexical/markdown": "^0.38.2",
-    "@lexical/overflow": "^0.38.2",
-    "@lexical/react": "^0.38.2",
-    "@lexical/rich-text": "^0.38.2",
-    "@lexical/selection": "^0.38.2",
-    "@lexical/table": "^0.38.2",
-    "@lexical/utils": "^0.38.2",
+    "@lexical/code": "^0.51.0",
+    "@lexical/extension": "^0.51.0",
+    "@lexical/history": "^0.51.0",
+    "@lexical/html": "^0.51.0",
+    "@lexical/link": "^0.51.0",
+    "@lexical/list": "^0.51.0",
+    "@lexical/mark": "^0.51.0",
+    "@lexical/markdown": "^0.51.0",
+    "@lexical/overflow": "^0.51.0",
+    "@lexical/react": "^0.51.0",
+    "@lexical/rich-text": "^0.51.0",
+    "@lexical/selection": "^0.51.0",
+    "@lexical/table": "^0.51.0",
+    "@lexical/utils": "^0.51.0",
     "@virtari-packages/react-button": "workspace:*",
     "@virtari-packages/react-code": "workspace:*",
     "@virtari-packages/react-color-picker": "workspace:*",
@@ -100,16 +100,16 @@
     "@virtari-packages/react-textarea": "workspace:*",
     "@virtari-packages/react-tooltip": "workspace:*",
     "@virtari-packages/utils": "workspace:*",
-    "lexical": "^0.38.2"
+    "lexical": "^0.51.0"
   },
   "peerDependencies": {
     "react": "^18.0.0 || ^19.0.0",
     "react-dom": "^18.0.0 || ^19.0.0"
   },
   "devDependencies": {
-    "@types/react": "^19.2.14",
-    "@types/react-dom": "^19.2.3",
-    "react": "^19.2.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "react": "^19.3.0",
     "tsup": "^8.0.0",
     "typescript": "^5.5.0"
   }
