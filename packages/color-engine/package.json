@@ -52,7 +52,7 @@
     "test": "pnpm build && node --test test/*.test.mjs"
   },
   "devDependencies": {
-    "typescript": "^5.5.0",
+    "typescript": "^7.0.2",
     "tsup": "^8.0.0"
   }
 }
