@@ -120,7 +120,7 @@
     "slate": "^0.120.0",
     "slate-dom": "^0.119.0",
     "slate-react": "^0.120.0",
-    "zod": "^3.25.0"
+    "zod": "^4.6.6"
   },
   "devDependencies": {
     "@types/react": "^19.2.14",
