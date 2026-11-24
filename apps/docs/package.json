@@ -109,7 +109,7 @@
     "@yoopta/table-of-contents": "^6.0.3",
     "@yoopta/tabs": "^6.0.3",
     "@yoopta/video": "^6.0.3",
-    "i18next": "^23.16.8",
+    "i18next": "^26.3.4",
     "is-hotkey": "^0.2.0",
     "katex": "^0.16.11",
     "prismjs": "^1.30.0",
